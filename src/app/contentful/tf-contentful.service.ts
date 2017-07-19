@@ -1,4 +1,4 @@
-import { Config } from './../../config';
+import { ContentfulConfig } from './tf-contentful.config';
 import { Http } from '@angular/http';
 import { Injectable } from '@angular/core';
 
@@ -7,8 +7,8 @@ export class ContentfulService {
   constructor(private http: Http) { }
 
   buildUrl(entryId: string) {
-    return Config.Base_API_URL + Config.SPACE_ID + Config.ENTRIES +
-      entryId + Config.ACESS_TOKEN + Config.API_KEY;
+    return ContentfulConfig.Base_API_URL + ContentfulConfig.SPACE_ID + ContentfulConfig.ENTRIES +
+      entryId + ContentfulConfig.ACESS_TOKEN + ContentfulConfig.API_KEY;
   }
 
   getAddress(entryId: string) {

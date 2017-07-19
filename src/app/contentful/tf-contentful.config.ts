@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 
 @Injectable()
-export class Config {
+export class ContentfulConfig {
 
   public static Base_API_URL: string = 'https://cdn.contentful.com/spaces/';
   public static ENTRIES: string = '/entries/';

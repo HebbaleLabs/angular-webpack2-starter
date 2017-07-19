@@ -1,3 +1,5 @@
+import { ContentfulModule } from './contentful/tf-contentful.module';
+
 import { TalfinderModule } from './shared/talfinder/tf-talfinder.module';
 import { EmployementModule } from './shared/employement/tf-employement.module';
 import { AddressModule } from './shared/address/tf-address.module';
@@ -40,5 +42,6 @@ export const APP_IMPORTS = [
   TransferHttpModule,
   AddressModule,
   EmployementModule,
-  TalfinderModule
+  TalfinderModule,
+  ContentfulModule
 ];
