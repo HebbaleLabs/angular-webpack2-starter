@@ -1,3 +1,8 @@
+import { ContentfulModule } from './contentful/tf-contentful.module';
+
+import { TalfinderModule } from './shared/talfinder/tf-talfinder.module';
+import { EmployementModule } from './shared/employement/tf-employement.module';
+import { AddressModule } from './shared/address/tf-address.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, PreloadAllModules } from '@angular/router';
 import { MaterialModule } from '@angular/material';
@@ -34,5 +39,9 @@ export const APP_IMPORTS = [
   StoreModule.provideStore(rootReducer),
   STORE_DEV_TOOLS_IMPORTS,
   StoreDevToolsModule,
-  TransferHttpModule
+  TransferHttpModule,
+  AddressModule,
+  EmployementModule,
+  TalfinderModule,
+  ContentfulModule
 ];
