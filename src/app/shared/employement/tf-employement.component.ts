@@ -6,13 +6,15 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 
 @Component({
   selector: 'tf-employement',
-  templateUrl: 'tf-employement.component.html'
+  templateUrl: 'tf-employement.component.html',
+  styleUrls: ['./tf-employement.component.scss']
 })
 
 export class EmployementComponent implements OnInit, OnDestroy {
   employementData: EmployementModel;
   private employementSubscription: Subscription;
   constructor(private contentfulService: ContentfulService) { }
+
 
   ngOnInit() {
     this.onGetEmployement();

@@ -6,7 +6,8 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 
 @Component({
   selector: 'tf-talfinder',
-  templateUrl: 'tf-talfinder.component.html'
+  templateUrl: 'tf-talfinder.component.html',
+  styleUrls: ['./tf-talfinder.component.scss']
 })
 
 export class TalfinderComponent implements OnInit, OnDestroy {

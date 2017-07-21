@@ -1,0 +1,27 @@
+/* margin */
+@mixin margin($value) {
+  margin-left: $value;
+  margin-right: $value;
+  margin-top: $value;
+  margin-bottom: $value;
+}
+$marginproperty: (margin);
+@mixin margin-value($side, $value) {
+    @each $prop in $marginproperty {
+        #{$prop}-#{$side}: $value;
+    }
+}
+/* padding */
+@mixin padding($value) {
+  padding-left: $value;
+  padding-right: $value;
+  padding-top: $value;
+  padding-bottom: $value;
+}
+
+$paddingproperty: (padding);
+@mixin padding-value($side, $value) {
+    @each $prop in $paddingproperty {
+        #{$prop}-#{$side}: $value;
+    }
+}

@@ -7,7 +7,8 @@ import { Subscription } from 'rxjs/Subscription';
 
 @Component({
   selector: 'tf-address',
-  templateUrl: 'tf-address.component.html'
+  templateUrl: 'tf-address.component.html',
+  styleUrls: ['./tf-address.component.scss']
 })
 
 export class AddressComponent implements OnInit, OnDestroy {
