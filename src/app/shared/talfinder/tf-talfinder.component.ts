@@ -1,3 +1,4 @@
+import { Subject } from 'rxjs/Subject';
 import { Subscription } from 'rxjs/Subscription';
 import { TalfinderModel } from './tf-talfinder.model';
 import { ContentfulConfig } from './../../contentful/tf-contentful.config';
@@ -13,6 +14,8 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 export class TalfinderComponent implements OnInit, OnDestroy {
   talfinderData: TalfinderModel;
   private talfinderSubscription: Subscription;
+  private ngUnsubscribe: Subject<any> = new Subject<any>();
+
   constructor(private contentfulService: ContentfulService) { }
 
   ngOnInit() {
@@ -22,6 +25,7 @@ export class TalfinderComponent implements OnInit, OnDestroy {
   onGetTalfinder() {
     let entryId = ContentfulConfig.TalfinderLearnig_Entry;
     this.contentfulService.getTalfinder(entryId)
+      .takeUntil(this.ngUnsubscribe)
       .subscribe(
       talfinderData => this.talfinderData = talfinderData.fields,
       error => console.log(error),
@@ -30,6 +34,7 @@ export class TalfinderComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
-    this.talfinderSubscription.unsubscribe();
+    this.ngUnsubscribe.next();
+    this.ngUnsubscribe.complete();
   }
 }

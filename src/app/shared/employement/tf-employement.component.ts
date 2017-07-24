@@ -1,3 +1,4 @@
+import { Subject } from 'rxjs/Subject';
 import { Subscription } from 'rxjs/Subscription';
 import { EmployementModel } from './tf-employement.model';
 import { ContentfulConfig } from './../../contentful/tf-contentful.config';
@@ -13,6 +14,8 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 export class EmployementComponent implements OnInit, OnDestroy {
   employementData: EmployementModel;
   private employementSubscription: Subscription;
+  private ngUnsubscribe: Subject<any> = new Subject<any>();
+
   constructor(private contentfulService: ContentfulService) { }
 
 
@@ -23,6 +26,7 @@ export class EmployementComponent implements OnInit, OnDestroy {
   onGetEmployement() {
     let entryId = ContentfulConfig.EmpoweringEmployability_Entry;
     this.contentfulService.getEmployement(entryId)
+      .takeUntil(this.ngUnsubscribe)
       .subscribe(
       employementData => this.employementData = employementData.fields,
       error => console.log(error),
@@ -33,6 +37,7 @@ export class EmployementComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
-    this.employementSubscription.unsubscribe();
+    this.ngUnsubscribe.next();
+    this.ngUnsubscribe.complete();
   }
 }

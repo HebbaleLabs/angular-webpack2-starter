@@ -1,3 +1,4 @@
+import { Subject } from 'rxjs/Subject';
 import { ContentfulConfig } from './../../contentful/tf-contentful.config';
 import { ContentfulService } from './../../contentful/tf-contentful.service';
 
@@ -14,6 +15,7 @@ import { Subscription } from 'rxjs/Subscription';
 export class AddressComponent implements OnInit, OnDestroy {
   addressData: AddressModel;
   private addressSubscription: Subscription;
+  private ngUnsubscribe: Subject<any> = new Subject<any>();
 
   constructor(private contentfulService: ContentfulService) { }
 
@@ -23,7 +25,8 @@ export class AddressComponent implements OnInit, OnDestroy {
 
   onGetAddress() {
     let entryId = ContentfulConfig.Address_ENTRY;
-    this.addressSubscription = this.contentfulService.getAddress(entryId)
+    this.contentfulService.getAddress(entryId)
+      .takeUntil(this.ngUnsubscribe)
       .subscribe(
       addressData => this.addressData = addressData.fields,
       error => console.log(error),
@@ -32,7 +35,8 @@ export class AddressComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
-    this.addressSubscription.unsubscribe();
+    this.ngUnsubscribe.next();
+    this.ngUnsubscribe.complete();
   }
 
 }
