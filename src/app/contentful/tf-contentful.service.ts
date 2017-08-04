@@ -7,7 +7,7 @@ export class ContentfulService {
   constructor(private http: Http) { }
 
   buildUrl(entryId: string) {
-    return ContentfulConfig.Base_API_URL + ContentfulConfig.SPACE_ID + ContentfulConfig.ENTRIES +
+    return ContentfulConfig.BASE_API_URL + ContentfulConfig.SPACE_ID + ContentfulConfig.ENTRIES +
       entryId + ContentfulConfig.ACESS_TOKEN + ContentfulConfig.API_KEY;
   }
 

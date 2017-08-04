@@ -12,6 +12,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 })
 
 export class EmployementComponent implements OnInit, OnDestroy {
+  panelHeading = 'Employement Information';
   employementData: EmployementModel;
   private employementSubscription: Subscription;
   private ngUnsubscribe: Subject<any> = new Subject<any>();
@@ -24,7 +25,7 @@ export class EmployementComponent implements OnInit, OnDestroy {
   }
 
   onGetEmployement() {
-    let entryId = ContentfulConfig.EmpoweringEmployability_Entry;
+    let entryId = ContentfulConfig.EMPOERING_EMPLOYABILITY_ENTRY;
     this.contentfulService.getEmployement(entryId)
       .takeUntil(this.ngUnsubscribe)
       .subscribe(

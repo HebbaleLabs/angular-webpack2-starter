@@ -1,3 +1,4 @@
+import { PanelModule } from './shared/pannel/tf-panel.module';
 import { ContentfulModule } from './contentful/tf-contentful.module';
 
 import { TalfinderModule } from './shared/talfinder/tf-talfinder.module';
@@ -43,5 +44,6 @@ export const APP_IMPORTS = [
   AddressModule,
   EmployementModule,
   TalfinderModule,
-  ContentfulModule
+  ContentfulModule,
+  PanelModule
 ];

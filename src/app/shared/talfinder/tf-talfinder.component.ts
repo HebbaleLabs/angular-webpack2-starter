@@ -1,3 +1,4 @@
+import { PanelComponent } from './../pannel/tf-panel.component';
 import { Subject } from 'rxjs/Subject';
 import { Subscription } from 'rxjs/Subscription';
 import { TalfinderModel } from './tf-talfinder.model';
@@ -8,10 +9,11 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 @Component({
   selector: 'tf-talfinder',
   templateUrl: 'tf-talfinder.component.html',
-  styleUrls: ['./tf-talfinder.component.scss']
+  styleUrls: ['./tf-talfinder.component.scss'],
 })
 
 export class TalfinderComponent implements OnInit, OnDestroy {
+  panelHeading = 'Talfinder information';
   talfinderData: TalfinderModel;
   private talfinderSubscription: Subscription;
   private ngUnsubscribe: Subject<any> = new Subject<any>();
@@ -23,7 +25,7 @@ export class TalfinderComponent implements OnInit, OnDestroy {
   }
 
   onGetTalfinder() {
-    let entryId = ContentfulConfig.TalfinderLearnig_Entry;
+    let entryId = ContentfulConfig.TALFINDER_LEARNING_ENTRY;
     this.contentfulService.getTalfinder(entryId)
       .takeUntil(this.ngUnsubscribe)
       .subscribe(

@@ -24,7 +24,7 @@ export class AddressComponent implements OnInit, OnDestroy {
   }
 
   onGetAddress() {
-    let entryId = ContentfulConfig.Address_ENTRY;
+    let entryId = ContentfulConfig.ADDRESS_ENTRY;
     this.contentfulService.getAddress(entryId)
       .takeUntil(this.ngUnsubscribe)
       .subscribe(
