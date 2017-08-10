@@ -1,17 +1,14 @@
-<div class="container">
-  <div class="panel panel-primary">
-    <div class="panel-heading">Address information</div>
-    <div class="panel-body">
-      <div *ngIf="addressData">
-        <li>{{addressData.informationType}}</li>
-        <br>
-        <li>{{addressData.contactInformation}}</li>
-        <br>
-        <li>{{addressData.additionalInfo}}</li>
-        <br>
-        <li> {{addressData.email}}</li>
-        <br>
-      </div>
-    </div>
-  </div>
-</div>
+<tf-panel>
+  <panel-heading>
+    <li>{{panelHeading}}</li>
+  </panel-heading>
+  <panel-body>
+    <li>{{addressData.informationType}}</li>
+    <br>
+    <li>{{addressData.contactInformation}}</li>
+    <br>
+    <li>{{addressData.additionalInfo}}</li>
+    <br>
+    <li> {{addressData.email}}</li>
+  </panel-body>
+</tf-panel>

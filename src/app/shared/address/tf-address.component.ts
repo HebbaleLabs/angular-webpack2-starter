@@ -14,6 +14,7 @@ import { Subscription } from 'rxjs/Subscription';
 
 export class AddressComponent implements OnInit, OnDestroy {
   addressData: AddressModel;
+  panelHeading = 'Address information';
   private addressSubscription: Subscription;
   private ngUnsubscribe: Subject<any> = new Subject<any>();
 

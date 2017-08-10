@@ -7,8 +7,8 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 
 export class PanelComponent implements OnInit {
-  @Input() public dataSource: string;
-  @Input() public panelHeading: string;
+  // @Input() public dataSource: string;
+  // @Input() public panelHeading: string;
   constructor() { }
 
   ngOnInit() { }

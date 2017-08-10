@@ -1,5 +1,5 @@
 import { PanelComponent } from './tf-panel.component';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 
@@ -8,5 +8,6 @@ import { CommonModule } from '@angular/common';
   exports: [PanelComponent],
   declarations: [PanelComponent],
   providers: [],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class PanelModule { }
