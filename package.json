@@ -161,7 +161,7 @@
     "karma-remap-coverage": "0.1.4",
     "karma-sourcemap-loader": "~0.3.7",
     "karma-webpack": "2.0.3",
-    "node-sass": "~4.5.2",
+    "node-sass": "^4.5.3",
     "nodemon": "~1.11.0",
     "npm-run-all": "~4.0.2",
     "phantomjs-polyfill": "~0.0.2",

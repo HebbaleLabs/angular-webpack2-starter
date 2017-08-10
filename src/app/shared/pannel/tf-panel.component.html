@@ -1,0 +1,23 @@
+<!-- <div class="container">
+  <div class="panel panel-primary">
+    <div class="panel-heading">{{panelHeading}}</div>
+    <div class="panel-body">
+      <div *ngIf="dataSource">
+        <li>{{dataSource.briefTeaser}}</li>
+        <br>
+        <li>{{dataSource.slogan}}</li>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<div class="container">
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <ng-content select="panel-heading"></ng-content>
+    </div>
+    <div class="panel-body">
+      <ng-content select="panel-body"></ng-content>
+    </div>
+  </div>
+</div>
