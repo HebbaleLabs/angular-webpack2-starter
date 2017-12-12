@@ -19,6 +19,7 @@ import { Store } from '@ngrx/store';
 import {
   BrowserTransferStateModule
 } from '../modules/transfer-state/browser-transfer-state.module';
+import {CourseHomePageModule} from './course-home-page/course-home-page.module'
 
 import { APP_DECLARATIONS } from './app.declarations';
 import { APP_ENTRY_COMPONENTS } from './app.entry-components';
@@ -43,6 +44,7 @@ import { AppState } from './reducers';
     HttpModule,
     APP_IMPORTS,
     RouterModule.forRoot(routes, { useHash: false, preloadingStrategy: PreloadAllModules }),
+    CourseHomePageModule
   ],
   bootstrap: [AppComponent],
   exports: [AppComponent],

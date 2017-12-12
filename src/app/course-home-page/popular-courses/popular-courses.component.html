@@ -1,0 +1,44 @@
+<section class="container-fluid">
+    <div class="row">
+        <h1 class="course-h1-text">Popular Courses</h1>
+        <br>
+        <div class="col-xs-6 col-md-4 col-lg-3" *ngFor="let data of contentData.PopularCoursesCards">
+            <div class="panel course-panel ">
+
+                <img src={{data.assetVal.fields.file.url}} alt="" class="img-responsive course-panel-image">
+
+                <div class="panel-body fixed-panel">
+                    <h3 class="course-h3-text">
+                        {{data.entVal.fields.courseTitle}}
+                    </h3>
+                    <br>
+                    <p class="p-text">
+                        {{data.entVal.fields.courseSummary}}
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--div class="col-xs-6 col-md-4 col-lg-3">
+            <div class="panel course-panel">
+
+                <img src="./images/writing-right.jpg" alt="" class="img-responsive course-panel-image-two">
+
+                <div class="panel-body">
+                    <h3 class="course-h3-text">
+                        Back End Developer
+                    </h3>
+                    <br>
+                    <p class="p-text">
+                        Master the basics to build the back end for modern web applications using Java, RESTful services & MongoDB </p>
+                </div>
+            </div>
+        </div-->
+    </div>
+    <div class="row ">
+        <a href="#">
+            <h2 class="course-link-blue">View all courses</h2>
+        </a>
+
+    </div>
+</section>
+
