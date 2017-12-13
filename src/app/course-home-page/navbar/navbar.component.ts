@@ -29,20 +29,20 @@ contentData={logo:{},menuitems:{}}
       (response:Response)=>{
         const data=response.json();
         this.contentData.logo=data.includes.Asset[0];
-        //console.log(this.assets);
+        
        this.contentData.menuitems=data.items.find(getValues)
         function getValues(item){
-          //console.log('-----HHHHHHH '+item.fields.navBarType)
+          
            if(item.fields.navBarType === "For Companies")
             {
               return item;
             }
         }
-        console.log(this.contentData)
+        
         
       },
       (error)=>{
-        //console.log(error);
+        
 
       }
     )

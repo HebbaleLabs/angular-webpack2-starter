@@ -1,0 +1,74 @@
+
+@media (min-width: 769px) {
+    
+    .learner-more-rev {
+        text-align: right;
+    }
+}
+
+@media(max-width:768px) {
+    
+    .learner-say {
+        text-align: center;
+    }
+    
+    .learner-more-rev {
+        text-align: center;
+    }
+}
+
+.gray-box {
+    background-color: #413c3c23;
+
+}
+
+.learner-say {
+    color: #000000;
+    font-family: Raleway;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    margin-left: 3%;
+    padding-bottom: 20px;
+}
+
+.learner-img {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+
+.learner-comment {
+    opacity: 0.8;
+    color: #000000;
+    font-family: Raleway;
+    font-size: 24px;
+    font-style: italic;
+    text-align: center;
+	font-weight: 300;
+}
+
+.learner-name {
+    color: #000000;
+    font-family: Raleway;
+    text-align: center;
+    font-weight: 600;
+    line-height: 19px;
+}
+
+.learner-desig {
+    color: #000000;
+    font-family: Raleway;
+    font-size: 16px;
+    text-align: center;
+}
+
+.learner-more-rev {
+    color: #2AB1EA;
+    font-family: Raleway;
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: 1%;
+    text-decoration: none;
+    
+}

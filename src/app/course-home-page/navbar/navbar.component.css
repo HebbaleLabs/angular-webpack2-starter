@@ -57,19 +57,14 @@
 .headeritem:hover,
 .headeritem:focus,
 .headeritem:active {
-    /*color: red;*/
+    
     background-color: #FFFFFF;
     border-bottom: 5px solid #2AB1EA;
     text-decoration: none;
-    /*transform: rotate(359.7deg);*/
+    
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.5);
     color: #000000;
-    /*
-    border-bottom: 3px solid #2AB1EA;
-    padding: 0;
-    
-    transform: rotate(359.7deg);
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.5);*/
+
 }
 /* show the collapse when navbar toggle is checked */
 #navbar-toggle-cbox:checked ~ .collapse {

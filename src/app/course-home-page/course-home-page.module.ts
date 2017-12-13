@@ -10,6 +10,8 @@ import { NavbarModule } from './navbar/navbar.module';
 
 import {CaptionModule} from './caption/caption.module';
 import {PopularCoursesModule} from './popular-courses/popular-courses.module'
+import { WhyLearnModule } from './why-learn/why-learn.module';
+import {LearnerTestimonialsModule} from './learner-testimonials/learner-testimonials.module'
 @NgModule({
   declarations: [
    CourseHomePageComponent
@@ -19,11 +21,13 @@ import {PopularCoursesModule} from './popular-courses/popular-courses.module'
     HttpModule,
     NavbarModule,
     CaptionModule,
-    PopularCoursesModule
+    PopularCoursesModule,
+    WhyLearnModule,
+    LearnerTestimonialsModule
   ],
   providers: [],
   exports:[
-      NavbarModule,
+      
       CourseHomePageComponent
   ]
   

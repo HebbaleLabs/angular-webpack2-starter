@@ -34,7 +34,7 @@ this.getContents();
             .subscribe(
               (data:any)=>{
                 
-               // console.log(data);
+               
                for (let item of data.items){
 
                    this.contentData.push(getVal(item)) 
@@ -44,7 +44,7 @@ this.getContents();
                       function getVal(item:any){
                         let assetVal=data.includes.Asset.find(findAsset)
                       
-                    //  this.some.push( {item,assetVal })
+                   
                         
           
 
@@ -59,14 +59,10 @@ this.getContents();
                        }
           
             
-           // console.log(this.contentData)
+           
           
               }
-            
-                
-/*
-                this.meetKodproContent=data.items[1];
-                this.meetKpdproImg=data.includes.Asset.id==="38FdpCtiVqkywa6aY48wOg";*/
+          
                 
               
 
