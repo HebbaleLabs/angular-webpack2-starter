@@ -45,7 +45,9 @@
     font-size: 24px;
     font-style: italic;
     text-align: center;
-	font-weight: 300;
+    font-weight: 300;
+    position: absolute;
+    display: inline-block;
 }
 
 .learner-name {
@@ -53,7 +55,7 @@
     font-family: Raleway;
     text-align: center;
     font-weight: 600;
-    line-height: 19px;
+    font-size: 16px;
 }
 
 .learner-desig {
@@ -61,6 +63,7 @@
     font-family: Raleway;
     font-size: 16px;
     text-align: center;
+    font-size: 16px;
 }
 
 .learner-more-rev {

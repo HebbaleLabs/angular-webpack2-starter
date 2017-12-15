@@ -3,7 +3,7 @@
     box-shadow: 2px 5px 4px 0 rgba(0, 0, 0, 0.5);
     height: 100%;
     width: 100%;
-    display:block;
+    display:inline-block;
 }
 .course-link-blue {
     color: #2AB1EA;
@@ -35,6 +35,7 @@
     font-weight: 500;
     font-family: Raleway;
     font-size: 16px;
+    padding: none;
 }
 .p-text {
     color: #000000;
@@ -43,7 +44,8 @@
     font-size: 12px;
 }
 .fixed-panel {
-    display: table;
+    
     min-height:200px;
+    max-height: 200px;
     
   }

@@ -30,9 +30,7 @@ contentData={title:"",PopularCoursesCards:[]};
             .subscribe(
               (data:any)=>{
                 this.contentData.title=data.items[0].fields.title;
-                
-
-                
+                 
                for (let item of data.items[0].fields.popularCoursesCards){
 
                 this.contentData.PopularCoursesCards.push(getVal(item))

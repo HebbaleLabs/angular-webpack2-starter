@@ -1,0 +1,12 @@
+
+<section class="container-fluid overflow-hide">
+    <div class="row section-pad">
+        <h1 class="job-partner-heading">Our Job Partners</h1>
+        <br>
+    
+        <div class="column job-partner-align" *ngFor="let data of contentData">
+            <img src={{data.assetValue.fields?.file.url}} alt="learners" class="img-responsive job-partner-img job-partner-align-img ">
+        </div>
+
+    </div>
+</section>

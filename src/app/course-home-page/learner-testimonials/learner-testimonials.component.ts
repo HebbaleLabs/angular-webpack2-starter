@@ -7,7 +7,7 @@ import { Http,Response} from '@angular/http';
   styleUrls: ['./learner-testimonials.component.css']
 })
 export class LearnerTestimonialsComponent implements OnInit {
-  images:Array<any> = [{"sType":"img","imgSrc":"https://www.google.co.in/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"},{"sType":"div","content":"...Hello It's slidable content"}];
+  
   contentData={title:"",testimonials:[]};
   constructor(private http:Http) { }
 

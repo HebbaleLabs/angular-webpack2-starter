@@ -1,0 +1,47 @@
+.footer{
+    background-color: rgba(11, 19, 43, 0.974);
+    overflow-x: hidden;
+}
+.toggle-item{
+    display: block;
+}
+.gary-box{
+    background-color: #413c3c23;
+    padding: 20px;
+    overflow-x: hidden;
+    
+    
+}
+.text{
+    color: #ffffff;
+    font-family: "Open Sans";	
+    font-size: 16px;	
+    
+}
+.overflow-hide{
+    overflow-x: hidden;
+}
+.gary-box{
+    background-color: #413c3c23;
+    padding: 20px;
+    overflow-x: hidden;
+    
+    
+    
+}
+.space{
+    max-height:10px;
+}
+
+
+
+@media(min-width:768px){
+    .disp{
+        display: inline-block;
+ }
+
+ .nowrap{
+     display: flex;
+     flex-wrap: nowrap;
+ }
+}
