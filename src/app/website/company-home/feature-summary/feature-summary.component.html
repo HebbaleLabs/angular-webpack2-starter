@@ -1,0 +1,27 @@
+<div class="row nowrap box"
+     *ngFor="let data of contentData">
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 img-column">
+    <img src={{data?.assetValue.fields.file.url}}
+         alt="image"
+         class="disp-img img-responsive">
+
+  </div>
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-column">
+    <p class="heading">{{data?.sectionHeading}}</p>
+    <P class="discription">{{data?.sectiDescription}}</P>
+    <div>
+      <ul class="wrap"
+          *ngFor="let advantage of data?.advantages">
+        <li>
+          <span>
+            <i [ngClass]="[
+      'fa',
+      'advantage.fields?.cssFaIcon']">
+            </i>
+          </span>
+          <p class="list-item">{{advantage.fields.advantage}}</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
