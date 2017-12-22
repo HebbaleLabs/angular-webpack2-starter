@@ -30,6 +30,7 @@ import { routes } from './app.routing';
 import { AppComponent } from './app.component';
 
 import { AppState } from './reducers';
+import { WebsiteModule } from './website/index';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { AppState } from './reducers';
     HttpModule,
     APP_IMPORTS,
     RouterModule.forRoot(routes, { useHash: false, preloadingStrategy: PreloadAllModules }),
+    WebsiteModule,
   ],
   bootstrap: [AppComponent],
   exports: [AppComponent],
