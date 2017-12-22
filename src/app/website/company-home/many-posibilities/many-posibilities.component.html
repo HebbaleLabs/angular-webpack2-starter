@@ -1,0 +1,17 @@
+<section class="container-fluid overflow-hide">
+  <div class="row section-pad">
+    <p class="heading">{{contentData.sectionHeading}}</p>
+
+    <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4 text-center align"
+         *ngFor="let data of contentData.possiblityItems">
+      <div class="icon-basic-display">
+      </div>
+
+
+      <p class="p-text">{{data.fields.possibilityTeaser}}</p>
+    </div>
+  </div>
+  <div class="row">
+    <p class="link-blue">Explore product features ></p>
+  </div>
+</section>

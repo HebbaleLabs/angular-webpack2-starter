@@ -1,0 +1,63 @@
+@import '../../shared/_bits.scss';
+
+
+.section-pad {
+  margin-left:4%;
+  margin-right:4%;
+  overflow-x: hidden;
+}
+.align {
+  display: flex;
+  flex-wrap: nowrap;  
+  text-align: center;
+  @include breakpoint(phablet) {
+		flex-wrap: wrap;
+  }
+}
+.heading {
+  color:$black;
+  font-family: $fontRailway;
+  font-size: $big;
+  font-weight:  $fontWieght;
+  line-height: 29px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  @include breakpoint(phablet) {
+		text-align: center;
+  }
+  @include breakpoint(tablet) {
+		text-align: left;
+  }
+  @include breakpoint(mobileonly) {
+		text-align: center;
+  }
+}
+
+section {
+  top: 0;
+  bottom: 0;
+  opacity: $opacity;
+  background-color:$talfinderGray;
+}
+.p-text{
+  color:$black;
+  font-family: Raleway;	
+  font-size: 16px;	
+  line-height: 19px;
+  
+}
+.link-blue{
+  color: $talfinderBlue;
+  font-family: $fontRailway;
+  font-size: $big	;
+  font-weight: $fontWieght;
+  text-align: right;
+  
+  @include breakpoint(phablet) {
+		text-align: center;
+  }
+ 
+  @include breakpoint(mobileonly) {
+		text-align: center;
+  }
+}

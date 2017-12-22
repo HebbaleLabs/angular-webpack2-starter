@@ -1,0 +1,53 @@
+<section class="container-fluid gray-box laptopuser-pad">
+    <div class="row ">
+        <h1 class="learner-say">{{contentData?.sectionHeading}}</h1>
+    </div>
+
+    <tf-carousel [interval]="nextPhotoInterval"
+                 [noWrap]="noLoopSlides">
+        <tf-slide *ngFor="let slidez of contentData.testimonials; let index=index"
+                  [active]="slidez.active">
+
+            <div class="row ">
+
+                <div class="col-lg-2  col-md-3 col-sm-12 col-xs-12 content-marg">
+                    <div align="center">
+                        <img src={{slidez.assetValue.fields.file.url}}
+                             alt="learners"
+                             class="img-responsive learner-img ">
+                    </div>
+
+                    <p class="learner-name">{{slidez.entryValue.fields.name}}</p>
+
+                    <p class="learner-desig">{{slidez.entryValue.fields.designation}}</p>
+
+                </div>
+
+
+                <div class=" col-lg-9 col-md-8  col-sm-12 col-xs-12 ">
+                    <p class="learner-comment">
+                        {{slidez.entryValue.fields.testimonial}}
+
+                    </p>
+
+
+                </div>
+
+            </div>
+
+
+
+
+            <!--img [src]="slidez.assetValue.fields.file.url"
+                 style="margin:auto;">
+
+            <div class="carousel-caption">
+                <h3 style="background-color: transparent;color: white;">Slide {{index + 1}}</h3>
+                <p style="background-color: transparent;color: white;">{{slidez.entryValue .fields.name}}
+                </p>
+            </div-->
+        </tf-slide>
+    </tf-carousel>
+
+    <h2 class="learner-more-rev ">Read more reviews ></h2>
+</section>

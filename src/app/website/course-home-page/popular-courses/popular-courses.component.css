@@ -1,0 +1,51 @@
+.course-panel {
+    background-color: #FFFFFF;
+    box-shadow: 2px 5px 4px 0 rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    display:inline-block;
+}
+.course-link-blue {
+    color: #2AB1EA;
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 1%;
+    text-decoration: none;
+}
+.course-link-blue:hover {
+ 
+    text-decoration: currentColor;
+}
+.course-h1-text {
+    color: #000000;
+    font-family: Raleway;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    margin-left: 1%;
+    padding-bottom: 20px;
+}
+.course-panel-image {
+    height: 100%;
+    width: 100%;
+}
+.course-h3-text {
+    color: #000000;
+    font-weight: 500;
+    font-family: Raleway;
+    font-size: 16px;
+    padding: none;
+}
+.p-text {
+    color: #000000;
+    font-family: Raleway;
+    width: auto;
+    font-size: 12px;
+}
+.fixed-panel {
+    
+    min-height:200px;
+    max-height: 200px;
+    
+  }
