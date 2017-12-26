@@ -1,14 +1,16 @@
-<section class="container-fluid overflow-hide">
-    <div class="row section-pad">
-        <p class="job-partner-heading">{{contentData.sectionTitle}}</p>
+<section class="container-fluid ourjobpartner">
+    <div class="row space"></div>
+    <div class="row ourjobpartner-content">
+        <p class="ourjobpartner-heading">{{contentData.sectionTitle}}</p>
         <br>
 
-        <div class="column job-partner-align"
+        <div class="column ourjobpartner-align"
              *ngFor="let data of contentData.sectionData">
             <img src={{data.fields?.file.url}}
                  alt="data.fileds.title"
-                 class="img-responsive job-partner-img job-partner-align-img ">
+                 class="img-responsive ourjobpartner-img  ">
         </div>
 
     </div>
+    <div class="row space"></div>
 </section>

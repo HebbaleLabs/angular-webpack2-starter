@@ -6,7 +6,7 @@ import { ContentfulService } from '../contentful/contentful.service';
 @Component({
   selector: 'tf-caption',
   templateUrl: './caption.component.html',
-  styleUrls: ['./caption.component.css']
+  styleUrls: ['./caption.component.scss']
 })
 export class CaptionComponent implements OnInit {
   @Input() pageCaption;

@@ -6,7 +6,7 @@ import { ContentfulService } from '../contentful/contentful.service';
 @Component({
   selector: 'tf-testimonials',
   templateUrl: './testimonials.component.html',
-  styleUrls: ['./testimonials.component.css']
+  styleUrls: ['./testimonials.component.scss']
 })
 export class TestimonialsComponent implements OnInit {
   @Input() page = '';

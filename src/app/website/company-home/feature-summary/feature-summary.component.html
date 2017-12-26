@@ -1,27 +1,35 @@
-<div class="row nowrap box"
-     *ngFor="let data of contentData">
-  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 img-column">
-    <img src={{data?.assetValue.fields.file.url}}
-         alt="image"
-         class="disp-img img-responsive">
+<section class="featuresummary">
+  <div class="row featuresummary-content"
+       *ngFor="let data of contentData">
+    <div class="row space"></div>
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 img-column text-center">
+        <img src={{data?.assetValue.fields.file.url}}
+             alt="image"
+             class="featuresummary-content-img img-responsive">
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-column text-center">
+        <p class="featuresummary-content-heading">{{data?.sectionHeading}}</p>
+        <P class="featuresummary-content-discription">{{data?.sectiDescription}}</P>
+        <div class="pull-left">
+          <ul class="wrap "
+              *ngFor="let advantage of data?.advantages">
+            <li [ngClass]="[advantage.fields?.cssFaIcon,'featuresummary-content-list',
+            'fa','fa-pull-left','fa-lg']">
 
-  </div>
-  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-column">
-    <p class="heading">{{data?.sectionHeading}}</p>
-    <P class="discription">{{data?.sectiDescription}}</P>
-    <div>
-      <ul class="wrap"
-          *ngFor="let advantage of data?.advantages">
-        <li>
-          <span>
-            <i [ngClass]="[
-      'fa',
-      'advantage.fields?.cssFaIcon']">
-            </i>
-          </span>
-          <p class="list-item">{{advantage.fields.advantage}}</p>
-        </li>
-      </ul>
+              <p class="featuresummary-content-advantage">
+                <span>
+                  <!--i [ngClass]="['featuresummary-content-list',
+                'fa',
+                'fa-check','fa-pull-left','fa-lg']"
+                     aria-hidden="true">
+                  </i-->
+                </span>{{advantage.fields.advantage}}</p>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
+    <div class="row space"></div>
   </div>
-</div>
+</section>

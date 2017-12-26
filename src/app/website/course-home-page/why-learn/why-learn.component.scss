@@ -1,0 +1,90 @@
+@import '../../shared/bits';
+@media (min-width: 768px) {
+    
+    
+    .content-img {
+        height:300px;
+        width:100%;
+        align-items: center;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+    .content-marg {
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+    }
+    .no-wrap {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .box:nth-child(odd)>.wrap{
+     display: flex;
+    flex-direction: row-reverse;
+    }
+    
+    
+}
+
+@media(max-width:767px) {
+    .p-text {
+        
+    }
+    .headings {
+        
+    }
+    .link-blue {
+        @include breakpoint(phablet){
+            text-align: center;
+        }
+        
+    }
+    
+    .box:nth-child(odd)>.wrap {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .content-img {
+        height:auto;
+        width:100%;
+        
+        margin-left: 0.3%;
+        margin-right: 0.5%;
+    }
+    
+}
+.headings {
+    color: $black;
+    font-family: $fontRaleway;
+    font-size: $big;
+    font-weight: $strong;
+    line-height: 29px;
+    padding-bottom: 20px;
+    @include breakpoint(phablet){
+        text-align: center;
+    }
+}
+.p-text {
+    color:$black;
+    font-family: $fontRaleway;
+    width: auto;
+    font-size: 18px;
+    @include breakpoint(phablet){
+        text-align: center;
+    }
+}
+
+
+.box:nth-child(odd){
+    
+    
+    background-color: $talfinderGray;
+    flex: 0 0 100%;
+    
+}
+.box:nth-child(even){
+    
+    
+    background-color:$white;
+    flex: 0 0 100%;
+    
+}

@@ -1,0 +1,96 @@
+/*
+.gary-box{
+    background-color: #413c3c23;
+    padding: 20px;
+    overflow-x: hidden;
+    
+    
+}
+.toggleItem{
+    display: block;
+}
+@media(min-width:768px){
+.disp{
+    display: inline-block;
+    flex-wrap: nowrap;
+}
+    
+
+.link-title{
+    
+        color: #000000;
+        font-family: Raleway;	
+        font-size: 16px;
+        display:block;
+        flex-wrap: nowrap;
+        
+    }
+
+}
+@media(max-width:767px){
+
+.link-title{
+    
+        color: #000000;
+        font-family: Raleway;	
+        font-size: 16px;
+        display:flex;
+        flex-wrap: wrap;
+        
+    }
+    
+}
+
+
+*/
+
+
+@import '../bits';
+.gary-box{
+    background-color:$talfinderGray;
+    opacity:$opacity;
+    overflow-x: hidden;
+}
+.toggleItem{
+    display: block;
+}
+.disp{
+
+    @include breakpoint(tablet) {
+        display: inline-block;
+        flex-wrap: nowrap;
+        } 
+
+    @include breakpoint(tablet) {
+        display: inline-block;
+        flex-wrap: nowrap;
+        } 
+    @include breakpoint(tablet) {
+    display: inline-block;
+    flex-wrap: nowrap;
+	} 
+}
+.link-title{
+    @include breakpoint(phablet) {
+        display:flex;
+        flex-wrap: wrap;
+      
+ }  @include breakpoint(tablet) {
+        display:block;
+        flex-wrap: nowrap;
+      
+ } 
+
+        color:$black;
+        font-family: $fontRaleway;	
+        font-size: $medium;
+        display:block;
+        flex-wrap: nowrap;
+        
+    }
+
+
+.full-width{
+    width: 100%;
+}
+

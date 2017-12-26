@@ -1,24 +1,32 @@
 @import '../../shared/_bits.scss';
 
-
-.section-pad {
+.manypossibility{
+  overflow-x:hidden; 
+  width:100%;
+}
+.manypossibility-content{
   margin-left:4%;
   margin-right:4%;
-  overflow-x: hidden;
+  
+  @include breakpoint(phablet) {
+    margin-left:5%;
+    margin-right:5%;
+  }
 }
 .align {
   display: flex;
   flex-wrap: nowrap;  
   text-align: center;
   @include breakpoint(phablet) {
-		flex-wrap: wrap;
+    flex-wrap: wrap;
+    text-align: center;
   }
 }
-.heading {
+.manypossibility-content-heading {
   color:$black;
-  font-family: $fontRailway;
+  font-family: $fontRaleway;
   font-size: $big;
-  font-weight:  $fontWieght;
+  font-weight:  $strong;
   line-height: 29px;
   padding-bottom: 20px;
   padding-top: 20px;
@@ -36,21 +44,21 @@
 section {
   top: 0;
   bottom: 0;
-  opacity: $opacity;
+  
   background-color:$talfinderGray;
 }
-.p-text{
+.manypossibility-content-text{
   color:$black;
-  font-family: Raleway;	
-  font-size: 16px;	
+  font-family: $fontRaleway;	
+  font-size: $medium;	
   line-height: 19px;
   
 }
-.link-blue{
+.manypossibility-link-blue{
   color: $talfinderBlue;
-  font-family: $fontRailway;
+  font-family: $fontRaleway;
   font-size: $big	;
-  font-weight: $fontWieght;
+  font-weight: $strong;
   text-align: right;
   
   @include breakpoint(phablet) {
@@ -60,4 +68,7 @@ section {
   @include breakpoint(mobileonly) {
 		text-align: center;
   }
+}
+.space{
+  padding: 10px;
 }

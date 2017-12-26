@@ -1,0 +1,34 @@
+@import '../bits';
+
+.objective-para {
+    height: 30%;
+    width: 65%;
+    color: $black;
+    font-family: $fontBitter;
+    font-size: $big;
+ 
+}
+.margin {
+    width: auto;
+    size: $big;
+}
+.underline {
+    height: 4px;
+    width: 55%;
+    transform: rotate(359.7deg);
+    background-color:$talfinderFooterBlue;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+.register {
+    background-color: $talfinderBlue;
+    
+    color: $white;
+    border-radius: 5px;
+    font-family: $fontRaleway;
+    font-size: $medium;
+    
+}
+.space{
+    padding: 10px;
+  }
