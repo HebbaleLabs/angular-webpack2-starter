@@ -1,0 +1,119 @@
+@import '../../shared/bits';
+  .nowrap{  
+    top: 0;
+    bottom: 0;  
+    display:inline;
+    flex-wrap: nowrap;
+  }
+  .wrap{
+    display: flex;
+    flex-wrap:wrap;
+  }
+  .disp-img{
+    top:0;
+    bottom: 0;
+    
+    height: 250px;		
+    width: 100%;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+  }
+.heading{
+  margin-left: 1%; 
+  text-align: left;
+  color:$black;
+  font-family:$fontBitter;	
+  font-size:$big;
+  line-height: 28px;
+  
+}
+.discription{
+  margin-left: 1%;
+  text-align: left;
+  color:$big;	
+  font-family:$fontRailway;
+  font-size: $medium;	
+  line-height: 19px;
+  
+}
+.list-item{
+
+  padding-bottom: 10px;
+  padding-top:10px;
+  display: inline-block;
+  color:$black;
+  font-family:$fontRailway;
+  font-size: $medium;
+  line-height: 19px;
+  font-family: $fontRailway;
+}
+.box:nth-child(odd){
+
+
+.img-column{
+  float: right;
+  
+  }
+  .text-column{
+  float:left
+  }
+
+}
+
+.box:nth-child(even){
+  
+  background-color: $talfinderGray;
+  
+  .img-column{
+    float: left;
+    
+    }
+    .text-column{
+     float:right;
+    }
+  
+  }
+/*
+
+
+  .disp-img2{
+    top:0;
+    bottom: 0;
+    height: 380px;	
+    width: 50%;
+    float: right;
+    
+  }
+.heading-two{
+  margin-right: 1%;
+  text-align: right;
+  color:$black;
+  font-family: Bitter;	
+  font-size:$big;
+  line-height: 28px;
+  
+}
+.discription-two{
+  margin-right: 1%;
+  text-align: right;
+  color: #000000;	
+  font-family: Raleway;	
+  font-size: 16px;	
+  line-height: 19px;
+  
+}
+.list-item-two{
+  
+  
+  padding-bottom: 10px;
+  padding-top:10px;
+  display: inline-block;
+  color: #000000;	
+  font-family: Raleway;
+  font-size: 16px;
+  line-height: 19px;
+  font-family: Raleway;
+}*/
+
+.gray-box{
+  background-color:$talfinderGray;
+}

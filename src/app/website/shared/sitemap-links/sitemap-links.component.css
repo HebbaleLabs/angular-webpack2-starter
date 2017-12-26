@@ -1,0 +1,41 @@
+.gary-box{
+    background-color: #413c3c23;
+    padding: 20px;
+    overflow-x: hidden;
+    
+    
+}
+.toggleItem{
+    display: block;
+}
+@media(min-width:768px){
+.disp{
+    display: inline-block;
+    flex-wrap: nowrap;
+}
+    
+
+.link-title{
+    
+        color: #000000;
+        font-family: Raleway;	
+        font-size: 16px;
+        display:block;
+        flex-wrap: nowrap;
+        
+    }
+
+}
+@media(max-width:767px){
+
+.link-title{
+    
+        color: #000000;
+        font-family: Raleway;	
+        font-size: 16px;
+        display:flex;
+        flex-wrap: wrap;
+        
+    }
+    
+}
