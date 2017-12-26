@@ -1,0 +1,29 @@
+<section class="container-fluid overflow-hide">
+ <div class="row gray-box">
+        <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target="#legal1" (click)="onToggle()">
+            <Span>Legal</Span>
+        </button>
+
+</div>
+<div class="row ">
+    <footer class="footer nowrap">
+
+                    <div class="collapse disp" id="legal1" [ngClass]="{'toggle-item':toggle===true}" >
+                        <div class="nav navbar-nav nowrap">
+                            <div class="col-lg-5">
+                                <p class="text"><a href="#">Privacy policy</a></p>
+                            </div>
+                            
+                            <div class="col-lg-5">
+                                <p class="text"><a href="#">Terms of Use</a></p>
+                            </div>
+                        </div>
+                    </div>
+                
+                <div class="col-lg-4">
+                    <p class="text"><span>&#169;</span> All Rights Are Reserved 2015</p>
+                </div>
+    </footer>
+
+</div>
+</section>

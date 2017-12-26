@@ -1,0 +1,50 @@
+import { Component, OnInit } from '@angular/core';
+import { Http, Response } from '@angular/http';
+
+
+@Component({
+  selector: 'app-all-links',
+  templateUrl: './all-links.component.html',
+  styleUrls: ['./all-links.component.css']
+})
+export class AllLinksComponent implements OnInit {
+  contentData= [];
+  toggle= true;
+  constructor(private http: Http) { }
+
+    ngOnInit() {
+      this.getContents();
+    }
+    getData() {
+    return this.http.get('https://cdn.contentful.com/spaces/l99z1yyviltd/entries?access_token=5f91dcaac99947796b2f772dba878c5b58fab81d02375c7b9d3f26a9e3a0f45b&content_type=sitemap')
+            .map(
+              (response: Response) => {
+                const data = response.json();
+                return data;
+
+              });
+    }
+
+    getContents() {
+      this.getData()
+              .subscribe(
+                (data: any) => {
+                  for (let item of data.items){
+                    this.contentData.push(item.fields);
+
+                  }
+
+
+                }
+
+              );
+    }  onToggle() {
+
+      if (this.toggle === true) {
+      this.toggle = false;
+    }else {
+      this.toggle = true;
+    }
+  }
+
+}

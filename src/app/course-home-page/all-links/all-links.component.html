@@ -1,0 +1,41 @@
+<section class="container-fluid gray-box">
+    <div class="row">
+        <button type="button"  class="navbar-toggle pull-left"  (click)="onToggle()">
+                <span class="sr-only">Toggle navigation</span>
+                <span>Site-map</span>
+        </button> 
+    </div>
+    <div class="collapse disp" id="defaultNavbar1"[ngClass]="{'toggleItem':toggle===true}">
+        
+        <div class="nav navbar-nav" >
+            <div class="align">
+                
+                        <div  *ngFor="let data of contentData">
+                        <div class=" col-xs-10 col-sm-4 col-md-4 col-lg-4" *ngIf="data.sitemapCategory==='Main'">
+                            <ul>
+                            <li><a href="#" class="link-title" *ngFor="let link of data.sitemapEntries">{{link}}</a></li>
+                            </ul>
+                        </div>
+                        </div>  
+
+                        <div class=" col-xs-10 col-sm-4 col-md-4 col-lg-4" *ngFor="let data of contentData">
+                                <ul *ngIf="data.sitemapCategory==='For Companies'">
+                                <li><a href="#" class="link-title">{{data.sitemapCategory}}</a></li>
+                                <li><a href="#" class="link-title" *ngFor="let link of data.sitemapEntries">{{link}}</a></li>
+                                </ul>
+                        </div>
+
+                        <div class=" col-xs-10 col-sm-4 col-md-4 col-lg-4" *ngFor="let data of contentData">
+                                <ul *ngIf="data.sitemapCategory==='For Learners'">
+                                    <li><a href="#" class="link-title">{{data.sitemapCategory}}</a></li>
+                                    <li><a href="#" class="link-title" *ngFor="let link of data.sitemapEntries">{{link}}</a></li>
+                            </ul>
+                        </div>
+                        
+                
+            </div>
+        </div>
+
+    </div>
+
+</section>
