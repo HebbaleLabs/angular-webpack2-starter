@@ -7,7 +7,7 @@ import { ContentfulService } from '../../shared/contentful/contentful.service';
 @Component({
   selector: 'tf-why-learn',
   templateUrl: './why-learn.component.html',
-  styleUrls: ['./why-learn.component.css']
+  styleUrls: ['./why-learn.component.scss']
 })
 export class WhyLearnComponent implements OnInit {
   contentData = [];

@@ -1,119 +1,154 @@
 @import '../../shared/bits';
-  .nowrap{  
-    top: 0;
-    bottom: 0;  
-    display:inline;
-    flex-wrap: nowrap;
-  }
-  .wrap{
+@import '../../shared/fontawesome-free-5.0.2/web-fonts-with-css/scss/fontawesome.scss';
+
+.featuresummary{
+  overflow-x:hidden;
+}
+
+.wrap{
     display: flex;
     flex-wrap:wrap;
-  }
-  .disp-img{
-    top:0;
-    bottom: 0;
+}
+.featuresummary-content-img{
+    @include breakpoint (phablet){
+      margin-left:10%;
+      margin-right:10%;
+          }
+    margin-left:2%;
+    margin-right:2%;
     
     height: 250px;		
-    width: 100%;
+    width:500px;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
   }
-.heading{
+.featuresummary-content-heading{
   margin-left: 1%; 
   text-align: left;
   color:$black;
   font-family:$fontBitter;	
   font-size:$big;
   line-height: 28px;
+  @include breakpoint (phablet){
+    text-align: center;
+        }
   
 }
-.discription{
+.featuresummary-content-discription{
   margin-left: 1%;
   text-align: left;
-  color:$big;	
-  font-family:$fontRailway;
+  color:$black;	
+  font-family:$fontRaleway;
   font-size: $medium;	
   line-height: 19px;
+  @include breakpoint (phablet){
+    text-align: center;
+   }
   
 }
-.list-item{
+.featuresummary-content-list{
+  line-height: 28px;
+  @include breakpoint (phablet){
+    text-align: center;
+        }
+}
+.featuresummary-content-advantage{
 
   padding-bottom: 10px;
   padding-top:10px;
   display: inline-block;
   color:$black;
-  font-family:$fontRailway;
+  font-family:$fontRaleway;
   font-size: $medium;
   line-height: 19px;
-  font-family: $fontRailway;
+  font-family: $fontRaleway;
+ 
 }
-.box:nth-child(odd){
 
+.featuresummary-content:nth-child(odd){
+
+  top: 0;
+  bottom: 0;  
+  background-color: $white;
 
 .img-column{
   float: right;
+
+    @include breakpoint(phablet){
+      display: none;
+    }
   
   }
-  .text-column{
+.text-column{
   float:left
   }
 
+  @include breakpoint (phablet){
+    display:flex;
+    flex-wrap: wrap;
+  }
+  @include breakpoint (tablet){
+    display:inline;
+    flex-wrap: nowrap;
+ 
+        }
+  @include breakpoint (laptop){
+          display:inline;
+          flex-wrap: nowrap;
+       
+        }
+  @include breakpoint (desktop){
+          display:inline;
+          flex-wrap: nowrap;
+             
+         }
 }
 
-.box:nth-child(even){
-  
-  background-color: $talfinderGray;
-  
+.featuresummary-content:nth-child(even){
+
+  top: 0;
+  bottom: 0;  
+  background: $talfinderGray;
+
   .img-column{
     float: left;
+    @include breakpoint(phablet){
+      display: none;
+    }
     
     }
-    .text-column{
+  .text-column{
      float:right;
     }
   
+  @include breakpoint (phablet){
+    display:flex;
+    flex-wrap: wrap;
   }
-/*
-
-
-  .disp-img2{
-    top:0;
-    bottom: 0;
-    height: 380px;	
-    width: 50%;
-    float: right;
-    
-  }
-.heading-two{
-  margin-right: 1%;
-  text-align: right;
+  @include breakpoint (tablet){
+    display:inline;
+    flex-wrap: nowrap;
+ 
+        }
+  @include breakpoint (laptop){
+    display:inline;
+    flex-wrap: nowrap;
+       
+        }
+  @include breakpoint (desktop){
+      display:inline;
+      flex-wrap: nowrap;
+             
+         }
+  
+}
+.fa-check{
+    color: $black; 
+}
+.space{
+  padding: 10px;
+}
+li:before {    
+  margin:0 20px 0 -15px;
   color:$black;
-  font-family: Bitter;	
-  font-size:$big;
-  line-height: 28px;
+  }
   
-}
-.discription-two{
-  margin-right: 1%;
-  text-align: right;
-  color: #000000;	
-  font-family: Raleway;	
-  font-size: 16px;	
-  line-height: 19px;
-  
-}
-.list-item-two{
-  
-  
-  padding-bottom: 10px;
-  padding-top:10px;
-  display: inline-block;
-  color: #000000;	
-  font-family: Raleway;
-  font-size: 16px;
-  line-height: 19px;
-  font-family: Raleway;
-}*/
-
-.gray-box{
-  background-color:$talfinderGray;
-}

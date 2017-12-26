@@ -1,0 +1,120 @@
+@import '../bits';
+
+.talfinder-nav-logo { 
+    height: 88%;
+    padding: 6px 0px;
+    width: auto;
+}
+.blue {
+    background-color:$talfinderBlue;
+}
+.signup-button {
+    display: block;
+    background-color:$white;
+    color:$black;
+    border-radius: 5px;
+    font-family: $fontRaleway;
+    font-size: $medium;
+}
+.login-button {
+    display: block;
+    background-color:$talfinderBlue;
+    color:$white;
+    border-radius: 5px;
+    font-family:$fontRaleway;
+    font-size: $medium;
+}
+.talfinder-nav {
+    height: auto;
+    width: 100%;
+    background-color: $white;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+.headeritem {
+    
+    background-color:$white;
+    box-shadow: none;
+    color:$black;
+    font-family:$fontRaleway;
+    font-size: $medium;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    text-decoration: none;
+    
+}
+.navbar-brand {
+    padding: 0px;
+}
+.common-margin {
+    margin-left: 1%;
+    margin-right: 1%;
+}
+.headeritem:hover,
+.headeritem:focus,
+.headeritem:active {
+    
+    background-color:$white;
+    border-bottom: 5px solid $talfinderBlue;
+    text-decoration: none;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.5);
+    color:$black;
+
+}
+/* show the collapse when navbar toggle is checked */
+#navbar-toggle-cbox:checked ~ .collapse {
+    display: block;
+}
+
+/* the checkbox used only internally; don't display it */
+#navbar-toggle-cbox {
+  display:none
+}
+.pad{
+    padding-inline-end: 3px;
+    padding-block-start: 3px;
+}
+.nav-buttons{
+display: inline-block;
+
+}
+
+
+.center {
+        @include breakpoint(tablet){
+
+        position: absolute;
+        left: 35%;
+        transform: translatex(-25%);
+   } 
+}
+.no-wrap {
+        @include breakpoint(tablet){
+            
+        display: flex;
+        flex-wrap: nowrap;
+                    } 
+}
+
+.nav-ul {
+    @include breakpoint(tablet){
+
+        padding-top:20px;
+        padding-bottom:20px;
+        padding-inline-start: 2px;
+        padding-inline-end: 2px;
+        display: inline-block;
+    
+    }
+    @include breakpoint(phablet){
+
+        padding-top:30px;
+        display: inline-block;
+    }
+
+    
+}
+
+
+

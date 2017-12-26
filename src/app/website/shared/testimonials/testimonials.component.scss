@@ -1,0 +1,69 @@
+@import '../bits';
+
+.testimonial {
+    background-color: $talfinderGray;
+    flex: 0 0 100%;
+}
+
+.learner-say {
+    
+    color:$black;
+    font-family: $fontRaleway;
+    font-size: $big;
+    font-weight: $strong;
+    line-height: 29px;
+    margin-left: 3%;
+    padding-bottom: 20px;
+    @include breakpoint(phablet){
+        text-align:center;
+    }
+}
+
+.learner-img {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+
+.learner-comment {
+    opacity: 0.8;
+    color:$black;
+    font-family: $fontRaleway;
+    font-size: $big;
+    font-style: italic;
+    text-align: center;
+	font-weight: 300;
+}
+
+.learner-name {
+    color:$black;
+    font-family: $fontRaleway;
+    text-align: center;
+    font-weight: $strong;
+    line-height: 19px;
+}
+
+.learner-desig {
+    color:$black;
+    font-family: $fontRaleway;
+    font-size: $medium;
+    text-align: center;
+}
+
+.learner-more-rev {
+
+    color:$talfinderBlue;
+    font-family: $fontRaleway;
+    font-size: $big;
+    font-weight: $strong;
+    margin-left: 1%;
+    text-decoration: none;
+    @include breakpoint(phablet){
+        text-align: center;
+    }
+    @include breakpoint(tablet){
+        text-align: right;
+    }
+}
+
+

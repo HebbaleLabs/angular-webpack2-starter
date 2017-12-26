@@ -1,0 +1,90 @@
+@import '../bits';
+.footer{
+    background-color:$talfinderFooterBlue;
+    overflow-x: hidden;
+    max-height: 30px;
+    overflow-y: hidden;
+
+}
+.toggle-item{
+    display: block;
+}
+.gary-box{
+    background-color:$talfinderGray;
+    padding: 20px;
+    overflow-x: hidden;
+    
+    
+}
+.text{
+    color:$white;
+    font-family: "Open Sans";	
+    font-size: $medium;	
+    
+}
+.overflow-hide{
+    overflow-x: hidden;
+}
+.space{
+    padding: 10px;
+    max-height:10px;
+}
+
+ .hiden{
+    @include breakpoint(phablet){
+        display: none;
+    }
+ }
+ .inline{
+    
+    @include breakpoint(phablet){
+        display: inline-block;
+    }
+}
+
+
+    .disp{
+        
+        @include breakpoint(tablet){
+            display: none;
+        }
+ }
+
+ .nowrap{
+    @include breakpoint(tablet){
+        
+     display: flex;
+     flex-wrap: nowrap;
+    }
+ }
+ .hiden{
+      
+    @include breakpoint(tablet){
+        display: inline;
+    }
+     
+     
+ }
+ .inline{
+      
+    @include breakpoint(tablet){
+        display: inline-block;
+    }
+     
+ }
+
+.center{
+    @include breakpoint(tablet){
+        
+    margin-left:30%;
+    
+    
+    align-content: center;
+    }
+}
+
+
+.list{
+    padding-left:15px;
+    padding-right:15px; 
+}

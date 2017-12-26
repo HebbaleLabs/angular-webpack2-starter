@@ -1,9 +1,12 @@
-<section class="container-fluid box" *ngFor='let cont of contentData'>
+<section class="container-fluid box"
+         *ngFor='let cont of contentData'>
     <br>
-    <div class="row section-pad wrap no-wrap " >
+    <div class="row section-pad wrap no-wrap ">
         <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
             <div>
-                <img src= '{{ cont.assetVal.fields.file.url  }}' alt="" class="img-responsive content-img">
+                <img src='{{ cont.assetVal.fields.file.url  }}'
+                     alt="image"
+                     class="img-responsive content-img">
             </div>
 
         </div>
@@ -15,7 +18,7 @@
                 {{cont.item.fields.advantageDescription}}
             </p>
 
-            <!--a href="#">
+            <!--a >
                 <h2 class="link-blue">Try KODEPRO</h2>
             </a-->
 

@@ -5,7 +5,7 @@ import { ContentfulService } from '../../shared/contentful/contentful.service';
 @Component({
   selector: 'tf-popular-courses',
   templateUrl: './popular-courses.component.html',
-  styleUrls: ['./popular-courses.component.css']
+  styleUrls: ['./popular-courses.component.scss']
 })
 export class PopularCoursesComponent implements OnInit {
   contentData = { title: '', PopularCoursesCards: [] };

@@ -5,7 +5,7 @@ import { ContentfulService } from '../contentful/contentful.service';
 @Component({
   selector: 'tf-our-job-partners',
   templateUrl: './our-jobpartners.component.html',
-  styleUrls: ['./our-jobpartners.component.css']
+  styleUrls: ['./our-jobpartners.component.scss']
 })
 export class OurJobPartnersComponent implements OnInit {
   @Input() page: string;

@@ -48,7 +48,7 @@ export class ManyPosibilitiesComponent implements OnInit {
 
           return { sectionHeading, possiblityItems };
         }
-
+        console.log(this.contentData);
       }
       );
 

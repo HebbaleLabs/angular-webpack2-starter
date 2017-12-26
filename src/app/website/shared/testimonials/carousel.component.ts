@@ -19,7 +19,8 @@ export enum Direction { UNKNOWN, NEXT, PREV }
                   <span class="glyphicon glyphicon-chevron-right "></span>
                  </a>
     </div>
-  `
+  `,
+  styleUrls: ['./carousel.component.scss']
 })
 export class Carousel implements OnDestroy {
   @Input() public noWrap: boolean;

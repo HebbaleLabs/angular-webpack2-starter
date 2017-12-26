@@ -6,7 +6,7 @@ import { ContentfulService } from '../contentful/contentful.service';
 @Component({
   selector: 'tf-sitemap-links',
   templateUrl: './sitemap-links.component.html',
-  styleUrls: ['./sitemap-links.component.css']
+  styleUrls: ['./sitemap-links.component.scss']
 })
 export class SiteMapLinksComponent implements OnInit {
   contentData = [];
