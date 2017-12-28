@@ -21,9 +21,9 @@ import { ContentfulService } from './shared/contentful/contentful.service';
     BrowserModule,
     HttpModule,
     NavbarModule,
-    WebsiteRoutingModule,
     CourseHomePageModule,
-    CompanyHomeModule
+    CompanyHomeModule,
+    WebsiteRoutingModule
   ],
   providers: [ContentfulService],
   exports: [
