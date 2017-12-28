@@ -5,6 +5,6 @@ import { DashboardComponent } from './features/dashboard.component';
 import { NotFound404Component } from './not-found404.component';
 
 export const routes: Routes = [
-  { path: '', component: DashboardComponent, pathMatch: 'full' },
+  { path: '', component: DashboardComponenttt, pathMatch: 'full' },
   { path: '**', component: NotFound404Component }
 ];
