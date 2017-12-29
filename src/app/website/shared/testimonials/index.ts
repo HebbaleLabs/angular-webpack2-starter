@@ -1,14 +1,10 @@
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 
-
-
-import { CommonModule, NgFor } from '@angular/common';
-
-import { BrowserModule } from '@angular/platform-browser';
 import { TestimonialsComponent } from './testimonials.component';
 import { Carousel } from './carousel.component';
 import { Slide } from './slide.component';
+import { CommonModule } from '@angular/common';
 
 
 @NgModule({
@@ -19,7 +15,7 @@ import { Slide } from './slide.component';
         Slide
     ],
     imports: [
-        BrowserModule,
+        CommonModule,
         HttpModule
     ],
     providers: [],

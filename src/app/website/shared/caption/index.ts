@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { CommonModule } from '@angular/common';
-
-import { BrowserModule } from '@angular/platform-browser';
 import { CaptionComponent } from './caption.component';
 
 @NgModule({
@@ -11,7 +9,7 @@ import { CaptionComponent } from './caption.component';
 
     ],
     imports: [
-        BrowserModule,
+        CommonModule,
         HttpModule
     ],
     providers: [],

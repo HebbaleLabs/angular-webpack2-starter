@@ -1,11 +1,14 @@
 /* tslint:disable: max-line-length */
-import { RouterModule, Routes } from '@angular/router';
-import { CommonModule } from '@angular/common';
+import { Routes } from '@angular/router';
+
 import { DashboardComponent } from './features/dashboard.component';
 import { NotFound404Component } from './not-found404.component';
 
-
 export const routes: Routes = [
-  { path: '', loadChildren: './website/index#WebsiteModule' },
+<<<<<<< f4a3f8d11731ce1bdabe25f49618c292252dce8b
+  { path: '', component: DashboardComponenttt, pathMatch: 'full' },
+    { path: '', component: DashboardComponent, pathMatch: 'full' },
+=======
+>>>>>>> Routing fix
   { path: '**', component: NotFound404Component }
 ];

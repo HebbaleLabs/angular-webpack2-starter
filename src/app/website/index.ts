@@ -9,6 +9,7 @@ import { WebsiteRoutingModule } from './website-routing.module';
 import { CourseHomePageModule } from './course-home-page/index';
 import { CompanyHomeModule } from './company-home/index';
 import { ContentfulService } from './shared/contentful/contentful.service';
+import { CommonModule } from '@angular/common';
 
 
 
@@ -18,12 +19,12 @@ import { ContentfulService } from './shared/contentful/contentful.service';
 
   ],
   imports: [
-    BrowserModule,
     HttpModule,
     NavbarModule,
     CourseHomePageModule,
     CompanyHomeModule,
-    WebsiteRoutingModule
+    WebsiteRoutingModule,
+    CommonModule
   ],
   providers: [ContentfulService],
   exports: [

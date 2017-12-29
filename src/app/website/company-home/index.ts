@@ -12,13 +12,14 @@ import { OurJobPartnersModule } from '../shared/our-job-partners/index';
 import { SiteMapLinksModule } from '../shared/sitemap-links/index';
 import { FooterModule } from '../shared/footer/index';
 import { TestimonialsModule } from '../shared/testimonials/index';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
     CompanyHomeComponent
   ],
   imports: [
-    BrowserModule,
+    CommonModule,
     HttpModule,
     NavbarModule,
     CaptionModule,

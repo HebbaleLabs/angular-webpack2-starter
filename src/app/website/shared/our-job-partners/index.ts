@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
-import { CommonModule } from '@angular/common';
-import { BrowserModule } from '@angular/platform-browser';
+
+
 import { OurJobPartnersComponent } from './our-jobpartners.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
 
@@ -12,7 +13,7 @@ import { OurJobPartnersComponent } from './our-jobpartners.component';
 
     ],
     imports: [
-        BrowserModule,
+        CommonModule,
         HttpModule
     ],
     providers: [],

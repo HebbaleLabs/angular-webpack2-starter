@@ -7,6 +7,7 @@
  */
 
 import { ApplicationRef, NgModule } from '@angular/core';
+
 import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpModule } from '@angular/http';
@@ -43,8 +44,7 @@ import { WebsiteModule } from './website/index';
     DEV_SERVER ? [BrowserAnimationsModule, BrowserTransferStateModule] : [],
     HttpModule,
     APP_IMPORTS,
-    RouterModule.forRoot(routes, { useHash: false, preloadingStrategy: PreloadAllModules }),
-    WebsiteModule,
+    RouterModule.forRoot(routes, { useHash: false, preloadingStrategy: PreloadAllModules })
   ],
   bootstrap: [AppComponent],
   exports: [AppComponent],
