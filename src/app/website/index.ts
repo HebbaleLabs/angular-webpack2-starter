@@ -6,8 +6,7 @@ import { NavbarModule } from './shared/navbar/index';
 
 import { WebsiteComponent } from './website.component';
 import { WebsiteRoutingModule } from './website-routing.module';
-import { CourseHomePageModule } from './course-home-page/index';
-import { CompanyHomeModule } from './company-home/index';
+
 import { ContentfulService } from './shared/contentful/contentful.service';
 import { CommonModule } from '@angular/common';
 
@@ -15,16 +14,12 @@ import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
-    WebsiteComponent,
-
+    WebsiteComponent
   ],
   imports: [
     HttpModule,
-    NavbarModule,
-    CourseHomePageModule,
-    CompanyHomeModule,
-    WebsiteRoutingModule,
-    CommonModule
+    CommonModule,
+    WebsiteRoutingModule
   ],
   providers: [ContentfulService],
   exports: [

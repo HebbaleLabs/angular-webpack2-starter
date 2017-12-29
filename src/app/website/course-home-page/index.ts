@@ -1,3 +1,4 @@
+import { CourseHomePageRoutingModule } from './course-home-page-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
@@ -26,7 +27,8 @@ import { CommonModule } from '@angular/common';
     TestimonialsModule,
     OurJobPartnersModule,
     SiteMapLinksModule,
-    FooterModule
+    FooterModule,
+    CourseHomePageRoutingModule
   ],
   providers: [],
   exports: [
