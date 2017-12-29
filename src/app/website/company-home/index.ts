@@ -1,3 +1,4 @@
+import { CompanyHomeRoutingModule } from './company-home-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
@@ -28,7 +29,8 @@ import { CommonModule } from '@angular/common';
     OurJobPartnersModule,
     SiteMapLinksModule,
     FooterModule,
-    TestimonialsModule
+    TestimonialsModule,
+    CompanyHomeRoutingModule
   ],
   providers: [],
 
