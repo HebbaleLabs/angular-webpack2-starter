@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 
 import { CommonModule } from '@angular/common';
-import { BrowserModule } from '@angular/platform-browser';
+
 import { FeatureSummaryComponent } from './feature-summary.component';
 
 @NgModule({
@@ -10,13 +10,13 @@ import { FeatureSummaryComponent } from './feature-summary.component';
         FeatureSummaryComponent,
     ],
     imports: [
-      BrowserModule,
+        CommonModule,
         HttpModule
     ],
     providers: [],
     exports: [
         FeatureSummaryComponent,
-        ]
+    ]
 })
 export class FeatureSummaryModule {
 

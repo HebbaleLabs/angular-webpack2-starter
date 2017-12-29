@@ -11,12 +11,13 @@ import { TestimonialsModule } from '../shared/testimonials/index';
 import { SiteMapLinksModule } from '../shared/sitemap-links/index';
 import { FooterModule } from '../shared/footer/index';
 import { OurJobPartnersModule } from '../shared/our-job-partners/index';
+import { CommonModule } from '@angular/common';
 @NgModule({
   declarations: [
     CourseHomePageComponent
   ],
   imports: [
-    BrowserModule,
+    CommonModule,
     HttpModule,
     NavbarModule,
     CaptionModule,

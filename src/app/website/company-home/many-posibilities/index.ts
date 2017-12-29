@@ -1,16 +1,14 @@
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
-
-import { CommonModule } from '@angular/common';
-import { BrowserModule } from '@angular/platform-browser';
 import { ManyPosibilitiesComponent } from './many-posibilities.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
     ManyPosibilitiesComponent,
   ],
   imports: [
-    BrowserModule,
+    CommonModule,
     HttpModule
   ],
   providers: [],

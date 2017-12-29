@@ -7,10 +7,8 @@ import { CompanyHomeComponent } from './company-home/company-home.component';
 
 
 const websiteRoutes: Routes = [
-  { path: '', component: WebsiteComponent },
-  { path: 'Home', component: WebsiteComponent },
-  { path: './For Learners', component: CourseHomePageComponent },
-  { path: './For Companies', component: CompanyHomeComponent }
+  { path: './for-learners', loadChildren: './course-home-page/index#CourseHomePageModule' },
+  { path: './for-companies', component: CompanyHomeComponent }
 ];
 
 

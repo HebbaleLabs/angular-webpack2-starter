@@ -1,16 +1,17 @@
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
-import { CommonModule } from '@angular/common';
-import { BrowserModule } from '@angular/platform-browser';
+
+
 
 import { FooterComponent } from './footer.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
     declarations: [
         FooterComponent,
     ],
     imports: [
-        BrowserModule,
+        CommonModule,
         HttpModule
     ],
     providers: [],
