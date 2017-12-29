@@ -7,7 +7,6 @@ import { WebsiteComponent } from './website/website.component';
 
 
 export const routes: Routes = [
-  { path: '', component: WebsiteComponent },
-  { path: 'home', loadChildren: './website/index#WebsiteModule' },
+  { path: '', loadChildren: './website/index#WebsiteModule' },
   { path: '**', component: NotFound404Component }
 ];
