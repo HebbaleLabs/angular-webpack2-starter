@@ -1,16 +1,16 @@
-<section class="overflow-hide">
-    <div class="container-fluid gray-box">
-        <div class="row">
+<section class="overflow-hide footer">
+    <div class="container-fluid footer__box">
+        <div class="row span-style">
             <button type="button"
                     class="navbar-toggle pull-left"
                     data-toggle="collapse"
-                    data-target="#legal1"
+                    data-target=".disp"
                     (click)="onToggle()">
                 <Span>Legal</Span>
+                <span class="pull-right"></span>
             </button>
         </div>
         <div class="collapse disp"
-             id="legal1"
              [ngClass]="{'toggle-item':toggle===true}">
 
             <p class="">
@@ -25,43 +25,24 @@
     </div>
     <div class="row space"></div>
     <div class="row ">
-        <footer class="footer text-center">
+        <footer class="footer__style text-center">
             <ul class="nav navbar-nav center">
-                <li class="hiden nowrap list">
-                    <p class="text">
+                <li class="footer__list">
+                    <p class="footer__text">
                         Privacy policy
                     </p>
                 </li>
-                <li class="hiden nowrap list">
-                    <p class="text">
+                <li class="footer__list">
+                    <p class="footer__text">
                         Terms of Use
                     </p>
                 </li>
-                <li class="list">
-                    <p class="text">
+                <li class="footer__list">
+                    <p class="footer__text">
                         <span>&#169;</span> All Rights Are Reserved 2015
                     </p>
                 </li>
             </ul>
-
-            <!--div class="col-lg-4 hiden nowrap">
-                <p class="text">
-                    Privacy policy
-                </p>
-            </div>
-            <div class="hiden nowrap">
-                <p class="text">
-                    Terms of Use
-                </p>
-            </div>
-
-            <div>
-                <p class="text">
-                    <span>&#169;</span> All Rights Are Reserved 2015</p>
-            </div-->
-
-
-
         </footer>
 
     </div>
