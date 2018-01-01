@@ -1,20 +1,21 @@
 <section class="container-fluid manypossibility">
   <div class="row space"></div>
-  <div class="row manypossibility-content">
-    <p class="manypossibility-content-heading">{{contentData.sectionHeading}}</p>
+  <div class="row manypossibility__content">
+    <p class="manypossibility__content-heading">{{contentData?.sectionHeading}}</p>
 
-    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4 text-center align"
-         *ngFor="let data of contentData.possiblityItems">
-      <i class="icon-basic-display">
+    <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4 "
+         *ngFor="let data of contentData?.possiblityItems">
 
-      </i>
+      <div [ngClass]="[data.fields?.cssClassIcon,'iconz','text-center']">
+        <div class="row space"></div>
+        <p class="nowrap manypossibility__content-text">{{data.fields?.possibilityTeaser}}</p>
+      </div>
 
-
-      <p class="manypossibility-content-text">{{data.fields.possibilityTeaser}}</p>
     </div>
+
   </div>
   <div class="row">
-    <p class="manypossibility-link-blue">Explore product features ></p>
+    <p class="manypossibility__link-blue">Explore product features ></p>
   </div>
   <div class="row space"></div>
 </section>

@@ -4,7 +4,7 @@
   overflow-x:hidden; 
   width:100%;
 }
-.manypossibility-content{
+.manypossibility__content{
   margin-left:4%;
   margin-right:4%;
   
@@ -22,7 +22,7 @@
     text-align: center;
   }
 }
-.manypossibility-content-heading {
+.manypossibility__content-heading {
   color:$black;
   font-family: $fontRaleway;
   font-size: $big;
@@ -47,14 +47,14 @@ section {
   
   background-color:$talfinderGray;
 }
-.manypossibility-content-text{
+.manypossibility__content-text{
   color:$black;
   font-family: $fontRaleway;	
   font-size: $medium;	
   line-height: 19px;
   
 }
-.manypossibility-link-blue{
+.manypossibility__link-blue{
   color: $talfinderBlue;
   font-family: $fontRaleway;
   font-size: $big	;
@@ -71,4 +71,12 @@ section {
 }
 .space{
   padding: 10px;
+}
+.nowrap{
+  display: inline;
+  flex-wrap: nowrap;
+}
+.iconz{
+  font-size: 3.5em;
+  color: $talfinderBlue;
 }
