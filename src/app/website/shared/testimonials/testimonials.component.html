@@ -12,21 +12,21 @@
 
                 <div class="col-lg-2  col-md-3 col-sm-12 col-xs-12 content-marg">
                     <div align="center">
-                        <img src={{slidez.assetValue.fields.file.url}}
+                        <img src={{slidez.assetValue?.fields.file.url}}
                              alt="learners"
                              class="img-responsive learner-img ">
                     </div>
 
-                    <p class="learner-name">{{slidez.entryValue.fields.name}}</p>
+                    <p class="learner-name">{{slidez.entryValue?.fields.name}}</p>
 
-                    <p class="learner-desig">{{slidez.entryValue.fields.designation}}</p>
+                    <p class="learner-desig">{{slidez.entryValue?.fields.designation}}</p>
 
                 </div>
 
 
                 <div class=" col-lg-9 col-md-8  col-sm-12 col-xs-12 ">
                     <p class="learner-comment">
-                        {{slidez.entryValue.fields.testimonial}}
+                        {{slidez.entryValue?.fields.testimonial}}
 
                     </p>
 
