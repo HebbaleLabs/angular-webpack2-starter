@@ -1,90 +1,80 @@
 @import '../bits';
 .footer{
+    overflow-x: hidden;
+}
+.footer__style{
     background-color:$talfinderFooterBlue;
     overflow-x: hidden;
-    max-height: 30px;
-    overflow-y: hidden;
+    
+    
 
 }
 .toggle-item{
     display: block;
 }
-.gary-box{
+.span-style{
     background-color:$talfinderGray;
-    padding: 20px;
-    overflow-x: hidden;
+}
+.footer__box{
+    @include breakpoint(tablet){
+        display:none
+    }
+    @include breakpoint(phablet){
     
+    padding: 10px;
+    overflow-x: hidden;
+}
     
 }
-.text{
+.footer__text{
     color:$white;
     font-family: "Open Sans";	
     font-size: $medium;	
     
 }
-.overflow-hide{
-    overflow-x: hidden;
-}
+
 .space{
     padding: 10px;
     max-height:10px;
 }
 
- .hiden{
+.footer__list{
+    padding-left:15px;
+    padding-right:15px; 
+
     @include breakpoint(phablet){
         display: none;
     }
- }
- .inline{
+    @include breakpoint(tablet){
+        display: inline;
+         
+     /*display: flex;*/
+     flex-wrap: nowrap;
+    }
+        
+}
+.inline{
     
     @include breakpoint(phablet){
         display: inline-block;
     }
-}
-
-
-    .disp{
-        
-        @include breakpoint(tablet){
-            display: none;
-        }
- }
-
- .nowrap{
-    @include breakpoint(tablet){
-        
-     display: flex;
-     flex-wrap: nowrap;
-    }
- }
- .hiden{
-      
-    @include breakpoint(tablet){
-        display: inline;
-    }
-     
-     
- }
- .inline{
-      
     @include breakpoint(tablet){
         display: inline-block;
     }
-     
- }
+}
+
+.disp{      
+    @include breakpoint(tablet){
+        display: none;
+    }
+}
 
 .center{
     @include breakpoint(tablet){
         
-    margin-left:30%;
-    
-    
-    align-content: center;
+     margin-left:30%;
+     align-content: center;
     }
 }
 
 
-.list{
-    padding-left:15px;
-    padding-right:15px; 
-}
