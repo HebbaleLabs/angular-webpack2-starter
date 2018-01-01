@@ -52,6 +52,7 @@ export class TestimonialsComponent implements OnInit {
               return entry.sys.id === entryRefernce.sys.id;
             }
             function getAsset(asset) {
+              console.log(entryValue);
               return asset.sys.id === entryValue.fields.profilePhoto.sys.id;
             }
             return { entryValue, assetValue };

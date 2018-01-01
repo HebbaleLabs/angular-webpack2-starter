@@ -9,7 +9,7 @@ import { Http, Response } from '@angular/http';
   styleUrls: ['./course-home-page.component.css']
 })
 export class CourseHomePageComponent implements OnInit {
-  navBarType = 'For Learners';
+  navBarMenuType = 'For Learners';
   page = 'Home';
   ourJobPartner = 'Courses Home';
   testimonialType = 'Course Home';

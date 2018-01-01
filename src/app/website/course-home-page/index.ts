@@ -1,3 +1,4 @@
+import { WebsiteLayoutModule } from './../shared/web-layout/index';
 import { CourseHomePageRoutingModule } from './course-home-page-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -20,15 +21,13 @@ import { CommonModule } from '@angular/common';
   imports: [
     CommonModule,
     HttpModule,
-    NavbarModule,
     CaptionModule,
     PopularCoursesModule,
     WhyLearnModule,
     TestimonialsModule,
     OurJobPartnersModule,
-    SiteMapLinksModule,
-    FooterModule,
-    CourseHomePageRoutingModule
+    CourseHomePageRoutingModule,
+    WebsiteLayoutModule
   ],
   providers: [],
   exports: [

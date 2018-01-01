@@ -10,11 +10,11 @@ import { WebsiteComponent } from './website.component';
 const websiteRoutes: Routes = [
   { path: '', component: WebsiteComponent },
   {
-    path: 'for-learners',
+    path: 'for-companies',
     loadChildren: './company-home/index#CompanyHomeModule'
   },
   {
-    path: 'for-companies',
+    path: 'for-learners',
     loadChildren: './course-home-page/index#CourseHomePageModule'
   }
 ];

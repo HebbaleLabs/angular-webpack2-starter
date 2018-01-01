@@ -1,17 +1,12 @@
+import { WebsiteLayoutModule } from './../shared/web-layout/index';
 import { CompanyHomeRoutingModule } from './company-home-routing.module';
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
-
-
 import { CompanyHomeComponent } from './company-home.component';
-import { NavbarModule } from '../shared/navbar/index';
 import { CaptionModule } from '../shared/caption/index';
 import { FeatureSummaryModule } from './feature-summary/index';
 import { ManyPosibilitiesModule } from './many-posibilities/index';
 import { OurJobPartnersModule } from '../shared/our-job-partners/index';
-import { SiteMapLinksModule } from '../shared/sitemap-links/index';
-import { FooterModule } from '../shared/footer/index';
 import { TestimonialsModule } from '../shared/testimonials/index';
 import { CommonModule } from '@angular/common';
 
@@ -22,13 +17,11 @@ import { CommonModule } from '@angular/common';
   imports: [
     CommonModule,
     HttpModule,
-    NavbarModule,
     CaptionModule,
     FeatureSummaryModule,
     ManyPosibilitiesModule,
     OurJobPartnersModule,
-    SiteMapLinksModule,
-    FooterModule,
+    WebsiteLayoutModule,
     TestimonialsModule,
     CompanyHomeRoutingModule
   ],
