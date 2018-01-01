@@ -28,7 +28,6 @@ export class NavbarComponent implements OnInit {
       .subscribe(
       (data: any) => {
         this.contentData.logo = data.includes.Asset[0];
-        console.log();
         this.contentData.menuitems = data.items.find(getValues);
         function getValues(item) {
 
@@ -37,12 +36,13 @@ export class NavbarComponent implements OnInit {
           }
         }
 
-
+        console.log(this.contentData);
       },
       (error) => {
 
 
       }
+
       );
   }
 }

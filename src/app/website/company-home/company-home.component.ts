@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./company-home.component.scss']
 })
 export class CompanyHomeComponent {
-  navBarType = 'For Companies';
+  navBarMenuType = 'For Companies';
   page = 'ProductCo';
   ourJobPartner = 'ProductCo';
   testimonialType = 'ProductCo';
