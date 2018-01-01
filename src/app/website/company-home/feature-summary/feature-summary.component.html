@@ -1,23 +1,23 @@
 <section class="featuresummary">
-  <div class="row featuresummary-content"
+  <div class="row featuresummary__content"
        *ngFor="let data of contentData">
     <div class="row space"></div>
     <div class="row">
       <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 img-column text-center">
         <img src={{data?.assetValue.fields.file.url}}
              alt="image"
-             class="featuresummary-content-img img-responsive">
+             class="featuresummary__content-img img-responsive">
       </div>
       <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-column text-center">
-        <p class="featuresummary-content-heading">{{data?.sectionHeading}}</p>
-        <P class="featuresummary-content-discription">{{data?.sectiDescription}}</P>
+        <p class="featuresummary__content-heading">{{data?.sectionHeading}}</p>
+        <P class="featuresummary__content-description">{{data?.sectiDescription}}</P>
         <div class="pull-left">
           <ul class="wrap "
               *ngFor="let advantage of data?.advantages">
-            <li [ngClass]="[advantage.fields?.cssFaIcon,'featuresummary-content-list',
+            <li [ngClass]="[advantage.fields?.cssFaIcon,'featuresummary__content-list',
             'fa','fa-pull-left','fa-lg']">
 
-              <p class="featuresummary-content-advantage">
+              <p class="featuresummary__content-advantage">
                 <span>
                   <!--i [ngClass]="['featuresummary-content-list',
                 'fa',

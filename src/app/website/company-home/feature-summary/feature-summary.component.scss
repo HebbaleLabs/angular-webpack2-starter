@@ -9,19 +9,19 @@
     display: flex;
     flex-wrap:wrap;
 }
-.featuresummary-content-img{
-    @include breakpoint (phablet){
-      margin-left:10%;
-      margin-right:10%;
-          }
-    margin-left:2%;
-    margin-right:2%;
-    
-    height: 250px;		
-    width:500px;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+.featuresummary__content-img{
+
+  margin-left:2%;
+  margin-right:2%;
+  height: 250px;		
+  width:500px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+  @include breakpoint (phablet){
+    margin-left:10%;
+    margin-right:10%;
   }
-.featuresummary-content-heading{
+}
+.featuresummary__content-heading{
   margin-left: 1%; 
   text-align: left;
   color:$black;
@@ -30,10 +30,10 @@
   line-height: 28px;
   @include breakpoint (phablet){
     text-align: center;
-        }
+  }
   
 }
-.featuresummary-content-discription{
+.featuresummary__content-description{
   margin-left: 1%;
   text-align: left;
   color:$black;	
@@ -42,16 +42,16 @@
   line-height: 19px;
   @include breakpoint (phablet){
     text-align: center;
-   }
+  }
   
 }
-.featuresummary-content-list{
+.featuresummary__content-list{
   line-height: 28px;
   @include breakpoint (phablet){
     text-align: center;
-        }
+  }
 }
-.featuresummary-content-advantage{
+.featuresummary__content-advantage{
 
   padding-bottom: 10px;
   padding-top:10px;
@@ -64,22 +64,22 @@
  
 }
 
-.featuresummary-content:nth-child(odd){
+.featuresummary__content:nth-child(odd){
 
   top: 0;
   bottom: 0;  
   background-color: $white;
 
-.img-column{
-  float: right;
+  .img-column{
+    float: right;
 
     @include breakpoint(phablet){
       display: none;
     }
   
   }
-.text-column{
-  float:left
+  .text-column{
+    float:left
   }
 
   @include breakpoint (phablet){
@@ -90,20 +90,20 @@
     display:inline;
     flex-wrap: nowrap;
  
-        }
+  }
   @include breakpoint (laptop){
-          display:inline;
-          flex-wrap: nowrap;
+    display:inline;
+    flex-wrap: nowrap;
        
-        }
+  }
   @include breakpoint (desktop){
-          display:inline;
-          flex-wrap: nowrap;
+    display:inline;
+    flex-wrap: nowrap;
              
-         }
+  }
 }
 
-.featuresummary-content:nth-child(even){
+.featuresummary__content:nth-child(even){
 
   top: 0;
   bottom: 0;  
@@ -115,10 +115,10 @@
       display: none;
     }
     
-    }
+  }
   .text-column{
      float:right;
-    }
+  }
   
   @include breakpoint (phablet){
     display:flex;
@@ -128,21 +128,21 @@
     display:inline;
     flex-wrap: nowrap;
  
-        }
+  }
   @include breakpoint (laptop){
     display:inline;
     flex-wrap: nowrap;
        
-        }
+  }
   @include breakpoint (desktop){
-      display:inline;
-      flex-wrap: nowrap;
+    display:inline;
+    flex-wrap: nowrap;
              
-         }
+  }
   
 }
 .fa-check{
-    color: $black; 
+  color: $black; 
 }
 .space{
   padding: 10px;
@@ -150,5 +150,5 @@
 li:before {    
   margin:0 20px 0 -15px;
   color:$black;
-  }
+}
   
