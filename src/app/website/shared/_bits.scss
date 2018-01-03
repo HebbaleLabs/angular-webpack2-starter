@@ -12,9 +12,6 @@ $fontBitter: Bitter;
 $opacity:0.08;
 
 
-
-
-
 @mixin breakpoint($point) {
   @if $point == desktop {
     @media (min-width: 1200px) { @content ; }

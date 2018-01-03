@@ -1,114 +1,75 @@
+import { Observable } from 'rxjs/Observable';
+
+import { ContentfulConfig } from './contentful.config';
 import { Http, Response } from '@angular/http';
 import { Injectable } from '@angular/core';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/toPromise';
+import { SafeResourceUrl } from '@angular/platform-browser';
 @Injectable()
 export class ContentfulService {
+  private url: SafeResourceUrl;
+  constructor(private http: Http,
+    private contentfulConfig: ContentfulConfig) { }
 
-  constructor(private http: Http) { }
+  buildURL(contentTypeId: string) {
+    // tslint:disable-next-line:max-line-length
+    return ContentfulConfig.BASE_API_URL + ContentfulConfig.SPACE_ID + ContentfulConfig.ENTRIES + ContentfulConfig.ACCESS_TOKEN + ContentfulConfig.API_KEY + ContentfulConfig.CONTENT_TYPE + contentTypeId;
+  }
+
+  getFromContentful(url: string): Observable<any> {
+    return this.http.get(url)
+      .map(res => res.json());
+  }
+
 
   public getPossibilitiesData(): any {
-    return this.http.get('https://cdn.contentful.com/spaces/l99z1yyviltd/entries?access_token=5f91dcaac99947796b2f772dba878c5b58fab81d02375c7b9d3f26a9e3a0f45b&content_type=productCoPossibilities')
-      .map(
-      (response: Response) => {
-        const data = response.json();
-        return data;
-
-      },
-      (err: any) => {
-      }
-      );
+    const requestURL = this.buildURL(this.contentfulConfig.MANY_POSIBILITIES);
+    return this.getFromContentful(requestURL);
   }
   getJobpartnerData(): any {
-    return this.http.get('https://cdn.contentful.com/spaces/l99z1yyviltd/entries?access_token=5f91dcaac99947796b2f772dba878c5b58fab81d02375c7b9d3f26a9e3a0f45b&content_type=ourCustomers')
-      .map(
-      (response: Response) => {
-        const data = response.json();
-        return data;
-
-      }
-      );
+    const requestURL = this.buildURL(this.contentfulConfig.OUR_JOB_PARTNER);
+    return this.getFromContentful(requestURL);
   }
   getFeatureSummaryData() {
-    return this.http.get('https://cdn.contentful.com/spaces/l99z1yyviltd/entries?access_token=5f91dcaac99947796b2f772dba878c5b58fab81d02375c7b9d3f26a9e3a0f45b&content_type=productCoFeatureSummary')
-      .map(
-      (response: Response) => {
-        const data = response.json();
-        return data;
-
-      },
-      (err: any) => {
-      }
-      );
+    const requestURL = this.buildURL(this.contentfulConfig.FEATURE_SUMMARY);
+    return this.getFromContentful(requestURL);
   }
 
   getSiteMapData() {
-    return this.http.get('https://cdn.contentful.com/spaces/l99z1yyviltd/entries?access_token=5f91dcaac99947796b2f772dba878c5b58fab81d02375c7b9d3f26a9e3a0f45b&content_type=sitemap')
-      .map(
-      (response: Response) => {
-        const data = response.json();
-        return data;
-
-      });
+    const requestURL = this.buildURL(this.contentfulConfig.SITEMAP);
+    return this.getFromContentful(requestURL);
   }
 
 
   getCaptionData() {
-    return this.http.get('https://cdn.contentful.com/spaces/l99z1yyviltd/entries?access_token=5f91dcaac99947796b2f772dba878c5b58fab81d02375c7b9d3f26a9e3a0f45b&content_type=courseHomePageCaption')
-      .map(
-      (response: Response) => {
-        const data = response.json();
-        return data;
-
-      });
+    const requestURL = this.buildURL(this.contentfulConfig.CAPTION);
+    return this.getFromContentful(requestURL);
   }
 
   getNavbarData() {
-    return this.http.get('https://cdn.contentful.com/spaces/l99z1yyviltd/entries?access_token=5f91dcaac99947796b2f772dba878c5b58fab81d02375c7b9d3f26a9e3a0f45b&content_type=navBar')
-      .map(
-      (response: Response) => {
-        const data = response.json();
-        return data;
-
-      });
+    const requestURL = this.buildURL(this.contentfulConfig.NAVBAR);
+    return this.getFromContentful(requestURL);
   }
 
 
 
   getTestimonialData() {
-    return this.http.get('https://cdn.contentful.com/spaces/l99z1yyviltd/entries?access_token=5f91dcaac99947796b2f772dba878c5b58fab81d02375c7b9d3f26a9e3a0f45b&content_type=courseHomeLearnerTestimonials')
-      .map(
-      (response: Response) => {
-        const data = response.json();
-        return data;
-
-      }
-      );
+    const requestURL = this.buildURL(this.contentfulConfig.TESTIMONIAL);
+    return this.getFromContentful(requestURL);
   }
 
 
 
   getPopularCoursesData() {
-    return this.http.get('https://cdn.contentful.com/spaces/l99z1yyviltd/entries?access_token=5f91dcaac99947796b2f772dba878c5b58fab81d02375c7b9d3f26a9e3a0f45b&content_type=coursesPagePopularCourses')
-      .map(
-      (response: Response) => {
-        const data = response.json();
-        return data;
-
-      }
-      );
+    const requestURL = this.buildURL(this.contentfulConfig.POPULAR_COURSE);
+    return this.getFromContentful(requestURL);
   }
 
 
   getWhyLearnWithUsData() {
-    return this.http.get('https://cdn.contentful.com/spaces/l99z1yyviltd/entries?access_token=5f91dcaac99947796b2f772dba878c5b58fab81d02375c7b9d3f26a9e3a0f45b&content_type=courseHomeWhyLearnWithTalFinder')
-      .map(
-      (response: Response) => {
-        const data = response.json();
-        return data;
-
-      }
-      );
+    const requestURL = this.buildURL(this.contentfulConfig.WHY_LEARN);
+    return this.getFromContentful(requestURL);
   }
 
 
