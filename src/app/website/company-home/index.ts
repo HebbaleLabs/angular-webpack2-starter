@@ -24,11 +24,6 @@ import { CommonModule } from '@angular/common';
     WebsiteLayoutModule,
     TestimonialsModule,
     CompanyHomeRoutingModule
-  ],
-  providers: [],
-
-  exports: [
-    CompanyHomeComponent
   ]
 })
 export class CompanyHomeModule {

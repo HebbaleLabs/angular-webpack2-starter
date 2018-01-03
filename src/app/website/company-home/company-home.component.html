@@ -1,9 +1,9 @@
-<tf-weblayout [navBarType]="navBarMenuType">
+<tf-weblayout [navBarType]="navBarMenuType"
+              [pageCaptionType]="page"
+              [pageTestimonialType]="testimonialType"
+              [pageOurJobPartnerType]="ourJobPartner">
   <div Content>
-    <tf-caption [pageCaption]="page"></tf-caption>
     <tf-many-posibilities></tf-many-posibilities>
     <tf-feature-summary></tf-feature-summary>
-    <tf-testimonials [page]="testimonialType"></tf-testimonials>
-    <tf-our-job-partners [page]="ourJobPartner"></tf-our-job-partners>
   </div>
 </tf-weblayout>
