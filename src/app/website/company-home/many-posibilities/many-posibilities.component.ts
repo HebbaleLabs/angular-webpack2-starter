@@ -12,7 +12,7 @@ import { ContentfulService } from '../../shared/contentful/contentful.service';
 })
 export class ManyPosibilitiesComponent implements OnInit {
 
-  contentData = {};
+  contentData: any = {};
   constructor(private http: Http,
     private contentfulService: ContentfulService) { }
 
@@ -36,16 +36,11 @@ export class ManyPosibilitiesComponent implements OnInit {
             possiblityItems.push(getEntry(possibility));
           }
           function getEntry(possibility) {
-
             function getItem(entry) {
               return entry.sys.id === possibility.sys.id;
-
             }
             return data.includes.Entry.find(getItem);
-
           }
-
-
           return { sectionHeading, possiblityItems };
         }
         console.log(this.contentData);

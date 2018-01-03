@@ -3,23 +3,15 @@
 .manypossibility{
   overflow-x:hidden; 
   width:100%;
+  background-color: $talfinderGray;
 }
 .manypossibility__content{
-  margin-left:4%;
-  margin-right:4%;
+  margin-left:25px;
+  margin-right:25px;
   
   @include breakpoint(phablet) {
-    margin-left:5%;
-    margin-right:5%;
-  }
-}
-.align {
-  display: flex;
-  flex-wrap: nowrap;  
-  text-align: center;
-  @include breakpoint(phablet) {
-    flex-wrap: wrap;
-    text-align: center;
+    margin-left:35px;
+    margin-right:35px;
   }
 }
 .manypossibility__content-heading {
@@ -41,12 +33,7 @@
   }
 }
 
-section {
-  top: 0;
-  bottom: 0;
-  
-  background-color:$talfinderGray;
-}
+
 .manypossibility__content-text{
   color:$black;
   font-family: $fontRaleway;	
@@ -76,7 +63,7 @@ section {
   display: inline;
   flex-wrap: nowrap;
 }
-.iconz{
-  font-size: 3.5em;
-  color: $talfinderBlue;
+.icon-style{
+  font-size: 4.5em;
+  color: $talfiderNavyBlue;
 }
