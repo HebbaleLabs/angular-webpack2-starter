@@ -8,7 +8,9 @@ import { WebsiteComponent } from './website.component';
 
 
 const websiteRoutes: Routes = [
-  { path: '', component: WebsiteComponent },
+  {
+    path: '', component: WebsiteComponent
+  },
   {
     path: 'for-companies',
     loadChildren: './company-home/index#CompanyHomeModule'
