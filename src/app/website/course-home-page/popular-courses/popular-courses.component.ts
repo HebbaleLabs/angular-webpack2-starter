@@ -8,7 +8,7 @@ import { ContentfulService } from '../../shared/contentful/contentful.service';
   styleUrls: ['./popular-courses.component.scss']
 })
 export class PopularCoursesComponent implements OnInit {
-  contentData = { title: '', PopularCoursesCards: [] };
+  contentData: any = { title: '', popularCoursesCards: [] };
   constructor(private http: Http,
     private contentfulService: ContentfulService) { }
 
@@ -21,31 +21,17 @@ export class PopularCoursesComponent implements OnInit {
       .subscribe(
       (data: any) => {
         this.contentData.title = data.items[0].fields.title;
-
-        for (let item of data.items[0].fields.popularCoursesCards) {
-
-          this.contentData.PopularCoursesCards.push(getValue(item));
-        }
-        function getValue(item) {
-          let entVal = data.includes.Entry.find(getEntry);
-          let assetVal = data.includes.Asset.find(getAsset);
-
-
-          function getEntry(entry) {
+        data.items[0].fields.popularCoursesCards.forEach(item => {
+          let entVal: any;
+          let assetVal: any;
+          entVal = data.includes.Entry.find(entry => {
             return entry.sys.id === item.sys.id;
-          }
-          function getAsset(asset) {
+          });
+          assetVal = data.includes.Asset.find(asset => {
             return asset.sys.id === entVal.fields.courseThumbnail.sys.id;
-          }
-          return { entVal, assetVal };
-
-        }
-
-      }
-
-      );
-
-
+          });
+          this.contentData.popularCoursesCards.push({ entVal, assetVal });
+        });
+      });
   }
-
 }
