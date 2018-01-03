@@ -1,6 +1,9 @@
 <div>
   <tf-navbar [navBarName]="navBarType"></tf-navbar>
-  <ng-content slector=[Content]></ng-content>
+  <tf-caption [pageCaption]="pageCaptionType"></tf-caption>
+  <ng-content slector=[content]></ng-content>
+  <tf-testimonials [page]="pageTestimonialType"></tf-testimonials>
+  <tf-our-job-partners [page]="pageOurJobPartnerType"></tf-our-job-partners>
   <tf-sitemap-links></tf-sitemap-links>
   <tf-footer></tf-footer>
 </div>
