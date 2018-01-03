@@ -12,7 +12,7 @@ import { ContentfulService } from '../../shared/contentful/contentful.service';
 })
 export class FeatureSummaryComponent implements OnInit {
 
-  contentData = [];
+  contentData: any = [];
   constructor(private http: Http,
     private contentfulService: ContentfulService) { }
 
@@ -34,7 +34,7 @@ export class FeatureSummaryComponent implements OnInit {
         function getValue(item) {
           const sectionHeading = item.fields.sectionHeader;
           const sectiDescription = item.fields.sectionDescription;
-          const advantages = [];
+          const advantages: any = [];
           const assetValue = data.includes.Asset.find(getAsset);
           function getAsset(asset) {
 
