@@ -11,7 +11,6 @@ import { CommonModule } from '@angular/common';
     CommonModule,
     HttpModule
   ],
-  providers: [],
   exports: [
     ManyPosibilitiesComponent,
   ]
