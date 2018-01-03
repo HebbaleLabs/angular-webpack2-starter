@@ -1,4 +1,4 @@
-<section class="container-fluid gray-box">
+<section class="container-fluid sitemaplink">
     <div class="row">
         <button type="button"
                 class="navbar-toggle pull-left"
@@ -7,50 +7,42 @@
             <span>Site-map</span>
         </button>
     </div>
-    <div class="row collapse disp"
+    <div class="row collapse sitemaplink__disp"
          id="defaultNavbar1"
          [ngClass]="{'toggleItem':toggle===true}">
-
         <div class="nowrap nav navbar-nav ">
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-10"
+            <div class="col-lg-4 col-xs-12"
                  *ngFor="let data of contentData">
                 <div *ngIf="data.sitemapCategory==='Main'">
                     <ul>
                         <li *ngFor="let link of data.sitemapEntries">
-                            <a class="link-title">{{link}}</a>
+                            <a class="sitemaplinks__name">{{link}}</a>
                         </li>
                     </ul>
                 </div>
             </div>
-
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-10"
+            <div class="col-lg-4 col-xs-12"
                  *ngFor="let data of contentData">
                 <ul *ngIf="data.sitemapCategory==='For Companies'">
                     <li>
-                        <a class="link-title">{{data.sitemapCategory}}</a>
+                        <a class="sitemaplinks__name">{{data.sitemapCategory}}</a>
                     </li>
                     <li *ngFor="let link of data.sitemapEntries">
-                        <a class="link-title">{{link}}</a>
+                        <a class="sitemaplinks__name">{{link}}</a>
                     </li>
                 </ul>
             </div>
-
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-10"
+            <div class="col-lg-4 col-xs-10"
                  *ngFor="let data of contentData">
                 <ul *ngIf="data.sitemapCategory==='For Learners'">
                     <li>
-                        <a class="link-title">{{data.sitemapCategory}}</a>
+                        <a class="sitemaplinks__name">{{data.sitemapCategory}}</a>
                     </li>
                     <li *ngFor="let link of data.sitemapEntries">
-                        <a class="link-title">{{link}}</a>
+                        <a class="sitemaplinks__name">{{link}}</a>
                     </li>
                 </ul>
             </div>
-
-
         </div>
-
-
     </div>
-
 </section>

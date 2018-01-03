@@ -9,7 +9,7 @@ import { ContentfulService } from '../contentful/contentful.service';
 })
 export class OurJobPartnersComponent implements OnInit {
   @Input() page: string;
-  contentData = { sectionTitle: '', sectionData: [] };
+  contentData: any = { sectionTitle: '', sectionData: [] };
   constructor(private http: Http,
     private contentfulService: ContentfulService) { }
 
@@ -24,38 +24,24 @@ export class OurJobPartnersComponent implements OnInit {
     this.contentfulService.getJobpartnerData()
       .subscribe(
       (data: any) => {
-
-
-
         for (let item of data.items) {
-
           if (item.fields.pageName === page) {
             this.contentData.sectionTitle = item.fields.sectionTitle;
             this.contentData.sectionData.push(getValue(item));
-
           }
         }
-
         function getValue(item) {
-
-          let assetValue;
+          let assetValue: any;
           item.fields.customerLogos.find(getCustomerDetails);
           function getCustomerDetails(customerId) {
-
             assetValue = data.includes.Asset.find(getAsset);
-
-
             function getAsset(asset) {
               return asset.sys.id === customerId.sys.id;
             }
             return assetValue;
           }
-
           return assetValue;
-
         }
-
-
       });
   }
 }

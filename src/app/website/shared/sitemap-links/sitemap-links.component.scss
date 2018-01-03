@@ -1,52 +1,6 @@
-/*
-.gary-box{
-    background-color: #413c3c23;
-    padding: 20px;
-    overflow-x: hidden;
-    
-    
-}
-.toggleItem{
-    display: block;
-}
-@media(min-width:768px){
-.disp{
-    display: inline-block;
-    flex-wrap: nowrap;
-}
-    
-
-.link-title{
-    
-        color: #000000;
-        font-family: Raleway;	
-        font-size: 16px;
-        display:block;
-        flex-wrap: nowrap;
-        
-    }
-
-}
-@media(max-width:767px){
-
-.link-title{
-    
-        color: #000000;
-        font-family: Raleway;	
-        font-size: 16px;
-        display:flex;
-        flex-wrap: wrap;
-        
-    }
-    
-}
-
-
-*/
-
 
 @import '../bits';
-.gary-box{
+.sitemaplinks{
     background-color:$talfinderGray;
     opacity:$opacity;
     overflow-x: hidden;
@@ -54,42 +8,35 @@
 .toggleItem{
     display: block;
 }
-.disp{
-
+.sitemaplinks__disp{
     @include breakpoint(tablet) {
         display: inline-block;
         flex-wrap: nowrap;
-        } 
-
+    } 
     @include breakpoint(tablet) {
         display: inline-block;
         flex-wrap: nowrap;
-        } 
+    } 
     @include breakpoint(tablet) {
-    display: inline-block;
-    flex-wrap: nowrap;
+        display: inline-block;
+        flex-wrap: nowrap;
 	} 
 }
-.link-title{
+.sitemaplinks__name{
+    color:$black;
+    font-family: $fontRaleway;	
+    font-size: $medium;
+    display:block;
+    flex-wrap: nowrap;
     @include breakpoint(phablet) {
         display:flex;
         flex-wrap: wrap;
-      
- }  @include breakpoint(tablet) {
+    }  
+    @include breakpoint(tablet) {
         display:block;
-        flex-wrap: nowrap;
-      
- } 
-
-        color:$black;
-        font-family: $fontRaleway;	
-        font-size: $medium;
-        display:block;
-        flex-wrap: nowrap;
-        
-    }
-
-
+        flex-wrap: nowrap;     
+    }      
+}
 .full-width{
     width: 100%;
 }

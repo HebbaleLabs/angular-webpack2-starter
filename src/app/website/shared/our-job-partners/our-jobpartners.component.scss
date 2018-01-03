@@ -1,43 +1,31 @@
 @import '../bits';
 
-.wrap {
-        @include breakpoint(phablet){
-            display: flex;
-            flex-wrap: wrap-reverse;
-       
-        }
-}
-
 .ourjobpartner{
     overflow-x: hidden;
 }
-.ourjobpartner-content {
+.ourjobpartner__content {
     padding-left: 1%;
     padding-right: 1%;
-    overflow-x: hidden;
-    
-    
+    overflow-x: hidden;   
 }
-.ourjobpartner-img {
-
+.ourjobpartner__img {
     height: 100px;
     width: 300px;
     margin-bottom: 5%;
     padding: 15px;
 }
-.ourjobpartner-align {
+.ourjobpartner__align {
     display: flex;
     flex-wrap: nowrap;
     @include breakpoint(tablet){
         margin-left: 2%;
     }
     @include breakpoint(phablet){
-
         align-content: center;
         margin-left: 22%;
     }
 }
-.ourjobpartner-heading {
+.ourjobpartner__heading {
     color:$black;
     font-family:$fontRaleway;
     font-size: $big;
@@ -46,12 +34,9 @@
     padding-bottom: 20px;
     margin-left: 2%;
     @include breakpoint(phablet){
-        
         text-align: center;
     }
-
 }
-.space{
-    padding: 10px;
-    
+.ourjobpartner__space{
+    padding: 10px;   
 }
