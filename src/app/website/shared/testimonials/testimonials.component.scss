@@ -3,10 +3,10 @@
 .testimonial {
     background-color: $talfinderGray;
     flex: 0 0 100%;
+    padding-top:20px;
+    padding-bottom:20px;
 }
-
-.learner-say {
-    
+.testimonial__title{
     color:$black;
     font-family: $fontRaleway;
     font-size: $big;
@@ -18,14 +18,12 @@
         text-align:center;
     }
 }
-
-.learner-img {
+.testimonial__img {
     border-radius: 50%;
     height: 200px;
     width: 200px;
 }
-
-.learner-comment {
+.testimonial__comment {
     opacity: 0.8;
     color:$black;
     font-family: $fontRaleway;
@@ -34,24 +32,20 @@
     text-align: center;
 	font-weight: 300;
 }
-
-.learner-name {
+.testimonial__name {
     color:$black;
     font-family: $fontRaleway;
     text-align: center;
     font-weight: $strong;
     line-height: 19px;
 }
-
-.learner-desig {
+.testimonial__desig {
     color:$black;
     font-family: $fontRaleway;
     font-size: $medium;
     text-align: center;
 }
-
-.learner-more-rev {
-
+.testimonial__link {
     color:$talfinderBlue;
     font-family: $fontRaleway;
     font-size: $big;
