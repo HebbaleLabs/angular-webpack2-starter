@@ -10,4 +10,8 @@ import { Component, Input } from '@angular/core';
 export class WebLayoutComponent {
   // tslint:disable-next-line:no-input-rename
   @Input() navBarType: string;
+  @Input() pageCaptionType: string;
+  @Input() pageTestimonialType: string;
+  @Input() pageOurJobPartnerType: string;
+
 }
