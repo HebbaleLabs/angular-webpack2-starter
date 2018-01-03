@@ -19,7 +19,6 @@ export class NavbarComponent implements OnInit {
 
 
   ngOnInit() {
-
     this.getNavbar(this.navBarName);
   }
 
@@ -30,19 +29,11 @@ export class NavbarComponent implements OnInit {
         this.contentData.logo = data.includes.Asset[0];
         this.contentData.menuitems = data.items.find(getValues);
         function getValues(item) {
-
           if (item.fields.navBarType === name) {
             return item;
           }
         }
 
-        console.log(this.contentData);
-      },
-      (error) => {
-
-
-      }
-
-      );
+      });
   }
 }

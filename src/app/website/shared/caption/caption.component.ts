@@ -10,16 +10,13 @@ import { ContentfulService } from '../contentful/contentful.service';
 })
 export class CaptionComponent implements OnInit {
   @Input() pageCaption;
-  contentData = {};
+  contentData: any = {};
   constructor(private http: Http,
     private contentfulService: ContentfulService) { }
 
   ngOnInit() {
     this.getContents(this.pageCaption);
-
   }
-
-
   getContents(pageCaption) {
     this.contentfulService.getCaptionData()
       .subscribe(
@@ -28,9 +25,6 @@ export class CaptionComponent implements OnInit {
         function getValue(item) {
           return item.fields.page === pageCaption;
         }
-      }
-
-      );
-
+      });
   }
 }

@@ -8,17 +8,14 @@ import { CommonModule } from '@angular/common';
 @NgModule({
 
     declarations: [
-        OurJobPartnersComponent,
-
-
+        OurJobPartnersComponent
     ],
     imports: [
         CommonModule,
         HttpModule
     ],
-    providers: [],
     exports: [
-        OurJobPartnersComponent,
+        OurJobPartnersComponent
     ]
 })
 export class OurJobPartnersModule {

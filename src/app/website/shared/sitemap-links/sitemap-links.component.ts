@@ -17,20 +17,14 @@ export class SiteMapLinksComponent implements OnInit {
   ngOnInit() {
     this.getContents();
   }
-
   getContents() {
     this.contentfulService.getSiteMapData()
       .subscribe(
       (data: any) => {
         for (let item of data.items) {
           this.contentData.push(item.fields);
-
         }
-
-
-      }
-
-      );
+      });
   } onToggle() {
     this.toggle = !this.toggle;
   }
