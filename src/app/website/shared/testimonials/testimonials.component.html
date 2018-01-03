@@ -1,0 +1,28 @@
+<section class="container-fluid testimonial">
+    <div class="row ">
+        <p class="testimonial__title">{{contentData?.sectionHeading}}</p>
+    </div>
+    <tf-carousel [interval]="nextPhotoInterval"
+                 [noWrap]="noLoopSlides">
+        <tf-slide *ngFor="let slidez of contentData.testimonials; let index=index"
+                  [active]="slidez.active">
+            <div class="row ">
+                <div class="col-lg-2  col-md-3 col-sm-3 col-xs-12 testimonial__content-marg">
+                    <div align="center">
+                        <img src={{slidez.assetValue?.fields.file.url}}
+                             alt="learners"
+                             class="img-responsive testimonial__img ">
+                    </div>
+                    <p class="testimonial__name">{{slidez.entryValue?.fields.name}}</p>
+                    <p class="testimonial__desig">{{slidez.entryValue?.fields.designation}}</p>
+                </div>
+                <div class=" col-lg-9 col-md-8 col-sm-8 col-xs-12 ">
+                    <p class="testimonial__comment">
+                        {{slidez.entryValue?.fields.testimonial}}
+                    </p>
+                </div>
+            </div>
+        </tf-slide>
+    </tf-carousel>
+    <p class="testimonial__link ">Read more reviews ></p>
+</section>

@@ -1,11 +1,11 @@
 /* tslint:disable: max-line-length */
-import { Routes } from '@angular/router';
-
-import { DashboardComponent } from './features/dashboard.component';
+import { RouterModule, Routes } from '@angular/router';
+import { CommonModule } from '@angular/common';
 import { NotFound404Component } from './not-found404.component';
+import { Component } from '@angular/core/src/metadata/directives';
+import { WebsiteComponent } from './website/website.component';
 
 export const routes: Routes = [
-  { path: '', component: DashboardComponenttt, pathMatch: 'full' },
-    { path: '', component: DashboardComponent, pathMatch: 'full' },
+  { path: '', loadChildren: './website/index#WebsiteModule' },
   { path: '**', component: NotFound404Component }
 ];

@@ -1,0 +1,42 @@
+@import '../bits';
+
+.ourjobpartner{
+    overflow-x: hidden;
+}
+.ourjobpartner__content {
+    padding-left: 1%;
+    padding-right: 1%;
+    overflow-x: hidden;   
+}
+.ourjobpartner__img {
+    height: 100px;
+    width: 300px;
+    margin-bottom: 5%;
+    padding: 15px;
+}
+.ourjobpartner__align {
+    display: flex;
+    flex-wrap: nowrap;
+    @include breakpoint(tablet){
+        margin-left: 2%;
+    }
+    @include breakpoint(phablet){
+        align-content: center;
+        margin-left: 22%;
+    }
+}
+.ourjobpartner__heading {
+    color:$black;
+    font-family:$fontRaleway;
+    font-size: $big;
+    font-weight: $strong;
+    line-height: 29px;
+    padding-bottom: 20px;
+    margin-left: 2%;
+    @include breakpoint(phablet){
+        text-align: center;
+    }
+}
+.ourjobpartner__space{
+    padding: 10px;   
+}

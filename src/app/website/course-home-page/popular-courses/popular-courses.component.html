@@ -1,0 +1,31 @@
+<section class="container-fluid popularcourse">
+    <div class="row">
+        <h1 class="popularcourse__title">Popular Courses</h1>
+        <br>
+        <div class="col-xs-6 col-md-4 col-lg-3"
+             *ngFor="let data of contentData.PopularCoursesCards">
+            <div class="panel popularcourse__panel ">
+
+                <img src={{data.assetVal.fields.file.url}}
+                     alt=""
+                     class="img-responsive popularcourse__image">
+
+                <div class="panel-body popularcourse__panel-body">
+                    <p class="popularcourse__subtitle">
+                        {{data.entVal.fields.courseTitle}}
+                    </p>
+                    <p class="popularcourse__description">
+                        {{data.entVal.fields.courseSummary}}
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="row ">
+        <a>
+            <h2 class="popularcourse__link-blue">View all courses</h2>
+        </a>
+
+    </div>
+</section>

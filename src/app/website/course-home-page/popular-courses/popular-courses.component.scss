@@ -1,0 +1,55 @@
+@import '../../shared/bits';
+.popularcourse{
+    background-color: $white;
+}
+.popularcourse__panel {
+    background-color:$white;
+    box-shadow: 2px 5px 4px 0 rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    display:inline-block;
+}
+.popularcourse__link-blue {
+    color:$talfinderBlue;
+    font-family: $fontRaleway;
+    font-size: 20px;
+    font-weight:$strong;
+    margin-left: 1%;
+    text-decoration: none;
+    &:hover {
+ 
+        text-decoration: none;
+    }
+}
+.popularcourse__title {
+    color:$black;
+    font-family: $fontRaleway;
+    font-size: $big;
+    font-weight: $strong;
+    line-height: 29px;
+    margin-left: 1%;
+    padding-bottom: 20px;
+}
+.popularcourse__image {
+    height: 100%;
+    width: 100%;
+}
+.popularcourse__subtitle {
+    color:$black;
+    font-weight: $strong;
+    font-family: $fontRaleway;
+    font-size: $medium;
+    padding: none;
+}
+.popularcourse__description {
+    color: $black;
+    font-family: $fontRaleway;
+    width: auto;
+    font-size: 12px;
+}
+.popularcourse__panel-body {
+    
+    min-height:200px;
+    max-height: 200px;
+    
+  }

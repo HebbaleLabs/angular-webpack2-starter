@@ -13,6 +13,7 @@ import { TransferHttpModule } from '../modules/transfer-http/transfer-http.modul
 import { rootReducer } from './reducers';
 import { StoreDevToolsModule } from './features/store-devtools.module';
 import { UserEffects } from './user/user.effects';
+import { WebsiteModule } from './website/index';
 
 const STORE_DEV_TOOLS_IMPORTS = [];
 if (ENV === 'development' && !AOT &&
@@ -34,5 +35,7 @@ export const APP_IMPORTS = [
   StoreModule.provideStore(rootReducer),
   STORE_DEV_TOOLS_IMPORTS,
   StoreDevToolsModule,
-  TransferHttpModule
+  TransferHttpModule,
+
+
 ];

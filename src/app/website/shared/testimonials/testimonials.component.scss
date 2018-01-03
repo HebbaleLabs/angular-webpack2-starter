@@ -1,0 +1,63 @@
+@import '../bits';
+
+.testimonial {
+    background-color: $talfinderGray;
+    flex: 0 0 100%;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+.testimonial__title{
+    color:$black;
+    font-family: $fontRaleway;
+    font-size: $big;
+    font-weight: $strong;
+    line-height: 29px;
+    margin-left: 3%;
+    padding-bottom: 20px;
+    @include breakpoint(phablet){
+        text-align:center;
+    }
+}
+.testimonial__img {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+.testimonial__comment {
+    opacity: 0.8;
+    color:$black;
+    font-family: $fontRaleway;
+    font-size: $big;
+    font-style: italic;
+    text-align: center;
+	font-weight: 300;
+}
+.testimonial__name {
+    color:$black;
+    font-family: $fontRaleway;
+    text-align: center;
+    font-weight: $strong;
+    line-height: 19px;
+}
+.testimonial__desig {
+    color:$black;
+    font-family: $fontRaleway;
+    font-size: $medium;
+    text-align: center;
+}
+.testimonial__link {
+    color:$talfinderBlue;
+    font-family: $fontRaleway;
+    font-size: $big;
+    font-weight: $strong;
+    margin-left: 1%;
+    text-decoration: none;
+    @include breakpoint(phablet){
+        text-align: center;
+    }
+    @include breakpoint(tablet){
+        text-align: right;
+    }
+}
+
+

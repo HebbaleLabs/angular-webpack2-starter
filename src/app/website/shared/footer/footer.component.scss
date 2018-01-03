@@ -1,0 +1,65 @@
+@import '../bits';
+.footer{
+    overflow-x: hidden;
+}
+.footer__style{
+    background-color:$talfinderFooterBlue;
+    overflow-x: hidden;
+}
+.toggle-item{
+    display: block;
+}
+.span-style{
+    background-color:$talfinderGray;
+}
+.footer__box{
+    @include breakpoint(tablet){
+        display:none
+    }
+    @include breakpoint(phablet){
+        padding: 10px;
+        overflow-x: hidden;
+    }   
+}
+.footer__text{
+    color:$white;
+    font-family: "Open Sans";	
+    font-size: $medium;	  
+}
+.space{
+    padding: 10px;
+    max-height:10px;
+}
+.footer__list{
+    padding-left:15px;
+    padding-right:15px; 
+
+    @include breakpoint(phablet){
+        display: none;
+    }
+    @include breakpoint(tablet){
+        display: inline;
+        flex-wrap: nowrap;
+    }        
+}
+.inline{
+    @include breakpoint(phablet){
+        display: inline-block;
+    }
+    @include breakpoint(tablet){
+        display: inline-block;
+    }
+}
+.disp{      
+    @include breakpoint(tablet){
+        display: none;
+    }
+}
+.center{
+    @include breakpoint(tablet){
+        margin-left:30%;
+        align-content: center;
+    }
+}
+
+

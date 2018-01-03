@@ -1,0 +1,69 @@
+@import '../../shared/_bits.scss';
+
+.manypossibility{
+  overflow-x:hidden; 
+  width:100%;
+  background-color: $talfinderGray;
+}
+.manypossibility__content{
+  margin-left:25px;
+  margin-right:25px;
+  
+  @include breakpoint(phablet) {
+    margin-left:35px;
+    margin-right:35px;
+  }
+}
+.manypossibility__content-heading {
+  color:$black;
+  font-family: $fontRaleway;
+  font-size: $big;
+  font-weight:  $strong;
+  line-height: 29px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  @include breakpoint(phablet) {
+		text-align: center;
+  }
+  @include breakpoint(tablet) {
+		text-align: left;
+  }
+  @include breakpoint(mobileonly) {
+		text-align: center;
+  }
+}
+
+
+.manypossibility__content-text{
+  color:$black;
+  font-family: $fontRaleway;	
+  font-size: $medium;	
+  line-height: 19px;
+  
+}
+.manypossibility__link-blue{
+  color: $talfinderBlue;
+  font-family: $fontRaleway;
+  font-size: $big	;
+  font-weight: $strong;
+  text-align: right;
+  
+  @include breakpoint(phablet) {
+		text-align: center;
+  }
+ 
+  @include breakpoint(mobileonly) {
+		text-align: center;
+  }
+}
+.space{
+  padding: 10px;
+}
+.nowrap{
+  display: inline;
+  flex-wrap: nowrap;
+}
+.icon-style{
+  font-size: 4.5em;
+  color: $talfiderNavyBlue;
+}

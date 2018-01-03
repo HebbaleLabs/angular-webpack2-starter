@@ -1,0 +1,43 @@
+
+@import '../bits';
+.sitemaplinks{
+    background-color:$talfinderGray;
+    opacity:$opacity;
+    overflow-x: hidden;
+}
+.toggleItem{
+    display: block;
+}
+.sitemaplinks__disp{
+    @include breakpoint(tablet) {
+        display: inline-block;
+        flex-wrap: nowrap;
+    } 
+    @include breakpoint(tablet) {
+        display: inline-block;
+        flex-wrap: nowrap;
+    } 
+    @include breakpoint(tablet) {
+        display: inline-block;
+        flex-wrap: nowrap;
+	} 
+}
+.sitemaplinks__name{
+    color:$black;
+    font-family: $fontRaleway;	
+    font-size: $medium;
+    display:block;
+    flex-wrap: nowrap;
+    @include breakpoint(phablet) {
+        display:flex;
+        flex-wrap: wrap;
+    }  
+    @include breakpoint(tablet) {
+        display:block;
+        flex-wrap: nowrap;     
+    }      
+}
+.full-width{
+    width: 100%;
+}
+

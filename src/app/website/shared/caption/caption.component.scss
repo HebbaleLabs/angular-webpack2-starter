@@ -1,0 +1,29 @@
+@import '../bits';
+.caption{
+    background-color:$white; 
+}
+.caption__headline {
+    height: 30%;
+    width: 65%;
+    color: $black;
+    font-family: $fontBitter;
+    font-size: $big;
+    width: auto;
+}
+.caption__underline {
+    height: 4px;
+    width: 55%;
+    transform: rotate(359.7deg);
+    background-color:$talfinderFooterBlue;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.5);
+}
+.caption__button {
+    background-color: $talfinderBlue;
+    color: $white;
+    border-radius: 5px;
+    font-family: $fontRaleway;
+    font-size: $medium;
+}
+.caption__space{
+    padding: 10px;
+}

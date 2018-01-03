@@ -1,0 +1,150 @@
+@import '../../shared/bits';
+
+
+.featuresummary{
+  overflow-x:hidden;
+}
+
+.wrap{
+    display: flex;
+    flex-wrap:wrap;
+}
+.featuresummary__content-img{
+
+  margin-left:2%;
+  margin-right:2%;
+  height: 250px;		
+  width:500px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+  @include breakpoint (phablet){
+    margin-left:10%;
+    margin-right:10%;
+  }
+}
+.featuresummary__content-heading{
+  margin-left: 1%; 
+  text-align: left;
+  color:$black;
+  font-family:$fontBitter;	
+  font-size:$big;
+  line-height: 28px;
+  @include breakpoint (phablet){
+    text-align: center;
+  }
+  
+}
+.featuresummary__content-description{
+  margin-left: 1%;
+  text-align: left;
+  color:$black;	
+  font-family:$fontRaleway;
+  font-size: $medium;	
+  line-height: 19px;
+  @include breakpoint (phablet){
+    text-align: center;
+  }
+  
+}
+.featuresummary__content-list{
+  line-height: 28px;
+  @include breakpoint (phablet){
+    text-align: center;
+  }
+}
+.featuresummary__content-advantage{
+
+  padding-bottom: 10px;
+  padding-top:10px;
+  display: inline-block;
+  color:$black;
+  font-family:$fontRaleway;
+  font-size: $medium;
+  line-height: 19px;
+  font-family: $fontRaleway;
+ 
+}
+
+.featuresummary__content{
+
+  top: 0;
+  bottom: 0;  
+  background-color: $white;
+  &:nth-child(odd){
+    .img-column{
+      float: right;
+
+      @include breakpoint(phablet){
+        display: none;
+      }
+    
+    }
+    .text-column{
+      float:left
+    }
+
+    @include breakpoint (phablet){
+      display:flex;
+      flex-wrap: wrap;
+    }
+    @include breakpoint (tablet){
+      display:inline;
+      flex-wrap: nowrap;
+  
+    }
+    @include breakpoint (laptop){
+      display:inline;
+      flex-wrap: nowrap;
+        
+    }
+    @include breakpoint (desktop){
+      display:inline;
+      flex-wrap: nowrap;
+              
+    }
+  }
+  &:nth-child(even){
+    .img-column{
+      float: left;
+      @include breakpoint(phablet){
+        display: none;
+      }
+      
+    }
+    .text-column{
+       float:right;
+    }
+    
+    @include breakpoint (phablet){
+      display:flex;
+      flex-wrap: wrap;
+    }
+    @include breakpoint (tablet){
+      display:inline;
+      flex-wrap: nowrap;
+   
+    }
+    @include breakpoint (laptop){
+      display:inline;
+      flex-wrap: nowrap;
+         
+    }
+    @include breakpoint (desktop){
+      display:inline;
+      flex-wrap: nowrap;
+               
+    }
+    
+
+  }
+}
+.fa-check{
+  color: $black; 
+}
+.space{
+  padding: 10px;
+}
+li:before {    
+  margin:0 20px 0 -15px;
+  color:$black;
+}
+  

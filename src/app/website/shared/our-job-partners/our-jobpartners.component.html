@@ -1,0 +1,13 @@
+<section class="container-fluid ourjobpartner">
+    <div class="row ourjobpartner__space"></div>
+    <div class="row ourjobpartner__content">
+        <p class="ourjobpartner__heading">{{contentData.sectionTitle}}</p>
+        <div class="column ourjobpartner__align"
+             *ngFor="let data of contentData.sectionData">
+            <img src={{data.fields?.file.url}}
+                 alt="data.fileds.title"
+                 class="img-responsive ourjobpartner__img">
+        </div>
+    </div>
+    <div class="row ourjobpartner__space"></div>
+</section>

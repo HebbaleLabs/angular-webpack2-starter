@@ -1,0 +1,35 @@
+$talfinderBlue:#2AB1EA;
+$talfiderNavyBlue:#064973;
+$talfinderGray: #EEEEEE;
+$talfinderFooterBlue:#0B132B;
+$white:#FFFFFF;
+$black : #000000;
+$strong:600;
+$big:24px;
+$medium:16px;
+$fontRaleway:Raleway;
+$fontBitter: Bitter;
+$opacity:0.08;
+
+
+
+
+
+@mixin breakpoint($point) {
+  @if $point == desktop {
+    @media (min-width: 1200px) { @content ; }
+ }
+  @else if $point == laptop {
+    @media (min-width: 1024px) { @content ; }
+ }
+   @else if $point == tablet {
+    @media (min-width: 768px) { @content ; }
+ }
+  @else if $point == phablet {
+    @media (max-width: 767px)  { @content ; }
+ }
+ @else if $point == mobileonly {
+    @media (max-width: 576px)  { @content ; }
+
+ }
+}

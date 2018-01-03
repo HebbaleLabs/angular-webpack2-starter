@@ -7,6 +7,7 @@
  */
 
 import { ApplicationRef, NgModule } from '@angular/core';
+
 import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpModule } from '@angular/http';
@@ -26,10 +27,9 @@ import { APP_IMPORTS } from './app.imports';
 import { APP_PROVIDERS } from './app.providers';
 
 import { routes } from './app.routing';
-
 import { AppComponent } from './app.component';
-
 import { AppState } from './reducers';
+
 
 @NgModule({
   declarations: [
@@ -42,7 +42,7 @@ import { AppState } from './reducers';
     DEV_SERVER ? [BrowserAnimationsModule, BrowserTransferStateModule] : [],
     HttpModule,
     APP_IMPORTS,
-    RouterModule.forRoot(routes, { useHash: false, preloadingStrategy: PreloadAllModules }),
+    RouterModule.forRoot(routes, { useHash: false, preloadingStrategy: PreloadAllModules })
   ],
   bootstrap: [AppComponent],
   exports: [AppComponent],
