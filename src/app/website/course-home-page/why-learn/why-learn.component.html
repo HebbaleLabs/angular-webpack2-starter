@@ -1,30 +1,23 @@
-<section class="container-fluid box"
+<section class="container-fluid box whylearn"
          *ngFor='let cont of contentData'>
-    <br>
-    <div class="row section-pad wrap no-wrap ">
+    <div class="row  wrap whylearn__content ">
         <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
             <div>
                 <img src='{{ cont.assetVal.fields.file.url  }}'
                      alt="image"
-                     class="img-responsive content-img">
+                     class="img-responsive whylearn__img">
             </div>
 
         </div>
 
-        <div class="col-lg-6 col-md-6  col-sm-12 col-xs-12  content-marg ">
-            <h1 class="headings">{{cont.item.fields.advantageTitle}}</h1>
+        <div class="col-lg-6 col-md-6  col-sm-12 col-xs-12  whylearn__content-marg ">
+            <h1 class="whylearn__headings">{{cont.item.fields.advantageTitle}}</h1>
 
-            <p class="p-text">
+            <p class="whylearn__description">
                 {{cont.item.fields.advantageDescription}}
             </p>
-
-            <!--a >
-                <h2 class="link-blue">Try KODEPRO</h2>
-            </a-->
-
         </div>
 
     </div>
-    <br>
+
 </section>
-<br>
