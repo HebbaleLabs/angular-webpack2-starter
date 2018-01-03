@@ -22,9 +22,6 @@ import { CommonModule } from '@angular/common';
     WebsiteRoutingModule
   ],
   providers: [ContentfulService],
-  exports: [
-    WebsiteComponent,
-  ]
 })
 export class WebsiteModule {
 
