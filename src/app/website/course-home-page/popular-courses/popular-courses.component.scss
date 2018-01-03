@@ -1,24 +1,27 @@
 @import '../../shared/bits';
-.course-panel {
+.popularcourse{
+    background-color: $white;
+}
+.popularcourse__panel {
     background-color:$white;
     box-shadow: 2px 5px 4px 0 rgba(0, 0, 0, 0.5);
     height: 100%;
     width: 100%;
     display:inline-block;
 }
-.course-link-blue {
+.popularcourse__link-blue {
     color:$talfinderBlue;
     font-family: $fontRaleway;
     font-size: 20px;
     font-weight:$strong;
     margin-left: 1%;
     text-decoration: none;
-}
-.course-link-blue:hover {
+    &:hover {
  
-    text-decoration: currentColor;
+        text-decoration: none;
+    }
 }
-.course-h1-text {
+.popularcourse__title {
     color:$black;
     font-family: $fontRaleway;
     font-size: $big;
@@ -27,24 +30,24 @@
     margin-left: 1%;
     padding-bottom: 20px;
 }
-.course-panel-image {
+.popularcourse__image {
     height: 100%;
     width: 100%;
 }
-.course-h3-text {
+.popularcourse__subtitle {
     color:$black;
     font-weight: $strong;
     font-family: $fontRaleway;
     font-size: $medium;
     padding: none;
 }
-.p-text {
+.popularcourse__description {
     color: $black;
     font-family: $fontRaleway;
     width: auto;
     font-size: 12px;
 }
-.fixed-panel {
+.popularcourse__panel-body {
     
     min-height:200px;
     max-height: 200px;
