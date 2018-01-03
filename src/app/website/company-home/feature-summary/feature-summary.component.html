@@ -3,12 +3,12 @@
        *ngFor="let data of contentData">
     <div class="row space"></div>
     <div class="row">
-      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 img-column text-center">
+      <div class="col-lg-6 col-xs-12 img-column text-center">
         <img src={{data?.assetValue.fields.file.url}}
              alt="image"
              class="featuresummary__content-img img-responsive">
       </div>
-      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-column text-center">
+      <div class="col-lg-6 col-xs-12 text-column text-center">
         <p class="featuresummary__content-heading">{{data?.sectionHeading}}</p>
         <P class="featuresummary__content-description">{{data?.sectiDescription}}</P>
         <div class="pull-left">

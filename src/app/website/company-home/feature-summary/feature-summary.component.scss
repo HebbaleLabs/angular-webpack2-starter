@@ -64,82 +64,78 @@
  
 }
 
-.featuresummary__content:nth-child(odd){
+.featuresummary__content{
 
   top: 0;
   bottom: 0;  
   background-color: $white;
+  &:nth-child(odd){
+    .img-column{
+      float: right;
 
-  .img-column{
-    float: right;
-
-    @include breakpoint(phablet){
-      display: none;
+      @include breakpoint(phablet){
+        display: none;
+      }
+    
     }
+    .text-column{
+      float:left
+    }
+
+    @include breakpoint (phablet){
+      display:flex;
+      flex-wrap: wrap;
+    }
+    @include breakpoint (tablet){
+      display:inline;
+      flex-wrap: nowrap;
   
+    }
+    @include breakpoint (laptop){
+      display:inline;
+      flex-wrap: nowrap;
+        
+    }
+    @include breakpoint (desktop){
+      display:inline;
+      flex-wrap: nowrap;
+              
+    }
   }
-  .text-column{
-    float:left
-  }
-
-  @include breakpoint (phablet){
-    display:flex;
-    flex-wrap: wrap;
-  }
-  @include breakpoint (tablet){
-    display:inline;
-    flex-wrap: nowrap;
- 
-  }
-  @include breakpoint (laptop){
-    display:inline;
-    flex-wrap: nowrap;
-       
-  }
-  @include breakpoint (desktop){
-    display:inline;
-    flex-wrap: nowrap;
-             
-  }
-}
-
-.featuresummary__content:nth-child(even){
-
-  top: 0;
-  bottom: 0;  
-  background: $talfinderGray;
-
-  .img-column{
-    float: left;
-    @include breakpoint(phablet){
-      display: none;
+  &:nth-child(even){
+    .img-column{
+      float: left;
+      @include breakpoint(phablet){
+        display: none;
+      }
+      
+    }
+    .text-column{
+       float:right;
     }
     
+    @include breakpoint (phablet){
+      display:flex;
+      flex-wrap: wrap;
+    }
+    @include breakpoint (tablet){
+      display:inline;
+      flex-wrap: nowrap;
+   
+    }
+    @include breakpoint (laptop){
+      display:inline;
+      flex-wrap: nowrap;
+         
+    }
+    @include breakpoint (desktop){
+      display:inline;
+      flex-wrap: nowrap;
+               
+    }
+    
+
   }
-  .text-column{
-     float:right;
-  }
-  
-  @include breakpoint (phablet){
-    display:flex;
-    flex-wrap: wrap;
-  }
-  @include breakpoint (tablet){
-    display:inline;
-    flex-wrap: nowrap;
- 
-  }
-  @include breakpoint (laptop){
-    display:inline;
-    flex-wrap: nowrap;
-       
-  }
-  @include breakpoint (desktop){
-    display:inline;
-    flex-wrap: nowrap;
-             
-  }
-  
 }
 .fa-check{
   color: $black; 
