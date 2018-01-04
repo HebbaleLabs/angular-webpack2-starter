@@ -2,9 +2,6 @@ import { CourseHomePageService } from './course-home-page.service';
 import { PopularCourseCardDisplayModel, WhyLearnDisplayModel } from './course-home-page.model';
 import { ContentfulService } from './../shared/contentful/contentful.service';
 import { Component, OnInit } from '@angular/core';
-import { Http, Response } from '@angular/http';
-
-
 
 @Component({
   selector: 'tf-course-home-page',
@@ -19,8 +16,8 @@ export class CourseHomePageComponent implements OnInit {
 
   popularCourseCardDisplayModel: PopularCourseCardDisplayModel;
   whyLearnDisplayModel: WhyLearnDisplayModel;
-  constructor(private http: Http,
-    private contentfulService: ContentfulService,
+
+  constructor(private contentfulService: ContentfulService,
     private courseHomePageService: CourseHomePageService) { }
   ngOnInit() {
     this.getPopularCourseCards();
