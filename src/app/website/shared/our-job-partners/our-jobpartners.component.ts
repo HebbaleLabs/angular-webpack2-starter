@@ -24,24 +24,25 @@ export class OurJobPartnersComponent implements OnInit {
     this.contentfulService.getJobpartnerData()
       .subscribe(
       (data: any) => {
-        for (let item of data.items) {
+        const dataModelMap = {};
+        data.items.forEach(item => {
           if (item.fields.pageName === page) {
+            const dataModel = {
+            };
             this.contentData.sectionTitle = item.fields.sectionTitle;
-            this.contentData.sectionData.push(getValue(item));
+            item.fields.customerLogos.forEach(logo => {
+              console.log(logo.sys.id);
+              dataModelMap[logo.sys.id] = dataModel;
+              this.contentData.sectionData.push(dataModel);
+              console.log(this.contentData);
+            });
           }
-        }
-        function getValue(item) {
-          let assetValue: any;
-          item.fields.customerLogos.find(getCustomerDetails);
-          function getCustomerDetails(customerId) {
-            assetValue = data.includes.Asset.find(getAsset);
-            function getAsset(asset) {
-              return asset.sys.id === customerId.sys.id;
-            }
-            return assetValue;
-          }
-          return assetValue;
-        }
+        });
+
+        Object.keys(dataModelMap).forEach(assetId => {
+          const assetData = data.includes.Asset.find(asset => asset.sys.id === assetId);
+          this.contentData.sectionData.push(dataModelMap[assetId].image = assetData.fields.file.url);
+        });
       });
   }
 }
