@@ -5,6 +5,7 @@
   <div Content>
     <tf-many-posibilities *ngIf="manyPossibilitiesModel"
                           [displayModel]="manyPossibilitiesModel"></tf-many-posibilities>
-    <tf-feature-summary [displayModel]="featureSummaryModel"></tf-feature-summary>
+    <tf-feature-summary *ngIf="featureSummaryModel"
+                        [displayModel]="featureSummaryModel"></tf-feature-summary>
   </div>
 </tf-weblayout>

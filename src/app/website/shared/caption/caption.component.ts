@@ -22,7 +22,6 @@ export class CaptionComponent implements OnInit {
       (data: any) => {
         this.contentData = data.items.find(item => {
           return item.fields.page === pageCaption;
-
         });
       });
   }
