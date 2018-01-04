@@ -1,9 +1,9 @@
 <section class="container-fluid box whylearn"
-         *ngFor='let cont of contentData'>
+         *ngFor='let cont of displayModel?.whyLearnContent'>
     <div class="row  wrap whylearn__content ">
         <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
             <div>
-                <img src='{{ cont.assetVal.fields.file.url  }}'
+                <img src='{{ cont.image }}'
                      alt="image"
                      class="img-responsive whylearn__img">
             </div>
@@ -11,10 +11,10 @@
         </div>
 
         <div class="col-lg-6 col-md-6  col-sm-12 col-xs-12  whylearn__content-marg ">
-            <h1 class="whylearn__headings">{{cont.item.fields.advantageTitle}}</h1>
+            <h1 class="whylearn__headings">{{cont.advantageTitle}}</h1>
 
             <p class="whylearn__description">
-                {{cont.item.fields.advantageDescription}}
+                {{cont.advantageDescription}}
             </p>
         </div>
 

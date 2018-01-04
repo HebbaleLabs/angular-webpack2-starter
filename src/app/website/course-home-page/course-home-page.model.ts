@@ -3,3 +3,6 @@ export interface PopularCourseCardDisplayModel {
   popularCourseCard: any[];
 
 }
+export interface WhyLearnDisplayModel {
+  whyLearnContent: any[];
+}
