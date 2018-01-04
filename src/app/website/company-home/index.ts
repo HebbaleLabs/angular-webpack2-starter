@@ -1,3 +1,4 @@
+import { CompanyHomeService } from './company-home.service';
 import { WebsiteLayoutModule } from './../shared/web-layout/index';
 import { CompanyHomeRoutingModule } from './company-home-routing.module';
 import { NgModule } from '@angular/core';
@@ -24,7 +25,8 @@ import { CommonModule } from '@angular/common';
     WebsiteLayoutModule,
     TestimonialsModule,
     CompanyHomeRoutingModule
-  ]
+  ],
+  providers: [CompanyHomeService]
 })
 export class CompanyHomeModule {
 
