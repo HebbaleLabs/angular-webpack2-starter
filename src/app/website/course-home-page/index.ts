@@ -1,3 +1,4 @@
+import { CourseHomePageService } from './course-home-page.service';
 import { WebsiteLayoutModule } from './../shared/web-layout/index';
 import { CourseHomePageRoutingModule } from './course-home-page-routing.module';
 import { NgModule } from '@angular/core';
@@ -23,7 +24,7 @@ import { CommonModule } from '@angular/common';
     OurJobPartnersModule,
     WebsiteLayoutModule,
     CourseHomePageRoutingModule
-  ]
-
+  ],
+  providers: [CourseHomePageService]
 })
 export class CourseHomePageModule { }

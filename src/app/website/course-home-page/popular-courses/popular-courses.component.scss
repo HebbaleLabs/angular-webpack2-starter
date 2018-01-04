@@ -5,11 +5,11 @@
 .popularcourse__panel {
     background-color:$white;
     box-shadow: 2px 5px 4px 0 rgba(0, 0, 0, 0.5);
-    height: 100%;
-    width: 100%;
     display:inline-block;
+    min-height:400px;
+    max-height: 400px;
 }
-.popularcourse__link-blue {
+.popularcourse__link{
     color:$pictonBlue;
     font-family: $fontRaleway;
     font-size: 20px;
