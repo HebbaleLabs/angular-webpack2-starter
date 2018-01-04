@@ -2,7 +2,6 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Http, Response } from '@angular/http';
 import { ContentfulService } from '../contentful/contentful.service';
 
-
 @Component({
   selector: 'tf-caption',
   templateUrl: './caption.component.html',
@@ -21,10 +20,10 @@ export class CaptionComponent implements OnInit {
     this.contentfulService.getCaptionData()
       .subscribe(
       (data: any) => {
-        this.contentData = data.items.find(getValue);
-        function getValue(item) {
+        this.contentData = data.items.find(item => {
           return item.fields.page === pageCaption;
-        }
+
+        });
       });
   }
 }

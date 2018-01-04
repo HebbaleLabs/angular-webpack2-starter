@@ -1,7 +1,7 @@
 @import '../bits';
 
 .testimonial {
-    background-color: $talfinderGray;
+    background-color: $gallery;
     flex: 0 0 100%;
     padding-top:20px;
     padding-bottom:20px;
@@ -46,7 +46,7 @@
     text-align: center;
 }
 .testimonial__link {
-    color:$talfinderBlue;
+    color:$pictonBlue;
     font-family: $fontRaleway;
     font-size: $big;
     font-weight: $strong;

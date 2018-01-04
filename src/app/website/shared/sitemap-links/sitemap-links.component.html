@@ -8,10 +8,9 @@
         </button>
     </div>
     <div class="row collapse sitemaplink__disp"
-         id="defaultNavbar1"
-         [ngClass]="{'toggleItem':toggle===true}">
-        <div class="nowrap nav navbar-nav ">
-            <div class="col-lg-4 col-xs-12"
+         [ngClass]="{'sitemaplinks--toggle':toggle===true}">
+        <div class="row nowrap nav navbar-nav ">
+            <div class="col-md-2"
                  *ngFor="let data of contentData">
                 <div *ngIf="data.sitemapCategory==='Main'">
                     <ul>
@@ -21,7 +20,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-4 col-xs-12"
+            <div class="col-md-3"
                  *ngFor="let data of contentData">
                 <ul *ngIf="data.sitemapCategory==='For Companies'">
                     <li>
@@ -32,7 +31,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-lg-4 col-xs-10"
+            <div class="col-md-4"
                  *ngFor="let data of contentData">
                 <ul *ngIf="data.sitemapCategory==='For Learners'">
                     <li>

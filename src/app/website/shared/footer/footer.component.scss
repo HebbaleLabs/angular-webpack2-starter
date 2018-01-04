@@ -1,16 +1,17 @@
 @import '../bits';
 .footer{
     overflow-x: hidden;
+
 }
 .footer__style{
-    background-color:$talfinderFooterBlue;
+    background-color:$haiti;
     overflow-x: hidden;
 }
-.toggle-item{
+.footer--toggle{
     display: block;
 }
-.span-style{
-    background-color:$talfinderGray;
+.footer_span-style{
+    background-color:$gallery;
 }
 .footer__box{
     @include breakpoint(tablet){
@@ -26,7 +27,7 @@
     font-family: "Open Sans";	
     font-size: $medium;	  
 }
-.space{
+.footer__space{
     padding: 10px;
     max-height:10px;
 }
@@ -42,7 +43,7 @@
         flex-wrap: nowrap;
     }        
 }
-.inline{
+.footer__inline{
     @include breakpoint(phablet){
         display: inline-block;
     }
@@ -50,12 +51,12 @@
         display: inline-block;
     }
 }
-.disp{      
+.footer__disp--hide{      
     @include breakpoint(tablet){
         display: none;
     }
 }
-.center{
+.footer__navbar-center{
     @include breakpoint(tablet){
         margin-left:30%;
         align-content: center;

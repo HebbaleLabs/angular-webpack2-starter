@@ -1,11 +1,10 @@
 @import '../../shared/bits';
 
-
 .featuresummary{
   overflow-x:hidden;
 }
 
-.wrap{
+.featuresummary__ul-wrap{
     display: flex;
     flex-wrap:wrap;
 }
@@ -50,6 +49,11 @@
   @include breakpoint (phablet){
     text-align: center;
   }
+  &:before {    
+    margin:0 20px 0 -15px;
+    color:$black;
+  }
+
 }
 .featuresummary__content-advantage{
 
@@ -70,7 +74,7 @@
   bottom: 0;  
   background-color: $white;
   &:nth-child(odd){
-    .img-column{
+    .featuresummary__img-column{
       float: right;
 
       @include breakpoint(phablet){
@@ -78,7 +82,7 @@
       }
     
     }
-    .text-column{
+    .featuresummary__text-column{
       float:left
     }
 
@@ -103,14 +107,14 @@
     }
   }
   &:nth-child(even){
-    .img-column{
+    .featuresummary__img-column{
       float: left;
       @include breakpoint(phablet){
         display: none;
       }
       
     }
-    .text-column{
+    .featuresummary__text-column{
        float:right;
     }
     
@@ -140,11 +144,6 @@
 .fa-check{
   color: $black; 
 }
-.space{
+.featuresummary__space{
   padding: 10px;
 }
-li:before {    
-  margin:0 20px 0 -15px;
-  color:$black;
-}
-  

@@ -1,3 +1,4 @@
+import { ContentfulModule } from './shared/contentful/index';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { BrowserModule } from '@angular/platform-browser';
@@ -19,6 +20,7 @@ import { CommonModule } from '@angular/common';
   imports: [
     HttpModule,
     CommonModule,
+    ContentfulModule,
     WebsiteRoutingModule
   ],
   providers: [ContentfulService],

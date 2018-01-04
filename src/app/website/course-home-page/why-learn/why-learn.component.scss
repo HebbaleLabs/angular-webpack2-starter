@@ -3,7 +3,7 @@
 .whylearn{
     &:nth-child(odd){
 
-        background-color: $talfinderGray;
+        background-color: $gallery;
         flex: 0 0 100%;
         .wrap {
             @include breakpoint(phablet){
