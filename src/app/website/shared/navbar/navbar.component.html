@@ -14,23 +14,22 @@
             <label for="navbar-toggle-cbox"
                    class="navbar-toggle collapsed "
                    data-toggle="collapse"
-                   data-target="#MyNavbar"
+                   data-target=".collapse"
                    aria-expanded="false"
                    aria-controls="navbar">
                 <span class="sr-only">Toggle data</span>
-                <span class="icon-bar talfindernav__blue"></span>
-                <span class="icon-bar talfindernav__blue"></span>
-                <span class="icon-bar talfindernav__blue"></span>
+                <span class="icon-bar talfindernav__hamburgerbar"></span>
+                <span class="icon-bar talfindernav__hamburgerbar"></span>
+                <span class="icon-bar talfindernav__hamburgerbar"></span>
             </label>
-            <a href="#">
+            <a>
                 <button class="btn navbar-btn  talfindernav__login-button pull-left">LOGIN</button>
             </a>
-            <a href="#">
+            <a>
                 <button class="btn navbar-btn navbar-right talfindernav__signup-button pull-left">SIGN-UP</button>
             </a>
         </div>
-        <div class="collapse navbar-collapse talfindernav__content-center"
-             id="MyNavbar">
+        <div class="collapse navbar-collapse talfindernav__content-center">
             <ul class="nav navbar-nav pull-center talfindernav__nav-ul ">
                 <li *ngFor="let item of contentData.menuitems.fields?.menuTabs">
                     <a class="talfindernav__headeritem"

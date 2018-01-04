@@ -1,22 +1,13 @@
 
 @import '../bits';
 .sitemaplinks{
-    background-color:$talfinderGray;
-    opacity:$opacity;
+    background-color:$gallery;
     overflow-x: hidden;
 }
-.toggleItem{
+.sitemaplinks--toggle{
     display: block;
 }
 .sitemaplinks__disp{
-    @include breakpoint(tablet) {
-        display: inline-block;
-        flex-wrap: nowrap;
-    } 
-    @include breakpoint(tablet) {
-        display: inline-block;
-        flex-wrap: nowrap;
-    } 
     @include breakpoint(tablet) {
         display: inline-block;
         flex-wrap: nowrap;

@@ -3,7 +3,7 @@
 .manypossibility{
   overflow-x:hidden; 
   width:100%;
-  background-color: $talfinderGray;
+  background-color: $gallery;
 }
 .manypossibility__content{
   margin-left:25px;
@@ -32,8 +32,6 @@
 		text-align: center;
   }
 }
-
-
 .manypossibility__content-text{
   color:$black;
   font-family: $fontRaleway;	
@@ -42,7 +40,7 @@
   
 }
 .manypossibility__link-blue{
-  color: $talfinderBlue;
+  color: $pictonBlue;
   font-family: $fontRaleway;
   font-size: $big	;
   font-weight: $strong;
@@ -56,14 +54,10 @@
 		text-align: center;
   }
 }
-.space{
+.manypossibility__space{
   padding: 10px;
 }
-.nowrap{
-  display: inline;
-  flex-wrap: nowrap;
-}
-.icon-style{
+.manypossibility__icon-style{
   font-size: 4.5em;
-  color: $talfiderNavyBlue;
+  color: $veniceBlue;
 }

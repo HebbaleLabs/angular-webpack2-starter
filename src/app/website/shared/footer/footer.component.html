@@ -1,6 +1,6 @@
 <section class="overflow-hide footer">
     <div class="container-fluid footer__box">
-        <div class="row span-style">
+        <div class="row footer_span-style">
             <button type="button"
                     class="navbar-toggle pull-left"
                     data-toggle="collapse"
@@ -10,8 +10,8 @@
                 <span class="pull-right"></span>
             </button>
         </div>
-        <div class="collapse disp"
-             [ngClass]="{'toggle-item':toggle===true}">
+        <div class="collapse footer__disp--hide"
+             [ngClass]="{'footer--toggle':toggle===true}">
             <p class="">
                 Privacy policy
             </p>
@@ -20,10 +20,10 @@
             </p>
         </div>
     </div>
-    <div class="row space"></div>
+    <div class="row footer__space"></div>
     <div class="row ">
         <footer class="footer__style text-center">
-            <ul class="nav navbar-nav center">
+            <ul class="nav navbar-nav footer__navbar-center">
                 <li class="footer__list">
                     <p class="footer__text">
                         Privacy policy
@@ -34,7 +34,7 @@
                         Terms of Use
                     </p>
                 </li>
-                <li class="footer__list">
+                <li class="footer__inline">
                     <p class="footer__text">
                         <span>&#169;</span> All Rights Are Reserved 2015
                     </p>
