@@ -1,3 +1,6 @@
+import { CourseHomePageService } from './course-home-page.service';
+import { PopularCourseCardDisplayModel } from './course-home-page.model';
+import { ContentfulService } from './../shared/contentful/contentful.service';
 import { Component, OnInit } from '@angular/core';
 import { Http, Response } from '@angular/http';
 
@@ -13,13 +16,21 @@ export class CourseHomePageComponent implements OnInit {
   page = 'Home';
   ourJobPartner = 'Courses Home';
   testimonialType = 'Course Home';
-  constructor(private http: Http) {
 
-  }
+  popularCourseCardDisplayModel: PopularCourseCardDisplayModel;
+  constructor(private http: Http,
+    private contentfulService: ContentfulService,
+    private courseHomePageService: CourseHomePageService) { }
   ngOnInit() {
+    this.getPopularCourseCards();
+  }
+  getPopularCourseCards() {
+    this.contentfulService.getPopularCoursesData()
+      .subscribe(
+      (data: any) => {
+        this.popularCourseCardDisplayModel = this.courseHomePageService.getPopularCourse(data);
+      });
   }
 
 }
-
-
 
