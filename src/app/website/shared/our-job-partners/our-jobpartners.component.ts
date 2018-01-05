@@ -31,17 +31,19 @@ export class OurJobPartnersComponent implements OnInit {
             };
             this.contentData.sectionTitle = item.fields.sectionTitle;
             item.fields.customerLogos.forEach(logo => {
-              console.log(logo.sys.id);
               dataModelMap[logo.sys.id] = dataModel;
               this.contentData.sectionData.push(dataModel);
-              console.log(this.contentData);
+
             });
           }
         });
 
-        Object.keys(dataModelMap).forEach(assetId => {
-          const assetData = data.includes.Asset.find(asset => asset.sys.id === assetId);
-          this.contentData.sectionData.push(dataModelMap[assetId].image = assetData.fields.file.url);
+        Object.keys(dataModelMap).forEach(logoId => {
+
+          const assetData = data.includes.Asset.find(asset => asset.sys.id === logoId);
+          if (assetData.fields.file.url) {
+            this.contentData.sectionData.push(dataModelMap[logoId].image = assetData.fields.file.url);
+          }
         });
       });
   }
