@@ -1,6 +1,6 @@
 <section class="container-fluid testimonial">
     <div class="row ">
-        <p class="testimonial__title">{{contentData?.sectionHeading}}</p>
+        <p class="testimonial__title">{{contentData?.sectionTitle}}</p>
     </div>
     <tf-carousel [interval]="nextPhotoInterval"
                  [noWrap]="noLoopSlides">
@@ -9,20 +9,20 @@
             <div class="row ">
                 <div class="col-lg-2  col-md-3 col-sm-3 col-xs-12 testimonial__content-marg">
                     <div align="center">
-                        <img src={{slidez.assetValue?.fields.file.url}}
+                        <img src={{slidez.image}}
                              alt="learners"
                              class="img-responsive testimonial__img ">
                     </div>
-                    <p class="testimonial__name">{{slidez.entryValue?.fields.name}}</p>
-                    <p class="testimonial__desig">{{slidez.entryValue?.fields.designation}}</p>
+                    <p class="testimonial__name">{{slidez.name}}</p>
+                    <p class="testimonial__desig">{{slidez.designation}}</p>
                 </div>
                 <div class=" col-lg-9 col-md-8 col-sm-8 col-xs-12 ">
                     <p class="testimonial__comment">
-                        {{slidez.entryValue?.fields.testimonial}}
+                        {{slidez.testimonial}}
                     </p>
                 </div>
             </div>
         </tf-slide>
     </tf-carousel>
-    <p class="testimonial__link ">Read more reviews ></p>
+    <p class="testimonial__link ">{{contentData.cta}}</p>
 </section>
