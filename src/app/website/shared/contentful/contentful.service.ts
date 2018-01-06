@@ -14,7 +14,7 @@ export class ContentfulService {
 
   buildURL(contentTypeId: string) {
     // tslint:disable-next-line:max-line-length
-    return ContentfulConfig.BASE_API_URL + ContentfulConfig.SPACE_ID + ContentfulConfig.ENTRIES + ContentfulConfig.ACCESS_TOKEN + ContentfulConfig.API_KEY + ContentfulConfig.CONTENT_TYPE + contentTypeId;
+    return ContentfulConfig.BASE_API_URL + ContentfulConfig.SPACE_ID + ContentfulConfig.ENTRIES + ContentfulConfig.ACCESS_TOKEN + ContentfulConfig.API_KEY + ContentfulConfig.INCLUDE_LEVEL + ContentfulConfig.CONTENT_TYPE + contentTypeId;
   }
 
   getFromContentful(url: string): Observable<any> {

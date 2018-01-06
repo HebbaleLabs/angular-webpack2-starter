@@ -7,11 +7,12 @@ export class ContentfulConfig {
   public static ACCESS_TOKEN = 'access_token=';
   public static API_KEY = '5f91dcaac99947796b2f772dba878c5b58fab81d02375c7b9d3f26a9e3a0f45b';
   public static CONTENT_TYPE = '&content_type=';
+  public static INCLUDE_LEVEL = '&include=3';
   // Shared section
   public readonly NAVBAR = 'navBar';
   public readonly CAPTION = 'courseHomePageCaption';
   public readonly TESTIMONIAL = 'courseHomeLearnerTestimonials';
-  public readonly SITEMAP = 'sitemap';
+  public readonly SITEMAP = 'homeFooter';
   public readonly OUR_JOB_PARTNER = 'ourCustomers';
   // Course home section
   public readonly POPULAR_COURSE = 'coursesPagePopularCourses';
