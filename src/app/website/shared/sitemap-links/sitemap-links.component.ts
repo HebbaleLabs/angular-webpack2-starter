@@ -9,8 +9,8 @@ import { ContentfulService } from '../contentful/contentful.service';
   styleUrls: ['./sitemap-links.component.scss']
 })
 export class SiteMapLinksComponent implements OnInit {
-  contentData = [];
-  toggle = false;
+  contentData: any[] = [];
+  toggle: boolean = false;
   constructor(private http: Http,
     private contentfulService: ContentfulService) { }
 
@@ -21,13 +21,43 @@ export class SiteMapLinksComponent implements OnInit {
     this.contentfulService.getSiteMapData()
       .subscribe(
       (data: any) => {
-        for (let item of data.items) {
-          this.contentData.push(item.fields);
-        }
+        const catagoryModelMap = {};
+
+        const urlmodelMap = {};
+        const dataModel = {};
+        data.items['0'].fields.sitemapEntries.forEach(catagoryId => {
+          catagoryModelMap[catagoryId.sys.id] = dataModel;
+
+        });
+
+        Object.keys(catagoryModelMap).forEach(catagoryId => {
+          const linkModelMap = {};
+          const entryData = data.includes.Entry.find(entry => entry.sys.id === catagoryId);
+          const linkdataModel = {
+            sitemapCategory: entryData.fields.sitemapCategory,
+            sitemapEntries: entryData.fields.sitemapEntries,
+            links: []
+          };
+          const linkModel = {};
+          entryData.fields.sitemapEntriesUrl.forEach(entry => {
+            linkModelMap[entry.sys.id] = linkModel;
+          });
+          catagoryModelMap[catagoryId] = linkdataModel;
+          this.contentData.push(linkdataModel);
+          Object.keys(linkModelMap).forEach(linkId => {
+            const linkData = data.includes.Entry.find(elements => elements.sys.id === linkId);
+            catagoryModelMap[catagoryId].links.push(linkData.fields);
+          });
+        });
       });
-  } onToggle() {
+    console.log(this.contentData);
+
+
+  }
+
+  onToggle() {
     this.toggle = !this.toggle;
   }
+
+
 }
-
-

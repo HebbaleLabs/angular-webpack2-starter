@@ -18,8 +18,6 @@ export class OurJobPartnersComponent implements OnInit {
     this.getContents(this.page);
 
   }
-
-
   getContents(page) {
     this.contentfulService.getJobpartnerData()
       .subscribe(
@@ -33,13 +31,10 @@ export class OurJobPartnersComponent implements OnInit {
             item.fields.customerLogos.forEach(logo => {
               dataModelMap[logo.sys.id] = dataModel;
               this.contentData.sectionData.push(dataModel);
-
             });
           }
         });
-
         Object.keys(dataModelMap).forEach(logoId => {
-
           const assetData = data.includes.Asset.find(asset => asset.sys.id === logoId);
           if (assetData.fields.file.url) {
             this.contentData.sectionData.push(dataModelMap[logoId].image = assetData.fields.file.url);
