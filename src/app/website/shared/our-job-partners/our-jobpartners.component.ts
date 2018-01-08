@@ -37,7 +37,8 @@ export class OurJobPartnersComponent implements OnInit {
         Object.keys(dataModelMap).forEach(logoId => {
           const assetData = data.includes.Asset.find(asset => asset.sys.id === logoId);
           if (assetData.fields.file.url) {
-            this.contentData.sectionData.push(dataModelMap[logoId].image = assetData.fields.file.url);
+            this.contentData.sectionData
+              .push(dataModelMap[logoId].image = assetData.fields.file.url);
           }
         });
       });

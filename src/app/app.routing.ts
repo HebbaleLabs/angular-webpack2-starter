@@ -6,6 +6,6 @@ import { Component } from '@angular/core/src/metadata/directives';
 import { WebsiteComponent } from './website/website.component';
 
 export const routes: Routes = [
-  { path: '', loadChildren: './website/index#WebsiteModule' },
+  { path: '', loadChildren: 'app/website/index#WebsiteModule' },
   { path: '**', component: NotFound404Component }
 ];

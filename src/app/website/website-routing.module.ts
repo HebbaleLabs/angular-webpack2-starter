@@ -13,11 +13,11 @@ const websiteRoutes: Routes = [
   },
   {
     path: 'for-companies',
-    loadChildren: './company-home/index#CompanyHomeModule'
+    loadChildren: 'app/website/company-home/index#CompanyHomeModule'
   },
   {
     path: 'for-learners',
-    loadChildren: './course-home-page/index#CourseHomePageModule'
+    loadChildren: 'app/website/course-home-page/index#CourseHomePageModule'
   }
 ];
 
