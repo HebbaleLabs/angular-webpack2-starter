@@ -1,6 +1,6 @@
 <section class="featuresummary">
   <div class="row featuresummary__content"
-       *ngFor="let data of displayModel?.featuresSummarySections">
+       *ngFor="let data of displayModel.featuresSummarySections">
     <div class="row featuresummary__space"></div>
     <div class="row">
       <div class="col-lg-6 col-xs-12 featuresummary__img-column text-center">
@@ -15,7 +15,7 @@
           <ul class="featuresummary__ul-wrap"
               *ngFor="let advantage of data?.advantages">
             <li [ngClass]="[advantage.icon,'featuresummary__content-list',
-            'fa','fa-pull-left','fa-lg']">
+            'fa','fa-pull-left','fa-lg','featuresummary__fa-chek']">
 
               <p class="featuresummary__content-advantage">
                 {{advantage.title}}</p>

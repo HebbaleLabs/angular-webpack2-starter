@@ -2,12 +2,14 @@
 
 .manypossibility{
   overflow-x:hidden; 
+  overflow-y:hidden; 
   width:100%;
+  height: auto;
   background-color: $gallery;
 }
 .manypossibility__content{
-  margin-left:25px;
-  margin-right:25px;
+  margin-left:5px;
+  margin-right:5px;
   
   @include breakpoint(phablet) {
     margin-left:35px;
@@ -58,6 +60,6 @@
   padding: 10px;
 }
 .manypossibility__icon-style{
-  font-size: 4.5em;
+  font-size: 6.5em;
   color: $veniceBlue;
 }

@@ -12,8 +12,8 @@
 
   margin-left:2%;
   margin-right:2%;
-  height: 250px;		
-  width:500px;
+  height: 300px;		
+  width:600px;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
   @include breakpoint (phablet){
     margin-left:10%;
@@ -74,6 +74,9 @@
   bottom: 0;  
   background-color: $white;
   &:nth-child(odd){
+    .featuresummary__content-img{
+      float: right;
+    }
     .featuresummary__img-column{
       float: right;
 
@@ -107,6 +110,10 @@
     }
   }
   &:nth-child(even){
+
+    .featuresummary__content-img{
+      float: left;
+    }
     .featuresummary__img-column{
       float: left;
       @include breakpoint(phablet){
@@ -140,7 +147,7 @@
     
   }
 }
-.fa-check{
+.featuresummary__fa-chek{
   color: $black; 
 }
 .featuresummary__space{
