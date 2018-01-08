@@ -1,22 +1,25 @@
+import { SlideModule } from './slide/index';
+import { CarouselModule } from './carousel/index';
+
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 
 import { TestimonialsComponent } from './testimonials.component';
-import { Carousel } from './carousel.component';
-import { Slide } from './slide.component';
+// import { Carousel } from './carousel/carousel.component';
+// import { Slide } from './slide/slide.component';
 import { CommonModule } from '@angular/common';
 
 
 @NgModule({
 
     declarations: [
-        TestimonialsComponent,
-        Carousel,
-        Slide
+        TestimonialsComponent
     ],
     imports: [
         CommonModule,
-        HttpModule
+        HttpModule,
+        CarouselModule,
+        SlideModule
     ],
     providers: [],
     exports: [

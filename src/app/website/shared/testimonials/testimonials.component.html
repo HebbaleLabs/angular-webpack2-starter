@@ -4,21 +4,21 @@
     </div>
     <tf-carousel [interval]="nextPhotoInterval"
                  [noWrap]="noLoopSlides">
-        <tf-slide *ngFor="let slidez of contentData.testimonials; let index=index"
-                  [active]="slidez.active">
+        <tf-slide *ngFor="let slide of contentData.testimonials; let index=index"
+                  [active]="slide.active">
             <div class="row ">
                 <div class="col-lg-2  col-md-3 col-sm-3 col-xs-12 testimonial__content-marg">
                     <div align="center">
-                        <img src={{slidez.image}}
+                        <img src={{slide.image}}
                              alt="learners"
                              class="img-responsive testimonial__img ">
                     </div>
-                    <p class="testimonial__name">{{slidez.name}}</p>
-                    <p class="testimonial__desig">{{slidez.designation}}</p>
+                    <p class="testimonial__name">{{slide.name}}</p>
+                    <p class="testimonial__desig">{{slide.designation}}</p>
                 </div>
                 <div class=" col-lg-9 col-md-8 col-sm-8 col-xs-12 ">
                     <p class="testimonial__comment">
-                        {{slidez.testimonial}}
+                        {{slide.testimonial}}
                     </p>
                 </div>
             </div>

@@ -53,7 +53,8 @@ export class TestimonialsComponent implements OnInit {
           cta = ctaData.fields.label;
         });
         Object.keys(testimonialMap).forEach(testimonialId => {
-          const testimonialEntry: any = data.includes.Entry.find(entry => entry.sys.id === testimonialId);
+          const testimonialEntry: any = data.includes.Entry
+            .find(entry => entry.sys.id === testimonialId);
 
           const dataModel = testimonialMap[testimonialId];
           const entryModel = {
@@ -66,7 +67,8 @@ export class TestimonialsComponent implements OnInit {
           testimonials.push(entryModel);
         });
         Object.keys(assetMap).forEach(assetId => {
-          const assetData = data.includes.Asset.find(asset => asset.sys.id === assetId);
+          const assetData = data.includes.Asset
+            .find(asset => asset.sys.id === assetId);
           assetMap[assetId].image = assetData.fields.file.url;
 
           this.contentData = { cta, testimonials, sectionTitle };

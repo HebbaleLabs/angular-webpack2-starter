@@ -1,14 +1,12 @@
 import { Component, OnInit, OnDestroy, Input, HostBinding } from '@angular/core';
 
-import { Carousel, Direction } from './carousel.component';
+import { Carousel, Direction } from '../carousel/carousel.component';
+
+
 
 @Component({
   selector: 'tf-slide',
-  template: `
-    <div [class.active]="active" class="item text-center">
-      <ng-content></ng-content>
-    </div>
-  `
+  templateUrl: 'slide.component.html'
 })
 export class Slide implements OnInit, OnDestroy {
   @Input() public index: number;

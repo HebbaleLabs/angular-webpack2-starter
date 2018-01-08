@@ -1,25 +1,14 @@
+import { Slide } from './../slide/slide.component';
+
 import { Component, OnDestroy, Input } from '@angular/core';
 import { NgFor } from '@angular/common';
-import { Slide } from './slide.component';
+
 
 export enum Direction { UNKNOWN, NEXT, PREV }
 
 @Component({
   selector: 'tf-carousel',
-  template: `
-    <div (mouseenter)="pause()" (mouseleave)="play()" class="carousel slide">
-      <ol class="carousel-indicators" [hidden]="slides.length <= 1">
-         <li *ngFor="let slidez of slides" [class.active]="slidez.active === true" (click)="select(slidez)"></li>
-      </ol>
-      <div class="carousel-inner"><ng-content></ng-content></div>
-                  <a class="left carousel-control" (click)="prev()" [hidden]="!slides.length">
-                  <span class="glyphicon glyphicon-chevron-left "></span>
-                  </a>
-                  <a class="right carousel-control" (click)="next()" [hidden]="!slides.length">
-                  <span class="glyphicon glyphicon-chevron-right "></span>
-                 </a>
-    </div>
-  `,
+  templateUrl: './carousel.component.html',
   styleUrls: ['./carousel.component.scss']
 })
 export class Carousel implements OnDestroy {
