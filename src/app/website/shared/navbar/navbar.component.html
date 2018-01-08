@@ -8,20 +8,19 @@
                      class=" img-responsive talfindernav__logo">
             </a>
         </div>
-        <input type="checkbox"
-               id="navbar-toggle-cbox">
         <div class="navbar-header pull-right">
-            <label for="navbar-toggle-cbox"
-                   class="navbar-toggle collapsed "
-                   data-toggle="collapse"
-                   data-target=".collapse"
-                   aria-expanded="false"
-                   aria-controls="navbar">
+            <button for="toggle-input"
+                    class="navbar-toggle collapsed "
+                    data-toggle="collapse"
+                    data-target=".collapse"
+                    aria-expanded="false"
+                    aria-controls="navbar"
+                    (click)="onToggle()">
                 <span class="sr-only">Toggle data</span>
                 <span class="icon-bar talfindernav__hamburgerbar"></span>
                 <span class="icon-bar talfindernav__hamburgerbar"></span>
                 <span class="icon-bar talfindernav__hamburgerbar"></span>
-            </label>
+            </button>
             <a>
                 <button class="btn navbar-btn  talfindernav__login-button pull-left">LOGIN</button>
             </a>
@@ -29,7 +28,8 @@
                 <button class="btn navbar-btn navbar-right talfindernav__signup-button pull-left">SIGN-UP</button>
             </a>
         </div>
-        <div class="collapse navbar-collapse talfindernav__content-center">
+        <div class="collapse navbar-collapse talfindernav__content-center"
+             [ngClass]="{'talfindernav--toggle':toggle===true}">
             <ul class="nav navbar-nav pull-center talfindernav__nav-ul ">
                 <li *ngFor="let item of contentData.menuitems.fields?.menuTabs">
                     <a class="talfindernav__headeritem"

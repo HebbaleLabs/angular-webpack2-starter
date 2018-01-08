@@ -13,7 +13,9 @@ import { ContentfulService } from '../contentful/contentful.service';
 export class NavbarComponent implements OnInit {
   contentData = { logo: {}, menuitems: {} };
   @Input() navBarName: string;
-  some: string = 'some';
+  some: string;
+  toggle: boolean = false;
+
   constructor(private http: Http,
     private contentfulService: ContentfulService) { }
 
@@ -21,12 +23,16 @@ export class NavbarComponent implements OnInit {
   ngOnInit() {
     this.getNavbar(this.navBarName);
   }
+  onToggle() {
+    this.toggle = !this.toggle;
+  }
+
 
   getNavbar(name) {
     this.contentfulService.getNavbarData()
       .subscribe(
       (data: any) => {
-        this.contentData.logo = data.includes.Asset[0];
+        this.contentData.logo = data.includes.Asset['0'];
         this.contentData.menuitems = data.items.find(getValues);
         function getValues(item) {
           if (item.fields.navBarType === name) {
