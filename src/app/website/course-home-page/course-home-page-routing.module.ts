@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 
-const compARoutes: Routes = [
+const compRoutes: Routes = [
   {
     path: '',
     component: CourseHomePageComponent
@@ -12,7 +12,7 @@ const compARoutes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(compARoutes)],
+  imports: [RouterModule.forChild(compRoutes)],
   exports: [RouterModule],
   declarations: []
 })
