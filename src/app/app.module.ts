@@ -1,3 +1,6 @@
+import { ImageService } from './services/image.service';
+
+import { NavbarComponent } from './navbar/navbar.component';
 /**
  * This module is the entry for your App when NOT using universal.
  *
@@ -34,7 +37,8 @@ import { AppState } from './reducers';
 @NgModule({
   declarations: [
     AppComponent,
-    APP_DECLARATIONS
+    APP_DECLARATIONS,
+    NavbarComponent
   ],
   entryComponents: [APP_ENTRY_COMPONENTS],
   imports: [
@@ -46,7 +50,7 @@ import { AppState } from './reducers';
   ],
   bootstrap: [AppComponent],
   exports: [AppComponent],
-  providers: [APP_PROVIDERS]
+  providers: [APP_PROVIDERS,ImageService]
 })
 
 export class AppModule {
