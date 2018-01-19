@@ -8,7 +8,7 @@
       </div>
       <div class="navbar-header navbar-right pull-right">
         <ul class="nav pull-left">
-            <li><button class="btn btn-md navbar-btn custom-button">LOGIN</button><span>SIGN-UP</span></li>
+            <li><button class="btn btn-sm navbar-btn custom-button">LOGIN</button><span>SIGN-UP</span></li>
             <!--<li class="navbar-text pull-left ">SIGN-UP</li>-->
         </ul>
         <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle">
@@ -22,7 +22,7 @@
       
       <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                    <li class="border">
+                    <!--<li class="border">
                         <a class="border" href="#">HOME
                             <span class="sr-only">(current)</span>
                         </a>
@@ -35,9 +35,13 @@
                     </li>
                     <li>
                         <a class="border" href="#">ABOUT US</a>
-                    </li>
+                    </li>-->
+                    <li class="border" *ngFor="let text of homePageEntries">
+                        <a href="" class="border">{{text}}</a></li>
             </ul>
       </div>
-    
     </div>
   </nav>
+  <div class="row">
+        <div class="jumbotron custom-jumbo"></div>
+</div>

@@ -1,4 +1,4 @@
-import { ImageService } from './services/image.service';
+import { NavBarService } from './services/navbar.service';
 
 import { NavbarComponent } from './navbar/navbar.component';
 /**
@@ -50,7 +50,7 @@ import { AppState } from './reducers';
   ],
   bootstrap: [AppComponent],
   exports: [AppComponent],
-  providers: [APP_PROVIDERS,ImageService]
+  providers: [APP_PROVIDERS,NavBarService]
 })
 
 export class AppModule {

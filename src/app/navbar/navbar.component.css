@@ -23,10 +23,12 @@
     display: inline-block;
     float: none;
     vertical-align: top;
+    margin-left: -15px;
 }
 .navbar .navbar-collapse {
     text-align: center;
 }
+
 .custom-button
 {
   border-radius: 5px;
@@ -62,4 +64,10 @@ nav > ul > li > a {
     color: Raleway;
     color: #000000;
     font-family: Raleway;
+}
+.custom-jumbo{
+        height: 433px;
+        width: 100%;
+        opacity: 0.08;
+        background-color: #111111;
 }
