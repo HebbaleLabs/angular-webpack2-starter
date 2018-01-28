@@ -3,7 +3,7 @@
       <div class="navbar-header navbar-left pull-left">
         <a href="/" class="navbar-brand">
             <!--<img alt="Brand" class="image" src="https://images.contentful.com/l99z1yyviltd/3t8zc5aVAA0KUqyimquuaA/7a7c141f262768de373894658d1e062f/TalFinder-Logo.svg">-->
-            <img alt="Brand" class="image" src="{{imgUrl}}" alt="Talfinder-logo">
+            <img alt="Brand" class="image" src="{{talfinderlogo}}" alt="Talfinder-logo">
         </a>
       </div>
       <div class="navbar-header navbar-right pull-right">
@@ -11,7 +11,7 @@
             <li><button class="btn btn-sm navbar-btn custom-button">LOGIN</button><span>SIGN-UP</span></li>
             <!--<li class="navbar-text pull-left ">SIGN-UP</li>-->
         </ul>
-        <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle">
+        <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle" >
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -22,26 +22,11 @@
       
       <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                    <!--<li class="border">
-                        <a class="border" href="#">HOME
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="border" href="#">FOR COMPANIES</a>
-                    </li>
-                    <li>
-                        <a class="border" href="#">FOR LEARNERS</a>
-                    </li>
-                    <li>
-                        <a class="border" href="#">ABOUT US</a>
-                    </li>-->
-                    <li class="border" *ngFor="let text of homePageEntries">
-                        <a href="" class="border">{{text}}</a></li>
+                    <li class="border" *ngFor="let menuentries of menutabs">
+                        <a href="" class="border">{{menuentries}}</a></li>
             </ul>
       </div>
     </div>
   </nav>
-  <div class="row">
-        <div class="jumbotron custom-jumbo"></div>
-</div>
+  
+  

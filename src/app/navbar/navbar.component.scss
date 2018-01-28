@@ -1,12 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+$breakpoint-mobile: 425px;
+$white : #FFFFFF;
+$Picton-Blue:#2AB1EA;
+$Black : #000000;
 .navbar-default {
     width: 100%;
     margin-bottom: 0px;
-    background-color: #FFFFFF;
+    background-color:$white;
 	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
     border-radius:0px;
     background-image: none;
 }
-
 .image
 {
     height: 28px;	
@@ -14,7 +18,7 @@
     
 }
 .navbar-default .navbar-nav>li>a {
-    color: #000000;
+    color: $Black ;
     font-family: Raleway;
 }
 
@@ -32,8 +36,8 @@
 .custom-button
 {
   border-radius: 5px;
-  color: white;
-  background-color:#2AB1EA;
+  color: $white;
+  background-color:$Picton-Blue;
   margin-right: 5px;
 }
 .navbar-default .navbar-toggle {
@@ -42,7 +46,7 @@
 .navbar-default .navbar-toggle .icon-bar {
     height: 4px;	
     width: 36px;
-    background-color: #2AB1EA;
+    background-color: $Picton-Blue;
 }
 nav > ul > li > a {
     text-decoration: none;
@@ -58,16 +62,32 @@ nav > ul > li > a {
     height: 0;    
     left:0;
     bottom:0px; 
-    border-bottom: 4px solid #2AB1EA;  
+    border-bottom: 4px solid $Picton-Blue;  
 }
 .navbar-default .navbar-text {
     color: Raleway;
-    color: #000000;
+    color: $Black ;
     font-family: Raleway;
 }
 .custom-jumbo{
-        height: 433px;
-        width: 100%;
-        opacity: 0.08;
-        background-color: #111111;
+    height: 433px;
+    width: 100%;
+}
+
+.img-responsive
+{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-top: 75px;
+    margin-left: 15px;
+}
+@media screen and (max-width:$breakpoint-mobile) 
+{
+    .image
+    {
+        height: 28px;
+        width: 121px;
+        margin-top: -1px;
+    }
 }

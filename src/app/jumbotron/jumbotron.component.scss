@@ -1,0 +1,131 @@
+$breakpoint-mobile-small: 325px;
+$breakpoint-mobile: 425px;
+$breakpoint-tablet: 768px;
+$breakpoint-laptop:1024px;
+$Picton-Blue:#2AB1EA;
+$White:#FFFFFF;
+$Black : #000000;
+$Haiti : #0B132B;
+.custom-jumbo{
+    height: 433px;
+    width: 100%;
+}
+.img-div
+{
+    margin-top: 30px;
+}
+.home-img {
+	height: 315px;
+	width: 501px;
+}
+.align
+{
+    text-align: center;
+}
+.empowering-employabi {
+	height: 42px;
+	opacity: 0.8;
+	color: $Black ;
+	font-size: 36px;
+	font-weight: bold;
+    line-height: 42px;
+    display: initial;
+    font-family: Raleway;
+}
+.brainteaser{
+	height: 19px;
+	width: 530px;
+	color:$Haiti; 
+	font-family: Raleway;
+	font-size: 16px;
+	line-height: 19px;
+}
+.jumbotron p {
+    margin-bottom: 0px;
+    font-size: 16px;
+    font-weight: 100;
+    display: inline-block;
+    margin-top: 40px;
+}
+@media screen and (max-width:$breakpoint-mobile){
+    
+    .empowering-employabi
+    {
+        font-size: 20px;
+    }
+    .brainteaser{
+        width: 300px;
+    }
+}
+.oval{
+        height: 56px;	
+        width: 56px;	
+        border: 1.5px solid #2AB1EA;
+}
+.downarrow
+{
+    margin-top: 6%;
+}
+.bounce {
+    -moz-animation: bounce 3s infinite;
+    -webkit-animation: bounce 3s infinite;
+    animation: bounce 3s infinite;
+}
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+.block
+{
+    display: block;
+}
+@media screen and (max-width:$breakpoint-mobile) {
+  .downarrow
+  {
+      margin-top: 13%;
+  }
+}

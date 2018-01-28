@@ -1,4 +1,7 @@
-import { NavBarService } from './services/navbar.service';
+import { ContactComponent } from './contact/contact.component';
+import { VideoComponent } from './video/video.component';
+import { JumbotronComponent } from './jumbotron/jumbotron.component';
+
 
 import { NavbarComponent } from './navbar/navbar.component';
 /**
@@ -33,12 +36,19 @@ import { routes } from './app.routing';
 import { AppComponent } from './app.component';
 
 import { AppState } from './reducers';
+import { homePageService } from './services/homepage.service';
+import { ProductComponent } from './products/product.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     APP_DECLARATIONS,
-    NavbarComponent
+    NavbarComponent,
+    JumbotronComponent,
+    ProductComponent,
+    VideoComponent,
+    ContactComponent
   ],
   entryComponents: [APP_ENTRY_COMPONENTS],
   imports: [
@@ -50,7 +60,7 @@ import { AppState } from './reducers';
   ],
   bootstrap: [AppComponent],
   exports: [AppComponent],
-  providers: [APP_PROVIDERS,NavBarService]
+  providers: [APP_PROVIDERS,homePageService]
 })
 
 export class AppModule {
