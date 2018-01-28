@@ -30,7 +30,7 @@ export class ProductComponent {
             (response) => 
             {
                 this.productlabel = response.json().items[0].fields.sectionHeader;
-                
+                console.log(response.json());
                 this.corparatetrainingimageurl =response.json().includes.Asset[0].fields.file.url;
                 this.corparatetrainingsegmenttitle = response.json().includes.Entry[0].fields.segmentTitle;
                 this.corparatetrainingsegmentDescription=response.json().includes.Entry[0].fields.segmentDescription;

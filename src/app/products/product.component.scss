@@ -1,12 +1,50 @@
 $white:#FFFFFF;
-$Black : #000000;
-.product__label
+$black : #000000;
+/*.product__label
 {
     color: $Black;
     font-family: Raleway;
     font-size: 24px;
     line-height: 29px;
     font-weight: 600;
+}*/
+@media screen and (max-width:425px)
+{
+    .productofferings{
+        height: 400px;
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+/*
+.productofferings
+{
+    height:400px;
+    width:100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+}*/
+.product__label{
+height: 29px;	
+width: 246px;
+color: $black ;	
+font-family: Raleway;	
+font-size: 24px;	
+font-weight: 600;	
+line-height: 29px;	
+}
+
+
+h2{
+    margin: 0px;
+}
+.pad{
+    padding-right: 5px;
+}
+.col-md-1
+{
+    width:3.333%;
 }
 @media screen and (max-width:768px)
 {
@@ -21,6 +59,7 @@ $Black : #000000;
     border-radius: 5px;	
     background-color:$white;	
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+    margin-top: 20px;
 }
 .segment__image{
 	height: 191px;
@@ -31,7 +70,7 @@ $Black : #000000;
 .tal-finder-hiring-too {	
     height: 19px;
     width: 224px;
-    color: $Black;
+    color: $black;
     font-family: Raleway;
     font-size: 15px;
     margin-top: 10px;
@@ -47,11 +86,5 @@ p
     letter-spacing: 0;
     margin-bottom: 0;
     font-family: Raleway;
-}
-@media (min-width: 992px)
-{
-    .col-md-offset-1 {
-        margin-left: 3.333333%;
-    }
 }
 
