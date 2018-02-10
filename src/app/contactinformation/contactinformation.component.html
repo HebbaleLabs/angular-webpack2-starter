@@ -1,0 +1,23 @@
+<div class="contactinforamtion">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="contactinforamtion__block">
+                    <p class="contactinforamtion__followus">Follow Us:</p>
+                    <span class="contactinforamtion__iconblock" *ngFor="let font of fontContentArray">
+                        <i class="fa" [ngClass]="font.fontAwesome" [ngStyle]="{'background-color':font.iconBgHex}"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="contactinforamtion__getintouchblock">
+                    <div *ngFor="let value of contentArray">
+                        <p class="contactinforamtion__title">{{value.title}}</p>
+                        <p class="contactinforamtion__phone">Phone:{{value.phone}}</p>
+                        <p class="contactinforamtion__email">Email:{{value.email}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

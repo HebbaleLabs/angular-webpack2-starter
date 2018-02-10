@@ -1,0 +1,77 @@
+@import "/home/srinivas/Desktop/AngularHomePage/angular-webpack2-starter/src/app/sassvariables/colorvariables.component.scss";
+@import "/home/srinivas/Desktop/AngularHomePage/angular-webpack2-starter/src/app/sassbreakpoint/sassbreakpoint.component.scss";
+
+@media screen and (max-width:$breakpoint-mobile)
+{
+    .productofferings{
+        height: 35px;
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+.product__label{
+height: 29px;	
+width: 246px;
+color: $black ;	
+font-family: Raleway;	
+font-size: 24px;	
+font-weight: 600;	
+line-height: 29px;	
+}
+h2{
+    margin: 0px;
+}
+.pad{
+    padding-right: 5px;
+}
+.col-md-1
+{
+    width:3.333%;
+}
+@media (min-width: 992px)
+{
+    .col-md-offset-1 {
+        margin-left: 3.333333%;
+    }
+}
+@media screen and (max-width:$breakpoint-tablet)
+{
+    h2
+    {
+        text-align: center;
+    }
+}
+.segement__cards{
+    height: 380px;	
+    width: 285px;	
+    border-radius: 5px;	
+    background-color:$white;	
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+    margin-top: 20px;
+}
+.segment__image{
+	height: 191px;
+    width: 286px;
+    margin-left: -15px;
+	border-radius: 5px 5px 0 0;
+}
+.tal-finder-hiring-too {	
+    height: 19px;
+    width: 224px;
+    color: $black;
+    font-family: Raleway;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 9px;
+}
+p
+{
+    margin-top: 18px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0;
+    margin-bottom: 0;
+    font-family: Raleway;
+}
+

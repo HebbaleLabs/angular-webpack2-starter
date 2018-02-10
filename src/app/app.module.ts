@@ -1,3 +1,13 @@
+import { ContactInformation } from './contactinformation/contactinformation.component';
+import { FooterComponent } from './footer/footer.component';
+
+import { MapComponent } from './map/map.component';
+import { ContactComponent } from './contact/contact.component';
+import { VideoComponent } from './video/video.component';
+import { JumbotronComponent } from './jumbotron/jumbotron.component';
+
+
+import { NavbarComponent } from './navbar/navbar.component';
 /**
  * This module is the entry for your App when NOT using universal.
  *
@@ -30,11 +40,23 @@ import { routes } from './app.routing';
 import { AppComponent } from './app.component';
 
 import { AppState } from './reducers';
+import { homePageService } from './services/homepage.service';
+import { ProductComponent } from './products/product.component';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    APP_DECLARATIONS
+    APP_DECLARATIONS,
+    NavbarComponent,
+    JumbotronComponent,
+    ProductComponent,
+    VideoComponent,
+    ContactComponent,
+    MapComponent,
+    FooterComponent,
+    ContactInformation
   ],
   entryComponents: [APP_ENTRY_COMPONENTS],
   imports: [
@@ -46,7 +68,7 @@ import { AppState } from './reducers';
   ],
   bootstrap: [AppComponent],
   exports: [AppComponent],
-  providers: [APP_PROVIDERS]
+  providers: [APP_PROVIDERS, homePageService]
 })
 
 export class AppModule {

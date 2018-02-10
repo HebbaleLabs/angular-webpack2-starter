@@ -1,0 +1,10 @@
+<div class="container-fluid">
+        <div class="productofferings">
+                <h2 class="product__label col-md-offset-1">{{productOfferingHeader}}</h2>
+        </div>
+        <div class="segement__cards col-md-3 col-sm-6 col-xs-12 col-md-offset-1 " *ngFor="let data of productOfferings">
+                <img class="segment__image" [src]="data.image">
+                <p class="tal-finder-hiring-too">{{data.title}}</p>
+                <p>{{data.description}}</p>
+        </div>
+</div>

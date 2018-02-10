@@ -1,0 +1,19 @@
+<div class="jumbotron custom-jumbotron">
+    <div class="footer__block">
+        <div class="col-md-4 footer__homeaboutus" *ngFor="let value of categoryEntriesarray">
+            <p>{{value.sitemapCategory}}</p>
+            <div *ngFor="let sitemapEntries of value.sitemapEntries">
+                <p>{{sitemapEntries}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="footer__copyright">
+    <div>
+        <p class="footer__privacypolicy">Privacy policy</p>
+        <p class="footer__termsofuse">Terms of Use</p>
+        <p class="footer__allrightsreserve">{{copyRight}}</p>
+    </div>
+</div>
