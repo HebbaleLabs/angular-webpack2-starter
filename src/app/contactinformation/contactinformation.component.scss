@@ -1,0 +1,81 @@
+@import "/home/srinivas/Desktop/AngularHomePage/angular-webpack2-starter/src/app/sassvariables/colorvariables.component.scss";
+@import "/home/srinivas/Desktop/AngularHomePage/angular-webpack2-starter/src/app/sassbreakpoint/sassbreakpoint.component.scss";
+
+.contactinforamtion__title
+{
+	height: 29px;
+	width: 143px;
+	opacity: 0.8;
+	color:$black;
+	font-family: Raleway;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 29px;
+	margin-left: 75px;
+}
+.contactinforamtion__phone {
+	height: 19px;
+	width: 187px;
+	color:$black;
+	font-family: Raleway;
+	font-size: 16px;
+	line-height: 19px;
+	margin-top: 24px;
+	margin-left: 50px;
+}
+.contactinforamtion__email{
+	height: 19px;
+	width: 286px;
+	color:$black;
+	font-family: Raleway;
+	font-size: 16px;
+	line-height: 19px;
+	margin-top: 24px;
+}
+.contactinformation{
+	
+	height: 187px;
+}
+.contactinforamtion__block{
+	height: 100px;
+	width: 290px;
+	margin-top: 39px;
+	margin-left: 112px;
+	text-align: center;
+}
+.contactinforamtion__followus{
+	height: 29px;
+    width: 226px;
+    opacity: 0.8;
+    color:$black;
+    font-family: Raleway;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    display: inline-block;
+    margin-left: 4px;
+}
+.contactinforamtion__getintouchblock{
+	height: 115px;
+	width: 286px;
+	margin-top: 39px;
+	margin-left: 100px;
+	
+}
+i.fa {
+	display: inline-block;
+	border-radius: 60px;
+	padding: 0.9em 0.9em;
+	color:white;
+  }
+.contactinforamtion__iconblock{
+	display: inline-block;
+	padding: 0 16px;
+	margin-top: 25px;
+}
+i.fa:last-child {
+	display: inline-block;
+	border-radius: 60px;
+	padding: 0.9em 0.9em;
+	color:white;
+  }

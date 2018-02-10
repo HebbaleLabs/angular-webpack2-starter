@@ -1,32 +1,28 @@
 <div class="container-fluid">
     <div class="row">
-        <div class="jumbotron custom-jumbo">
-                    <div class="container">
-                            <div class="align">
-                              <h2 
-                                class="empowering-employabi">{{responseslogancontent}}
-                            </h2>
-                            </div>
-                            <div class="align">
-                              <p 
-                                class="brainteaser">{{responsebrainteasercontent}}
-                              </p>
-                            </div>
-                            <div class="img-div">
-                                <img class="img-responsive center-block home-img" src="{{homeImageUrl}}" alt="homeimage"> 
-                            </div>
-                    </div>
+        <div class="jumbotron custom-jumbotron">
+            <div class="container">
+                <div class="textcenter">
+                    <h2 class="jumbotron__slogan">{{responseSloganContent}}
+                    </h2>
+                </div>
+                <div class="textcenter">
+                    <p class="jumbotron__briefteaser jumbotron__text">{{responseBreifTeaserContent}}
+                    </p>
+                </div>
+                <div class="jumbotron__imagesection">
+                    <img [src]="homeImageUrl" class="img-responsive center-block jumbotron__image"  alt="homeimage">
+                </div>
+            </div>
         </div>
     </div>
     <div class="block">
-            <div class="downarrow bounce">
-                <div class="circle">
-                   <div class="angle-div">
+        <div class="downarrow bounce">
+            <div class="circle">
+                <div class="angle-div">
                     <i class="fa fa-angle-down fa-2x angle center-block" aria-hidden="true"></i>
-                   </div>
-                  
-                </div>  
+                </div>
             </div>
+        </div>
     </div>
 </div>
-

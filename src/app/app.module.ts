@@ -1,3 +1,7 @@
+import { ContactInformation } from './contactinformation/contactinformation.component';
+import { FooterComponent } from './footer/footer.component';
+
+import { MapComponent } from './map/map.component';
 import { ContactComponent } from './contact/contact.component';
 import { VideoComponent } from './video/video.component';
 import { JumbotronComponent } from './jumbotron/jumbotron.component';
@@ -40,6 +44,7 @@ import { homePageService } from './services/homepage.service';
 import { ProductComponent } from './products/product.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -48,7 +53,10 @@ import { ProductComponent } from './products/product.component';
     JumbotronComponent,
     ProductComponent,
     VideoComponent,
-    ContactComponent
+    ContactComponent,
+    MapComponent,
+    FooterComponent,
+    ContactInformation
   ],
   entryComponents: [APP_ENTRY_COMPONENTS],
   imports: [
@@ -60,7 +68,7 @@ import { ProductComponent } from './products/product.component';
   ],
   bootstrap: [AppComponent],
   exports: [AppComponent],
-  providers: [APP_PROVIDERS,homePageService]
+  providers: [APP_PROVIDERS, homePageService]
 })
 
 export class AppModule {

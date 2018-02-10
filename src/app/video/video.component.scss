@@ -1,33 +1,38 @@
-$white:#FFFFFF;
+@import "/home/srinivas/Desktop/AngularHomePage/angular-webpack2-starter/src/app/sassvariables/colorvariables.component.scss";
+@import "/home/srinivas/Desktop/AngularHomePage/angular-webpack2-starter/src/app/sassbreakpoint/sassbreakpoint.component.scss";
 .video
 {
     margin-top:40px; 
 }
-.custom-jumbo
+.custom-jumbotron
 {
     border-radius:0px;
     height: auto;
     width: 100%; 
 }
-.c{
+.video__text{
     width: 100%;
     height: auto;	
-    color: #000000;	
+    color: $black;	
     font-family: Raleway;	
     font-size: 24px;	
     font-weight: 600;	
     margin-top: -30px;
     margin-bottom: 25px;
 }
+iframe
+{
+    width:1250;
+};
 .video__block{
     height: 716px;	
     width: 1274px;	
     border-radius: 5px;	
-    background-color: #000000;	
+    background-color: $black;	
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
     
 }
-@media screen and (min-width: 768px)
+@media screen and (min-width:$breakpoint-tablet)
 {
     .container-fluid .jumbotron {
         padding-right: 60px;
@@ -39,18 +44,13 @@ $white:#FFFFFF;
     height: 0;
     overflow: hidden;
   }
-   
-  /* 16x9 Aspect Ratio */
-  .intrinsic-container-16x9 {
+.intrinsic-container-16x9 {
     padding-bottom: 56.25%;
   }
-   
-  /* 4x3 Aspect Ratio */
-  .intrinsic-container-4x3 {
+.intrinsic-container-4x3 {
     padding-bottom: 75%;
   }
-   
-  .intrinsic-container iframe {
+.intrinsic-container iframe {
     position: absolute;
     top:0;
     left: 0;

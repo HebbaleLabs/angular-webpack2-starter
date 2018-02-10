@@ -1,30 +1,14 @@
-$white:#FFFFFF;
-$black : #000000;
-/*.product__label
-{
-    color: $Black;
-    font-family: Raleway;
-    font-size: 24px;
-    line-height: 29px;
-    font-weight: 600;
-}*/
-@media screen and (max-width:425px)
+@import "/home/srinivas/Desktop/AngularHomePage/angular-webpack2-starter/src/app/sassvariables/colorvariables.component.scss";
+@import "/home/srinivas/Desktop/AngularHomePage/angular-webpack2-starter/src/app/sassbreakpoint/sassbreakpoint.component.scss";
+
+@media screen and (max-width:$breakpoint-mobile)
 {
     .productofferings{
-        height: 400px;
+        height: 35px;
         width: 100%;
         margin-top: 20px;
     }
 }
-/*
-.productofferings
-{
-    height:400px;
-    width:100%;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-top: 20px;
-}*/
 .product__label{
 height: 29px;	
 width: 246px;
@@ -34,8 +18,6 @@ font-size: 24px;
 font-weight: 600;	
 line-height: 29px;	
 }
-
-
 h2{
     margin: 0px;
 }
@@ -46,7 +28,13 @@ h2{
 {
     width:3.333%;
 }
-@media screen and (max-width:768px)
+@media (min-width: 992px)
+{
+    .col-md-offset-1 {
+        margin-left: 3.333333%;
+    }
+}
+@media screen and (max-width:$breakpoint-tablet)
 {
     h2
     {
@@ -76,7 +64,6 @@ h2{
     margin-top: 10px;
     margin-left: 9px;
 }
-
 p
 {
     margin-top: 18px;

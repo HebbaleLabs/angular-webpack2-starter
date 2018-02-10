@@ -1,8 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway');
-$breakpoint-mobile: 425px;
-$white : #FFFFFF;
-$Picton-Blue:#2AB1EA;
-$Black : #000000;
+@import "/home/srinivas/Desktop/AngularHomePage/angular-webpack2-starter/src/app/sassvariables/colorvariables.component.scss";
+@import "/home/srinivas/Desktop/AngularHomePage/angular-webpack2-starter/src/app/sassbreakpoint/sassbreakpoint.component.scss";
 .navbar-default {
     width: 100%;
     margin-bottom: 0px;
@@ -11,14 +8,14 @@ $Black : #000000;
     border-radius:0px;
     background-image: none;
 }
-.image
+.navbar__logo
 {
     height: 28px;	
     width: 184px;
     
 }
 .navbar-default .navbar-nav>li>a {
-    color: $Black ;
+    color: $black ;
     font-family: Raleway;
 }
 
@@ -37,7 +34,7 @@ $Black : #000000;
 {
   border-radius: 5px;
   color: $white;
-  background-color:$Picton-Blue;
+  background-color:$picton-blue;
   margin-right: 5px;
 }
 .navbar-default .navbar-toggle {
@@ -46,7 +43,7 @@ $Black : #000000;
 .navbar-default .navbar-toggle .icon-bar {
     height: 4px;	
     width: 36px;
-    background-color: $Picton-Blue;
+    background-color: $picton-blue;
 }
 nav > ul > li > a {
     text-decoration: none;
@@ -62,18 +59,13 @@ nav > ul > li > a {
     height: 0;    
     left:0;
     bottom:0px; 
-    border-bottom: 4px solid $Picton-Blue;  
+    border-bottom: 4px solid $picton-blue;  
 }
 .navbar-default .navbar-text {
     color: Raleway;
-    color: $Black ;
+    color: $black ;
     font-family: Raleway;
 }
-.custom-jumbo{
-    height: 433px;
-    width: 100%;
-}
-
 .img-responsive
 {
     display: block;
@@ -84,7 +76,7 @@ nav > ul > li > a {
 }
 @media screen and (max-width:$breakpoint-mobile) 
 {
-    .image
+    .navbar__logo
     {
         height: 28px;
         width: 107px;

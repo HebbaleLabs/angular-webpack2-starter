@@ -1,46 +1,40 @@
-$breakpoint-mobile-small: 325px;
-$breakpoint-mobile: 425px;
-$breakpoint-tablet: 768px;
-$breakpoint-laptop:1024px;
-$Picton-Blue:#2AB1EA;
-$White:#FFFFFF;
-$Black : #000000;
-$Haiti : #0B132B;
-.custom-jumbo{
+@import "/home/srinivas/Desktop/AngularHomePage/angular-webpack2-starter/src/app/sassvariables/colorvariables.component.scss";
+@import "/home/srinivas/Desktop/AngularHomePage/angular-webpack2-starter/src/app/sassbreakpoint/sassbreakpoint.component.scss";
+.custom-jumbotron{
     height: 433px;
     width: 100%;
 }
-.img-div
+.jumbotron__imagesection
 {
     margin-top: 30px;
 }
-.home-img {
+.jumbotron__image {
 	height: 315px;
 	width: 501px;
 }
-.align
+.textcenter
 {
     text-align: center;
 }
-.empowering-employabi {
+.jumbotron__slogan {
 	height: 42px;
 	opacity: 0.8;
-	color: $Black ;
+	color: $black ;
 	font-size: 36px;
 	font-weight: bold;
     line-height: 42px;
     display: initial;
     font-family: Raleway;
 }
-.brainteaser{
+.jumbotron__briefteaser{
 	height: 19px;
 	width: 530px;
-	color:$Haiti; 
+	color:$haiti; 
 	font-family: Raleway;
 	font-size: 16px;
 	line-height: 19px;
 }
-.jumbotron p {
+.jumbotron__text {
     margin-bottom: 0px;
     font-size: 16px;
     font-weight: 100;
@@ -49,26 +43,24 @@ $Haiti : #0B132B;
 }
 @media screen and (max-width:$breakpoint-mobile){
     
-    .empowering-employabi
+    .jumbotron__slogan
     {
         font-size: 20px;
     }
-    .brainteaser{
+    .jumbotron__briefteaser{
         width: 300px;
     }
 }
 .oval{
         height: 56px;	
         width: 56px;	
-        border: 1.5px solid #2AB1EA;
+        border: 1.5px solid $picton-blue;
 }
 .downarrow
 {
     margin-top: 6%;
 }
 .bounce {
-    -moz-animation: bounce 3s infinite;
-    -webkit-animation: bounce 3s infinite;
     animation: bounce 3s infinite;
 }
 @-moz-keyframes bounce {
@@ -123,7 +115,7 @@ $Haiti : #0B132B;
   {
       height: 55px;
       width: 55px;
-      border: 1px solid #2AB1EA;
+      border: 1px solid $picton-blue;
       border-radius: 35px;
       margin-left: 48%;
   }
@@ -144,7 +136,7 @@ $Haiti : #0B132B;
   {
       height: 55px;
       width: 55px;
-      border: 2px solid #2AB1EA;
+      border: 2px solid $picton-blue;
       border-radius: 35px;
       margin-left: 40%;
       margin-top: 64px;
@@ -152,7 +144,7 @@ $Haiti : #0B132B;
 }
 .angle{
   
-    color: #2AB1EA;
+    color: $picton-blue;
 }
 .angle-div{
   display: inline-block;

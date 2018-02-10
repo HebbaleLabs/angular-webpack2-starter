@@ -1,18 +1,71 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway');
-.contact__section {	
-    height: 225px;	
+@import "/home/srinivas/Desktop/AngularHomePage/angular-webpack2-starter/src/app/sassvariables/colorvariables.component.scss";
+@import "/home/srinivas/Desktop/AngularHomePage/angular-webpack2-starter/src/app/sassbreakpoint/sassbreakpoint.component.scss";
+
+
+.contactsection {	
+    height: 190px;	
     width: 100%;
     padding-right:20px;
     padding-left:20px;
-    border:1px solid green;
 }
 .contact {
-    color: #000000;
+    color: $black;
     font-family: Raleway;
     font-size: 24px;
     font-weight: 600;
     line-height: 29px;
     text-align: center;
     display: inline;
-    margin-left: -6px;
 }
+.contact__demo{
+	height: 29px;
+	opacity: 0.8;
+	color:$black;
+	font-family: Raleway;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 29px;
+	text-align: center;
+}
+
+.contact__description{
+	height: 38px;
+	color: $black;
+	font-family: Raleway;
+    text-align: center;
+    margin-top: 24px;
+}
+.contact__email{
+    height: 29px;
+    color: $picton-blue;
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 29px;
+    text-align: center;
+}
+@media screen and (max-width:$breakpoint-mobile)
+{
+    .contact {
+        color: $black;
+        font-family: Raleway;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 29px;
+        text-align: center;
+        display: inline;
+        margin-left: 90px;
+    }
+}
+@media screen and (max-width:$breakpoint-mobile)
+{
+    .contact__email{
+        height: 29px;
+        color: $picton-blue;
+        font-family: Raleway;
+        font-size: 17px;
+        font-weight: 600;
+        line-height: 29px;
+    }
+}
+

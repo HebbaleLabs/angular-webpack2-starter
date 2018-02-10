@@ -1,14 +1,10 @@
 <div class="video">
     <div class="container-fluid">
         <div class="row">
-            <div class="jumbotron custom-jumbo">
-                <h2 class="c">Videos</h2>
+            <div class="jumbotron custom-jumbotron">
+                <h2 class="video__text">Videos</h2>
                 <div class="intrinsic-container intrinsic-container-16x9">
-                    <iframe width="1250" 
-                    frameborder="0" 
-                    border="0"  
-                    class="video__block"
-                    src="https://www.youtube.com/embed/yU9rQ720qdw?showinfo=0&rel=0" allowfullscreen></iframe>
+                    <iframe [src]="trustedVideoUrl" class="video__block" frameborder="0" border="0" allowfullscreen></iframe>
                 </div>
             </div>
         </div>

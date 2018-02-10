@@ -1,0 +1,69 @@
+@import "/home/srinivas/Desktop/AngularHomePage/angular-webpack2-starter/src/app/sassvariables/colorvariables.component.scss";
+@import "/home/srinivas/Desktop/AngularHomePage/angular-webpack2-starter/src/app/sassbreakpoint/sassbreakpoint.component.scss";
+.custom-jumbotron{
+    height: 279px;
+    width: 100%;
+    margin-bottom:0; 
+}
+.footer__copyright{
+	height: 40px;
+	width: 100%;
+	background-color: $haiti;
+}
+.footer__privacypolicy {
+	height: 22px;
+	width: 101px;
+	color: $white;
+	font-family: "Open Sans";
+	font-size: 16px;
+    line-height: 22px;
+    position: absolute;
+    left: 272px;
+    margin-top: 9px;
+}
+.footer__block{
+	height: 139px;
+	width: 671px;
+	margin-left: 30px;
+}
+.footer__homeaboutus{
+	height: 81px;
+	color: #000000;
+	font-family: Raleway;
+	font-size: 16px;
+	line-height: 19px;
+}
+.products-pricing-blo {
+	height: 112px;
+	width: 67px;
+	color: #000000;
+	font-family: Raleway;
+	font-size: 16px;
+	line-height: 19px;
+	border: 1px solid orange;
+	margin-left: 198px;
+}
+.footer__termsofuse {
+	height: 22px;
+	width: 98px;
+	color: $white;
+	font-family: "Open Sans";
+	font-size: 16px;
+    line-height: 22px;
+    display:inline-block;
+    position:absolute;
+    left: 400px;
+    margin-top: 9px;
+}
+.footer__allrightsreserve{
+	height: 22px;
+	width: 200px;
+	color: $white;
+	font-family: "Open Sans";
+	font-size: 16px;
+    line-height: 22px;
+    display: inline-block;
+    position: absolute;
+    margin-top: 9px;
+    left: 530px;
+}
